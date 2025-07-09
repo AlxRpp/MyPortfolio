@@ -1,27 +1,47 @@
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-.language{
+.language {
     color: white;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.navbar{
+.navbar {
     padding-top: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
- button{
+button {
     cursor: pointer;
     background-color: transparent;
     color: white;
     border: none;
- }
+}
 
- 
+
+.toggle {
+    width: 32px;
+    height: 10px;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    border: 1px solid white;
+    position: relative;
+
+    >div {
+        height: 16px;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        border: 1px solid white;
+        background-color: var(--color-tertiary);
+        position: absolute;
+        top: -50%;
+        left: 0;
+        transition: all .3s ease-in-out;
+    }
+}

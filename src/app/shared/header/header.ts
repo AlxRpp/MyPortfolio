@@ -1,22 +1,29 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
 export class Header {
   english: boolean = true;
   german: boolean = false;
+  currentLanguage = signal<string>("english")
+  toggleGER = '50%';
+  toggleENG = '-5%';
+  active = '#24DD80';
+  white = '#ffffff'
 
-  toggleLanguageToEnglish() {
-    this.english = true;
-    this.german = false;
-  }
-
-  toggleLanguageToGerman() {
-    this.english = false;
-    this.german = true;
+  toggleLanguage(lang: string) {
+    this.currentLanguage.set(lang);
+    if (this.currentLanguage() == "english") {
+      this.english = true;
+      this.german = false;
+    } else {
+      this.german = true;
+      this.english = false;
+    }
   }
 }

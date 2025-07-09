@@ -6,13 +6,11 @@
         <a href="#">Projects</a>
         <a href="#">Contact</a>
         <div class="language">
-            <button (click)="toggleLanguageToEnglish()">EN</button>
-            @if (english) {
-            <img src="./assets/icons/toggleEN.png" alt="" srcset="">
-            }@else {
-            <img src="./assets/icons/toggleDE.png" alt="" srcset="">
-            }
-            <button (click)="toggleLanguageToGerman()">DE</button>
+            <button [ngStyle]="{'color': english?active:white}" (click)="toggleLanguage('english')">EN</button>
+            <div class="toggle">
+                <div [ngStyle]="{'left': german? toggleGER: toggleENG}"></div>
+            </div>
+            <button [ngStyle]="{'color': german?active:white}" (click)="toggleLanguage('german')">DE</button>
         </div>
     </div>
 
