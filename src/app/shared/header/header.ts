@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss'
 })
 export class Header {
+  english: boolean = true;
+  german: boolean = false;
 
+  toggleLanguageToEnglish() {
+    this.english = true;
+    this.german = false;
+  }
+
+  toggleLanguageToGerman() {
+    this.english = false;
+    this.german = true;
+  }
 }
