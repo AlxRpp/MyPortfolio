@@ -1,5 +1,17 @@
+@font-face{
+    font-family: "primaryFont";
+    src: url('../public/assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
+}
+
+@font-face{
+    font-family: "secondaryFont";
+    src: url('../public/assets/fonts/Kalam-Bold.ttf');
+}
+
 body{
     margin: 0;
+    font-family: primaryFont, sans-serif;
+    font-weight: 700;
 }
 
 *{

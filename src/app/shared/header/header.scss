@@ -1,12 +1,18 @@
 a{
     color: white;
+    text-decoration: none;
 }
 
 .language{
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .navbar{
+    padding-top: 32px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
