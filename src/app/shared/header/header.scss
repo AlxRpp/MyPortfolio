@@ -155,13 +155,14 @@
 
 .navbar {
     padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 button {
-
     background-color: transparent;
     color: white;
     border: none;
