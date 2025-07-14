@@ -6,11 +6,14 @@
         <a class="projects" href="#">Projects</a>
         <a class="contact" href="#">Contact</a>
         <div class="language">
-            <button [ngStyle]="{'color': english?active:white}" (click)="toggleLanguage('english')">EN</button>
+            <button [class.english]="german" [ngStyle]="{'color': english?active:white}"
+                (click)="toggleLanguage('english')">EN
+            </button>
             <div class="toggle">
                 <div [ngStyle]="{'left': german? toggleGER: toggleENG}"></div>
             </div>
-            <button [ngStyle]="{'color': german?active:white}" (click)="toggleLanguage('german')">DE</button>
+            <button [class.german]="english" [ngStyle]="{'color': german?active:white}"
+                (click)="toggleLanguage('german')">DE</button>
         </div>
     </div>
 
