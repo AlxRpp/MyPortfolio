@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-primary: #24DD80;
     --color-secondary: #1AA8B5;
     --color-tertiary: #1073EA;
@@ -6,29 +6,31 @@
 
 
 
-@font-face{
+@font-face {
     font-family: "primaryFont";
     src: url('../public/assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
 }
 
-@font-face{
+@font-face {
     font-family: "secondaryFont";
     src: url('../public/assets/fonts/Kalam-Bold.ttf');
 }
 
-body{
+body {
     margin: 0;
     font-family: primaryFont, sans-serif;
     font-weight: 700;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.max-content{
+.max-content {
     max-width: 1440px;
     margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
 }
