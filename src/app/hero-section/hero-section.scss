@@ -19,7 +19,6 @@
 
 .hero {
     width: 860px;
-    // outline: 1px solid pink;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -63,24 +62,27 @@
 .picture {
     position: absolute;
     right: 24px;
-    bottom: 0;
+    bottom: 5px;
     transform: rotate(8deg);
     width: 204px;
     height: 244px;
-    background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-    background-image: url('../../../public/assets/images/papertexture.jpg');
-    filter: brightness(1.15);
+    overflow: hidden;
 
-    >img {
-        background-size: cover;
-        aspect-ratio: 1/1;
+    .polaroid {
         width: 100%;
-        filter: brightness(.8);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .main-image {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: top;
+        transform: scale(2) translate(10px, 50px);
     }
 
     span {
@@ -90,5 +92,6 @@
         font-family: secondaryFont, sans-serif;
         margin: auto;
         text-align: center;
+        z-index: 1;
     }
 }
