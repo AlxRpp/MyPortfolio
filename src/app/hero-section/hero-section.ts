@@ -2,10 +2,11 @@ import { Component, ElementRef, signal, viewChild } from '@angular/core';
 import { Header } from "../shared/header/header";
 import { Button } from "../shared/button/button";
 import { CommonModule } from '@angular/common';
+import { SocialLinks } from "../shared/social-links/social-links";
 
 @Component({
   selector: 'app-hero-section',
-  imports: [CommonModule, Header, Button],
+  imports: [CommonModule, Header, Button, SocialLinks],
   templateUrl: './hero-section.html',
   styleUrl: './hero-section.scss'
 })

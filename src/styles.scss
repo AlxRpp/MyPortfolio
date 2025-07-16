@@ -2,9 +2,8 @@
     --color-primary: #24DD80;
     --color-secondary: #1AA8B5;
     --color-tertiary: #1073EA;
-    --color-cta: #F87A55
+    --color-cta: #F87A55;
 }
-
 
 
 @font-face {
@@ -12,10 +11,12 @@
     src: url('../public/assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
 }
 
+
 @font-face {
     font-family: "secondaryFont";
     src: url('../public/assets/fonts/Kalam-Bold.ttf');
 }
+
 
 body {
     margin: 0;
@@ -23,11 +24,13 @@ body {
     font-weight: 700;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .max-content {
     max-width: 1440px;
