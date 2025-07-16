@@ -2,21 +2,27 @@
     <app-header class="header"></app-header>
     <div class="hero max-content">
         <div (mouseenter)="startGreeting()" (mouseleave)="stopGreeting()" class="greeting"
-            [ngStyle]="{'background-color':background()?bgBlue:bgTransparent}"> {{ hello() }}
+            [ngStyle]="{'background-color':background()?bgBlue:bgTransparent}"> {{ greeting() }}
             @if (showHand()) {
             <img #wavingHand src="./assets/icons/waving_hand.png" alt="" srcset=""> }
         </div>
-
         <div class="main-title">
             Frontend
-            <div class="picture">
-                <img class="main-image" src="./assets/images/selfie.jpeg" alt="" srcset="">
+            <div (mouseenter)="addColor()" (mouseleave)="addGrayscale()" class="picture">
+                <img [ngStyle]="{'filter': imageHover()?colored:blackAndWhite}" class="main-image"
+                    src="./assets/images/selfie.jpeg" alt="" srcset="">
                 <img class="polaroid" src="./assets/images/polaroid _Frame.png " alt="" srcset="">
-                <span>Alex :)</span>
+                <span>{{ name() }}</span>
             </div>
         </div>
         <div class="main-title">DEVELOPER</div>
         <app-button></app-button>
+    </div>
+    <div class="socialBar max-content">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle">
+        </div>
     </div>
 
 </div>

@@ -93,6 +93,8 @@
         object-fit: cover;
         object-position: top;
         transform: scale(2) translate(10px, 50px);
+        filter: grayscale(1);
+        transition: filter .25s ease;
     }
 
     span {
@@ -146,5 +148,20 @@
 
 .stop-greeting {
     animation: StopWavingHand .5s ease-in-out forwards;
+
+}
+
+.socialBar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.circle {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 1px solid white;
 
 }

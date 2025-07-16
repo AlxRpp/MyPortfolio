@@ -10,19 +10,22 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hero-section.scss'
 })
 export class HeroSection {
-  hello = signal<string>('Hello world');
+  greeting = signal<string>('Hello world');
+  name = signal<string>('Alex :)')
   background = signal<boolean>(false);
   showHand = signal<boolean>(false);
-  bgBlue = '#3355FF'
-  bgTransparent = 'transparent'
-  wavingHand = viewChild.required<ElementRef>('wavingHand')
-
+  imageHover = signal<boolean>(false);
+  wavingHand = viewChild.required<ElementRef>('wavingHand');
+  bgBlue = '#3355FF';
+  bgTransparent = 'transparent';
+  blackAndWhite = 'grayscale(1)';
+  colored = 'grayscale(0)'
 
   startGreeting() {
     if (this.showHand()) {
       return
     } else {
-      this.hello.set("I´M ALEXANDER RUPPEL")
+      this.greeting.set("I´M ALEXANDER RUPPEL")
       this.background.set(true);
       this.showHand.set(true);
       setTimeout(() => {
@@ -38,12 +41,23 @@ export class HeroSection {
       this.wavingHand().nativeElement.classList.add('stop-greeting');
       setTimeout(() => {
         this.showHand.set(false);
-        this.hello.set('Hello world')
+        this.greeting.set('Hello world')
         this.background.set(false);
       }, 250)
     }
+  }
+
+  addColor() {
+    this.imageHover.set(true);
+    this.name.set('Alex :D');
+  }
+
+  addGrayscale() {
+    this.imageHover.set(false);
+    this.name.set('Alex :)');
 
   }
+
 
 
 
