@@ -6,7 +6,7 @@
             @if (showHand()) {
             <img #wavingHand src="./assets/icons/waving_hand.png" alt="" srcset=""> }
         </div>
-        <div class="main-title">
+        <div class="main-title hero-frontend">
             Frontend
             <div (mouseenter)="addColor()" (mouseleave)="addGrayscale()" class="picture">
                 <img [ngStyle]="{'filter': imageHover()?colored:blackAndWhite}" class="main-image"
@@ -15,8 +15,8 @@
                 <span>{{ name() }}</span>
             </div>
         </div>
-        <div class="main-title">DEVELOPER</div>
-        <app-button></app-button>
+        <div class="main-title hero-dev">DEVELOPER</div>
+        <app-button class="hero-ctaBtn"></app-button>
     </div>
     <app-social-links class="socialBar max-content"></app-social-links>
 </div>
