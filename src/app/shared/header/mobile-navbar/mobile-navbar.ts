@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, signal, viewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-navbar',
@@ -15,6 +15,8 @@ export class MobileNavbar {
   toggleENG = '-5%';
   active = '#24DD80';
   white = '#ffffff'
+  mobileNavBar = viewChild.required<ElementRef>('mobileNav');
+
 
   toggleLanguage(lang: string) {
     this.currentLanguage.set(lang);
@@ -28,7 +30,6 @@ export class MobileNavbar {
   }
 
   toggleBurgerMenu() {
-    console.log("Burger is Open");
-
+    this.mobileNavBar().nativeElement.classList.toggle('d-none')
   }
 }

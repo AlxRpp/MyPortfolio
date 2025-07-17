@@ -1,8 +1,10 @@
 .mobileNavbar {
     width: 100%;
-    background-image: url('../../../../public/assets/images/hero.png');
+    // background-image: url('/assets/images/hero.png');
     height: 100dvh;
-    background-color: white;
+    background-color: blue;
+    z-index: 17;
+    position: relative;
 }
 
 .mobileNavbar-header {
