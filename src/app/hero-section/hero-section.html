@@ -17,6 +17,12 @@
         </div>
         <div class="main-title hero-dev">DEVELOPER</div>
         <app-button class="hero-ctaBtn"></app-button>
+        <div class="hero-mobile-img">
+            <img [ngStyle]="{'filter': imageHover()?colored:blackAndWhite}" class="main-image"
+                src="./assets/images/selfie.jpeg" alt="" srcset="">
+            <img class="polaroid" src="./assets/images/polaroid _Frame.png " alt="" srcset="">
+            <span>{{ name() }}</span>
+        </div>
     </div>
     <app-social-links class="socialBar max-content"></app-social-links>
 </div>

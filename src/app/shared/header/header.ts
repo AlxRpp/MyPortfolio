@@ -26,4 +26,9 @@ export class Header {
       this.english = false;
     }
   }
+
+  toggleBurgerMenu() {
+    console.log("Burger is Open");
+
+  }
 }

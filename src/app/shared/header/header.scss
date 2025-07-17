@@ -3,6 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    >.burger {
+        height: 32px;
+        cursor: pointer;
+    }
 }
 
 
@@ -189,4 +194,46 @@ button {
         left: 0;
         transition: all .3s ease-in-out;
     }
+}
+
+
+@media(min-width: 721px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-me {
+        display: none;
+    }
+
+    .skills {
+        display: none;
+    }
+
+    .projects {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .language {
+        display: none;
+    }
+
+}
+
+.mobileNavbar {
+    width: 100%;
+    background-image: url('../../../../public/assets/images/hero.png');
+    height: 100dvh;
+    background-color: white;
+}
+
+.mobileNavbar-header {
+    display: flex;
+    justify-content: space-between;
 }

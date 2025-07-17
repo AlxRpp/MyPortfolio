@@ -2,7 +2,6 @@
     --color-primary: #24DD80;
     --color-secondary: #1AA8B5;
     --color-tertiary: #1073EA;
-    --color-cta: #F87A55;
 }
 
 
@@ -35,6 +34,12 @@ body {
 .max-content {
     max-width: 1440px;
     margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
+}
+
+@media (max-width: 720px) {
+    .max-content {
+        padding: 0 12px;
+    }
+
 }
