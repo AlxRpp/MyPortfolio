@@ -18,27 +18,8 @@
         <img class="burger" (click)="toggleBurgerMenu()"
             src="./assets/icons/Hand-drawn_lines/00_Header/MobileIcon/burgerMenu.png" alt="" srcset="">
     </div>
-    <div class="mobileNavbar">
-        <div class="mobileNavbar-header">
-            <img src="./assets/icons/testLogo.png" alt="" srcset="">
-            <img src="./assets/icons/Hand-drawn_lines/00_Header/MobileIcon/close.png" alt="" srcset="">
-        </div>
-        <div class="mobileNavbar-content">
-            <a class="mobileNavbar-about-me" href="#">About me</a>
-            <a class="mobileNavbar-skills" href="#">Skills</a>
-            <a class="mobileNavbar-projects" href="#">Projects</a>
-            <a class="mobileNavbar-contact" href="#">Contact</a>
-            <div class="mobileNavbar-language">
-                <button [class.english]="german" [ngStyle]="{'color': english?active:white}"
-                    (click)="toggleLanguage('english')">EN
-                </button>
-                <div class="toggle">
-                    <div [ngStyle]="{'left': german? toggleGER: toggleENG}"></div>
-                </div>
-                <button [class.german]="english" [ngStyle]="{'color': german?active:white}"
-                    (click)="toggleLanguage('german')">DE</button>
-            </div>
-        </div>
-    </div>
+
+    <app-mobile-navbar #mobileNav></app-mobile-navbar>
+
 
 </div>

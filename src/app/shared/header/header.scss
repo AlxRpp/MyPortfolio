@@ -226,14 +226,6 @@ button {
 
 }
 
-.mobileNavbar {
-    width: 100%;
-    background-image: url('../../../../public/assets/images/hero.png');
-    height: 100dvh;
-    background-color: white;
-}
-
-.mobileNavbar-header {
-    display: flex;
-    justify-content: space-between;
+.d-none {
+    display: none;
 }

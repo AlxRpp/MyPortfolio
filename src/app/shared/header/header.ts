@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, ElementRef, signal, viewChild } from '@angular/core';
+import { MobileNavbar } from "./mobile-navbar/mobile-navbar";
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule],
+  imports: [CommonModule, MobileNavbar],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
@@ -15,6 +16,8 @@ export class Header {
   toggleENG = '-5%';
   active = '#24DD80';
   white = '#ffffff'
+  mobileNavBar = viewChild.required<ElementRef>('mobileNav');
+
 
   toggleLanguage(lang: string) {
     this.currentLanguage.set(lang);
@@ -28,7 +31,9 @@ export class Header {
   }
 
   toggleBurgerMenu() {
-    console.log("Burger is Open");
+    console.log(this.mobileNavBar());
+
+    this.mobileNavBar().nativeElement.classList.add('d-none')
 
   }
 }
