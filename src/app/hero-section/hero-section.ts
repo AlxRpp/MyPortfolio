@@ -23,7 +23,7 @@ export class HeroSection implements AfterViewInit {
   colored = 'grayscale(0)'
 
   ngAfterViewInit(): void {
-    this.MobileView();
+    this.mobileView();
   }
 
   startGreeting() {
@@ -63,7 +63,7 @@ export class HeroSection implements AfterViewInit {
 
   }
 
-  MobileView() {
+  mobileView() {
     let width = window.innerWidth;
     if (width <= 720) {
       setTimeout(() => {
