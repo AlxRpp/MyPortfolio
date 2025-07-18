@@ -31,7 +31,7 @@ export class Header {
   }
 
   toggleBurgerMenu() {
-    this.mobileNavBar().nativeElement.classList.toggle('d-none')
+    this.mobileNavBar().nativeElement.classList.toggle('transform-BurgerMenu')
 
   }
 }

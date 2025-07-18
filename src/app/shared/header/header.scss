@@ -238,6 +238,8 @@ button {
     left: 0;
     right: 0;
     z-index: 1;
+    transform: translateY(-1000px);
+    transition: all .35s ease-in-out;
 }
 
 .mobileNavbar-header {
@@ -256,6 +258,6 @@ button {
 }
 
 
-.d-none {
-    display: none;
+.transform-BurgerMenu {
+    transform: translateY(0);
 }
