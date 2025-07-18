@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal, viewChild, ElementRef } from '@angular/core';
+import { SocialLinks } from "../../social-links/social-links";
 
 @Component({
   selector: 'app-mobile-navbar',
-  imports: [CommonModule],
+  imports: [CommonModule, SocialLinks],
   templateUrl: './mobile-navbar.html',
   styleUrl: './mobile-navbar.scss'
 })
@@ -15,7 +16,7 @@ export class MobileNavbar {
   toggleENG = '-5%';
   active = '#24DD80';
   white = '#ffffff'
-  mobileNavBar = viewChild.required<ElementRef>('mobileNav');
+  // mobileNavBar = viewChild.required<ElementRef>('mobileNav');
 
 
   toggleLanguage(lang: string) {
@@ -29,7 +30,5 @@ export class MobileNavbar {
     }
   }
 
-  toggleBurgerMenu() {
-    this.mobileNavBar().nativeElement.classList.toggle('d-none')
-  }
+
 }
