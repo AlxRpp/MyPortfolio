@@ -1,0 +1,19 @@
+.content {
+    display: flex;
+
+    >.papers {
+        width: 50%;
+
+        >img {
+            width: 100%;
+        }
+    }
+
+    .about-me {
+        width: 50%;
+    }
+}
+
+.CTA-BTN {
+    color: black;
+}
