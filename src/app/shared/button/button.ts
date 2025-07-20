@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './button.scss'
 })
 export class Button {
-
+  public value = signal<string>('Get in touch')
 }
