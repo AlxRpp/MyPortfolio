@@ -7,5 +7,5 @@ import { Component, signal } from '@angular/core';
   styleUrl: './button.scss'
 })
 export class Button {
-  public value = signal<string>('Get in touch')
+  value = signal<string>('Get in touch');
 }
