@@ -1,6 +1,6 @@
 .content {
     display: flex;
-    margin: 96px 0;
+    margin: 96px 0b;
 
 }
 
@@ -40,6 +40,19 @@
     >img {
         width: 550px;
     }
+
+    .location {
+        display: flex;
+        gap: 24px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        z-index: 4;
+        color: white;
+        font-weight: 300;
+        transform: translateX(-50%) rotate(-5deg);
+        align-items: center;
+    }
 }
 
 .about-me {
@@ -74,5 +87,7 @@
 
     &-CTA {
         border: 1px solid red;
+        align-self: self-end;
+        width: 30%;
     }
 }
