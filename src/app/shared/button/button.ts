@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-button',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './button.html',
   styleUrl: './button.scss'
 })

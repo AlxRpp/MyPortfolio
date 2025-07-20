@@ -1,15 +1,78 @@
 .content {
     display: flex;
+    margin: 96px 0;
 
-    >.papers {
-        width: 50%;
+}
 
-        >img {
-            width: 100%;
+.paper {
+    position: relative;
+    width: 50%;
+
+
+
+    &-1 {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        left: 10%;
+        transform: rotate(-5deg);
+    }
+
+    &-2 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        left: 10%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    &-3 {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        left: 10%;
+        transform: translateY(-100%) rotate(3deg);
+        z-index: 1;
+
+    }
+
+    >img {
+        width: 550px;
+    }
+}
+
+.about-me {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 48px;
+
+    &-header {
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+        }
+
+        img {
+            width: 45%;
         }
     }
 
-    .about-me {
-        width: 50%;
+
+    &-text-area {
+        font-weight: 300;
+        max-width: 45ch;
+    }
+
+
+    &-CTA {
+        border: 1px solid red;
     }
 }
