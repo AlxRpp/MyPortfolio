@@ -20,3 +20,13 @@ button {
         cursor: pointer;
     }
 }
+
+.second {
+    color: black;
+    box-shadow: 2px 4px 0 black;
+    border: 1px solid black;
+
+    &:hover {
+        color: white;
+    }
+}

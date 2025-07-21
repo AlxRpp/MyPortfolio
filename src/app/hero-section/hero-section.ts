@@ -21,6 +21,7 @@ export class HeroSection implements AfterViewInit {
   bgTransparent = 'transparent';
   blackAndWhite = 'grayscale(1)';
   colored = 'grayscale(0)'
+  BtnText = 'Get in touch'
 
   ngAfterViewInit(): void {
     this.mobileView();

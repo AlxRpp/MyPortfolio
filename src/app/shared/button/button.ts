@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -8,5 +8,6 @@ import { Component, signal } from '@angular/core';
   styleUrl: './button.scss'
 })
 export class Button {
-  value = signal<string>('Get in touch');
+  @Input() class: string = ""
+  @Input() value: string = ""
 }

@@ -9,4 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about-me.scss'
 })
 export class AboutMe {
+  talk = "Let’s talk"
 }
