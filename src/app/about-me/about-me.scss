@@ -21,7 +21,6 @@
     &-2 {
         position: absolute;
         top: 53%;
-        left: 0;
         left: 10%;
         transform: translateY(-50%);
         z-index: 2;
@@ -30,7 +29,6 @@
     &-3 {
         position: absolute;
         top: 115%;
-        left: 0;
         left: 10%;
         transform: translateY(-115%) rotate(1deg);
         z-index: 1;
@@ -155,5 +153,50 @@
 
     100% {
         clip-path: inset(0 100% 0 0);
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .paper {
+        min-width: 500px;
+
+        >img {
+            width: 450px;
+        }
+
+        &-1 {
+            top: 50px;
+            left: 5%;
+        }
+
+        &-2 {
+            top: 53%;
+            left: 5%;
+        }
+
+        &-3 {
+            top: 100%;
+            left: 5%;
+        }
+
+        .location {
+            top: 20%;
+            left: 52.5%;
+        }
+
+        .relocate {
+            top: 46%;
+            left: 31%;
+        }
+
+        .remote {
+            top: 72.5%;
+            left: 25%;
+        }
+    }
+
+    .about-me {
+        padding-left: 24px;
     }
 }
