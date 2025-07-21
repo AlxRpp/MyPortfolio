@@ -92,6 +92,8 @@
     padding-left: 48px;
 
     &-header {
+        position: relative;
+
         h2 {
             font-size: 20px;
             font-weight: 500;
@@ -102,6 +104,20 @@
             font-weight: 700;
         }
 
+        &::after {
+            content: "";
+            background-image: url('../../../public/assets/icons/Hand-drawn_lines/01_AboutMe/ColorOption-3.png');
+            width: 300px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 90px;
+            clip-path: inset(0 100% 0 0);
+            animation: aboutMe 6s ease-in-out infinite alternate;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
         img {
             width: 300px;
         }
@@ -110,12 +126,34 @@
 
     &-text-area {
         font-weight: 300;
-        max-width: 45ch;
+        padding: 32px 0;
     }
 
 
     &-CTA {
         align-self: self-end;
         width: 30%;
+    }
+}
+
+@keyframes aboutMe {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    16% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    66% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    83% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 100% 0 0);
     }
 }
