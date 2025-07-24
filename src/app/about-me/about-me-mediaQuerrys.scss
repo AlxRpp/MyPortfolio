@@ -297,20 +297,20 @@
             width: 500px;
         }
     }
-}
 
-.about-me {
-    &-header {
-        h2 {
-            font-size: 18px;
-        }
 
-        h1 {
-            font-size: 48px;
+    .about-me {
+        &-header {
+            h2 {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
         }
     }
 }
-
 
 @media(max-width: 515px) {
     .paper {
