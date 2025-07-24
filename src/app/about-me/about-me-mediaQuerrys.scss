@@ -1,0 +1,422 @@
+@media(max-width: 1200px) {
+    .paper {
+        min-width: 500px;
+
+        >img {
+            width: 450px;
+        }
+
+        &-1 {
+            top: 38px;
+            left: 30px;
+        }
+
+        &-2 {
+            top: 53%;
+            left: 30px
+        }
+
+        &-3 {
+            top: 104%;
+            left: 30px;
+        }
+
+        .location {
+            top: 20%;
+            left: 52.5%;
+        }
+
+        .relocate {
+            top: 46%;
+            left: 31%;
+        }
+
+        .remote {
+            top: 72.5%;
+            left: 25%;
+        }
+    }
+
+    .about-me {
+        padding-right: 30px;
+
+        &-header {
+            h1 {
+                font-size: 52px;
+            }
+
+            &::after {
+                width: 240px;
+                top: 80px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .content {
+        gap: 16px;
+    }
+
+    .paper {
+        min-width: 400px;
+        font-size: 20px;
+
+        >img {
+            width: 400px;
+        }
+
+        &-1 {
+            top: 35px;
+            left: 0px;
+        }
+
+        &-2 {
+            top: 53%;
+            left: 0px
+        }
+
+        &-3 {
+            top: 104%;
+            left: 0px;
+        }
+
+        .location {
+            top: 18%;
+            left: 52.5%;
+        }
+
+        .relocate {
+            top: 46%;
+            left: 25%;
+        }
+
+        .remote {
+            top: 75.5%;
+            left: 22%;
+        }
+    }
+
+    .about-me {
+        padding-right: 0;
+
+        &-header {
+            h1 {
+                font-size: 48px;
+            }
+
+            &::after {
+                width: 220px;
+                top: 75px;
+            }
+        }
+
+        &-text-area {
+            padding: 18px 0;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .content {
+        gap: 16px;
+    }
+
+    .paper {
+        min-width: 350px;
+        font-size: 20px;
+
+        >img {
+            width: 350px;
+        }
+
+        &-1 {
+            top: 35px;
+            left: 0px;
+        }
+
+        &-2 {
+            top: 53%;
+            left: 0px
+        }
+
+        &-3 {
+            top: 104%;
+            left: 0px;
+        }
+
+        .location {
+            top: 17%;
+            left: 50.5%;
+            gap: 12px;
+
+            >img {
+                width: 32px;
+            }
+        }
+
+        .relocate {
+            top: 47%;
+            left: 20%;
+            gap: 12px;
+
+            >img {
+                width: 32px;
+            }
+        }
+
+        .remote {
+            top: 79.5%;
+            left: 14%;
+            gap: 12px;
+
+            >img {
+                width: 32px;
+            }
+        }
+    }
+
+    .about-me {
+        padding-right: 0;
+
+        &-header {
+            h2 {
+                font-size: 18px;
+
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+
+            &::after {
+                width: 220px;
+                top: 75px;
+            }
+        }
+
+        &-text-area {
+            padding: 8px 0;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .content {
+        gap: 16px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .paper {
+        min-width: 600px;
+        height: 420px;
+        font-size: 22px;
+
+        >img {
+            width: 600px;
+        }
+
+        &-1 {
+            top: 35px;
+            left: 0px;
+        }
+
+        &-2 {
+            top: 53%;
+            left: 0px
+        }
+
+        &-3 {
+            top: 104%;
+            left: 0px;
+        }
+
+        .location {
+            top: 20%;
+            left: 50.5%;
+            gap: 24px;
+
+            >img {
+                width: 32px;
+            }
+        }
+
+        .relocate {
+            top: 50%;
+            left: 30%;
+            gap: 12px;
+
+            >img {
+                width: 32px;
+            }
+        }
+
+        .remote {
+            top: 75.5%;
+            left: 29%;
+            gap: 12px;
+
+            >img {
+                width: 32px;
+            }
+        }
+    }
+
+    .about-me {
+        width: 100%;
+        padding-right: 0;
+
+        &-header {
+            h2 {
+                font-size: 20px;
+
+            }
+
+            h1 {
+                font-size: 54px;
+            }
+
+            &::after {
+                width: 250px;
+                top: 75px;
+            }
+        }
+
+        &-text-area {
+            padding: 18px 0;
+        }
+    }
+}
+
+@media(max-width: 615px) {
+    .paper {
+        min-width: 500px;
+        height: 365px;
+        font-size: 22px;
+
+        >img {
+            width: 500px;
+        }
+    }
+}
+
+.about-me {
+    &-header {
+        h2 {
+            font-size: 18px;
+
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+    }
+}
+
+
+@media(max-width: 515px) {
+    .paper {
+        min-width: 400px;
+        height: 300px;
+        font-size: 20px;
+
+        >img {
+            width: 400px;
+        }
+
+        .location {
+            top: 21%;
+            left: 50.5%;
+            gap: 12px;
+
+            >img {
+                width: 32px;
+            }
+        }
+
+        .relocate {
+            top: 47%;
+            left: 27%;
+            gap: 12px;
+
+            >img {
+                width: 32px;
+            }
+        }
+
+        .remote {
+            top: 73.5%;
+            left: 23%;
+            gap: 12px;
+
+            >img {
+                width: 32px;
+            }
+        }
+    }
+
+    .about-me {
+        &-header {
+            h2 {
+                font-size: 16px;
+
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+
+            &::after {
+                width: 210px;
+                top: 65px;
+            }
+        }
+    }
+}
+
+@media(max-width: 415px) {
+    .paper {
+        min-width: 300px;
+        height: 250px;
+        font-size: 18px;
+
+        >img {
+            width: 300px;
+        }
+
+        &-3 {
+            top: 100%;
+        }
+
+        .location {
+            top: 21%;
+            left: 50.5%;
+            gap: 12px;
+
+            >img {
+                width: 28px;
+            }
+        }
+
+        .relocate {
+            top: 47%;
+            left: 21%;
+            gap: 12px;
+
+            >img {
+                width: 28px;
+            }
+        }
+
+        .remote {
+            top: 71.5%;
+            left: 15%;
+            gap: 12px;
+
+            >img {
+                width: 28px;
+            }
+        }
+    }
+}

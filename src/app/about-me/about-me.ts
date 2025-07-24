@@ -6,7 +6,10 @@ import { CommonModule } from '@angular/common';
   selector: 'app-about-me',
   imports: [Button, CommonModule],
   templateUrl: './about-me.html',
-  styleUrl: './about-me.scss'
+  styleUrls: [
+    './about-me.scss',
+    './about-me-mediaQuerrys.scss'
+  ]
 })
 export class AboutMe {
   talk = "Let’s talk"
