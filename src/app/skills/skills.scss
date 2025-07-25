@@ -3,5 +3,36 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
 
+.content {
+    display: flex;
+    max-width: 85%;
+    margin: 0 auto;
+    gap: 32px;
+    padding: 96px 0;
+}
+
+.skills-header {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    span {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+}
+
+.skills-icons-paper {
+    background-image: url('../../../public/assets/icons/RippedPaper/a.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    // width: 60%;
+    color: black;
+    height: 100px;
 }
