@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './skills.scss'
 })
 export class Skills {
-
+  icons: [string] = [
+    ''
+  ]
 }
