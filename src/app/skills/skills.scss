@@ -159,17 +159,31 @@
     top: 0;
     left: 0;
 
-    span {
-        font-size: 16px;
+    >p {
+        position: absolute;
+        top: 30px;
+        left: 29px;
+        width: 142px;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+        pointer-events: none;
     }
 
     .nextTech {
+        cursor: pointer;
+        pointer-events: none;
         display: flex;
         gap: 24px;
+        position: absolute;
+        top: 100px;
+        left: 50px;
 
         >div {
             display: flex;
             flex-direction: column;
+
+
         }
     }
 
