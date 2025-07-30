@@ -8,6 +8,7 @@
 
 .content {
     display: flex;
+    flex-direction: column;
     max-width: 100%;
     margin: 0 auto;
     gap: 32px;
@@ -63,5 +64,59 @@
 
     &-empty {
         width: 25%;
+    }
+}
+
+.skills-field {
+    width: 100%;
+    margin: 48px auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-empty {
+        width: 25%;
+    }
+
+    &-icons {
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    &-sticker {
+        width: 25%;
+        rotate: 8deg;
+
+        >img {
+            aspect-ratio: 1/1;
+            width: 200px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+.singleTechnology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+
+    >img {
+        aspect-ratio: 1/1;
+        width: 64px;
+    }
+
+    >span {
+        text-wrap: wrap;
+        width: 80px;
+        font-weight: 300;
     }
 }

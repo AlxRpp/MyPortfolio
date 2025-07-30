@@ -14,8 +14,17 @@
                 <div class="skills-header-empty"></div>
             </div>
             <div class="skills-field">
+                <div class="skills-field-empty"></div>
                 <div class="skills-field-icons">
-
+                    @for (icon of icons; track $index) {
+                    <div class="singleTechnology">
+                        <img src="{{ icon.src }}" alt="" srcset="">
+                        <span>{{ icon.name }}</span>
+                    </div>
+                    }
+                </div>
+                <div class="skills-field-sticker">
+                    <img src="./assets/icons/Stickers/Skills-PeelOff/a.png" alt="" srcset="">
                 </div>
             </div>
         </div>
