@@ -97,7 +97,29 @@
                 cursor: pointer;
             }
         }
+
+        &-action {
+            font-family: secondaryFont-Light, sans-serif;
+
+            >img {
+                width: 50px;
+                position: absolute;
+                top: 35px;
+                left: 75px;
+            }
+
+            span {
+                position: absolute;
+                top: 90px;
+                left: 45px;
+                font-size: 36px;
+                font-weight: 100;
+                line-height: 100%;
+                text-align: center;
+            }
+        }
     }
+
 }
 
 
@@ -108,6 +130,13 @@
     align-items: center;
     text-align: center;
     gap: 12px;
+    filter: grayscale(1);
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        filter: grayscale(0);
+        scale: .8;
+    }
 
     >img {
         aspect-ratio: 1/1;
