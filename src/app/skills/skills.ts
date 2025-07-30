@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, signal, viewChild } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './skills.scss'
 })
 export class Skills {
+  sticker = signal<string>("A");
+  arrow = viewChild.required<ElementRef>('arrow');
+  pull = viewChild.required<ElementRef>('pull');
+  peeledSticker = viewChild.required<ElementRef>('peeledSticker')
+  peeled = false;
+
   icons = [
     {
       'name': 'Angular',
@@ -51,9 +57,34 @@ export class Skills {
   ]
 
 
+  stickerPeel() {
+    if (this.sticker() === "C") {
+      this.stickerContent()
+      this.sticker.set("A");
+      this.peeled = false
+    } else {
+      this.sticker.set("B")
+      setTimeout(() => {
+        this.sticker.set("C")
+        this.stickerContent()
+        this.peeled = true;
+      }, 70)
+    }
+  }
 
-
-
+  stickerContent() {
+    if (this.peeled) {
+      this.peeledSticker().nativeElement.classList.add('d-none');
+      this.arrow().nativeElement.classList.remove('d-none');
+      this.pull().nativeElement.classList.remove('d-none');
+    } else {
+      this.peeledSticker().nativeElement.classList.remove('d-none');
+      this.arrow().nativeElement.classList.add('d-none');
+      this.pull().nativeElement.classList.add('d-none');
+    }
+  }
 
 
 }
+
+

@@ -24,10 +24,25 @@
                     }
                 </div>
                 <div class="skills-field-sticker">
-                    <img src="./assets/icons/Stickers/Skills-PeelOff/a.png" alt="" srcset="">
+                    <img (click)="stickerPeel()" src="./assets/icons/Stickers/Skills-PeelOff/{{ sticker() }}.png" alt=""
+                        srcset="">
                     <div class="skills-field-sticker-action">
-                        <img src="./assets/icons/Stickers/Arrow.png" alt="">
-                        <span>Pull to <br> peel</span>
+                        <img #arrow src="./assets/icons/Stickers/Arrow.png" alt="">
+                        <span #pull>Pull to <br> peel</span>
+                        <div #peeledSticker class="interested d-none">
+                            <p>Also, I'm interested <br> in diving into:</p>
+                            <div class="nextTech">
+                                <div>
+                                    <img src="./assets/icons/TeckStack/React.png" alt="" srcset="">
+                                    <p>React</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/icons/TeckStack/VueJs.png" alt="" srcset="">
+                                    <p>Vue.js</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
