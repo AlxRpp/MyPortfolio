@@ -28,14 +28,15 @@
         span {
             font-size: 20px;
             font-weight: 300;
-            text-align: end;
+            // text-align: end;
+            padding-left: 130px;
         }
 
         h1 {
             font-size: 64px;
             font-weight: 700;
             position: relative;
-            text-align: end;
+            // text-align: end;
 
             &::after {
                 content: "";
@@ -46,7 +47,8 @@
                 aspect-ratio: 3/2;
                 position: absolute;
                 top: -6px;
-                right: -25px;
+                // right: -25px;
+                left: -25px;
                 transform: rotateY(180deg);
                 animation: circleAnimation 4.8s infinite both;
             }
@@ -74,6 +76,7 @@
     margin: 48px auto;
     display: flex;
     justify-content: space-between;
+    display: flex;
 
     &-empty {
         width: 25%;
@@ -83,13 +86,16 @@
         width: 40%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
         gap: 24px;
     }
 
     &-sticker {
         width: 25%;
         rotate: 8deg;
+        display: flex;
+        justify-content: end;
+        align-items: start;
 
         >img {
             aspect-ratio: 1/1;
@@ -102,12 +108,13 @@
 
         &-action {
             font-family: secondaryFont-Light, sans-serif;
+            position: relative;
 
             >img {
                 width: 50px;
                 position: absolute;
                 top: 35px;
-                left: 75px;
+                right: 80px;
                 cursor: pointer;
                 pointer-events: none;
             }
@@ -115,13 +122,14 @@
             span {
                 position: absolute;
                 top: 90px;
-                left: 45px;
+                right: 55px;
                 font-size: 36px;
                 font-weight: 100;
                 line-height: 100%;
                 text-align: center;
                 cursor: pointer;
                 pointer-events: none;
+                text-wrap: nowrap;
             }
         }
     }
@@ -136,17 +144,19 @@
     align-items: center;
     text-align: center;
     gap: 12px;
-    filter: grayscale(1);
     transition: all .15s ease-in-out;
 
-    &:hover {
-        filter: grayscale(0);
-        scale: .8;
-    }
+
 
     >img {
         aspect-ratio: 1/1;
         width: 64px;
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+            scale: .9;
+        }
     }
 
     >span {
@@ -164,7 +174,7 @@
     >p {
         position: absolute;
         top: 30px;
-        left: 29px;
+        right: 30px;
         width: 142px;
         text-align: center;
         font-size: 18px;
@@ -179,7 +189,7 @@
         gap: 24px;
         position: absolute;
         top: 100px;
-        left: 50px;
+        right: 50px;
 
         >div {
             display: flex;
