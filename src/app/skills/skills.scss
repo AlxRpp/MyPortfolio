@@ -47,6 +47,8 @@
                 position: absolute;
                 top: -6px;
                 right: -25px;
+                transform: rotateY(180deg);
+                animation: circleAnimation 4.8s infinite both;
             }
         }
     }
@@ -192,4 +194,55 @@
 
 .d-none {
     display: none;
+}
+
+
+
+@keyframes circleAnimation {
+    0% {
+        transform: translateX(0%) rotateY(180deg);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+
+    2.5% {
+        transform: translateX(-30px) rotate(6deg) rotateY(180deg);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+
+    5% {
+        transform: translateX(15px) rotate(-6deg) rotateY(180deg);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+
+    7.5% {
+        transform: translateX(-15px) rotate(3.6deg) rotateY(180deg);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+
+    10% {
+        transform: translateX(9px) rotate(-2.4deg) rotateY(180deg);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+
+    12.5% {
+        transform: translateX(-6px) rotate(1.2deg) rotateY(180deg);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+
+    16.67%,
+    58.33% {
+        transform: translateX(0%) rotateY(180deg);
+        opacity: 1;
+    }
+
+    58.34%,
+    100% {
+        opacity: 0;
+    }
 }
