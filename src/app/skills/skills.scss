@@ -24,6 +24,7 @@
         flex-direction: column;
         text-wrap: nowrap;
         width: 25%;
+        // padding-left: 32px;
 
         span {
             font-size: 20px;
@@ -64,6 +65,7 @@
         padding: 30px;
         font-size: 14px;
         font-weight: 400;
+        margin-left: 12px;
     }
 
     &-empty {
@@ -83,7 +85,7 @@
     }
 
     &-icons {
-        width: 40%;
+        width: clamp(500px, 45%, 580px);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
