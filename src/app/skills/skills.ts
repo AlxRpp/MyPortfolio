@@ -4,7 +4,10 @@ import { Component, ElementRef, signal, viewChild } from '@angular/core';
   selector: 'app-skills',
   imports: [],
   templateUrl: './skills.html',
-  styleUrl: './skills.scss'
+  styleUrls: [
+    './skills.scss',
+    './skills-mediaQuerrys.scss'
+  ]
 })
 export class Skills {
   sticker = signal<string>("A");

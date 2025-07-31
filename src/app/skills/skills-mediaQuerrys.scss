@@ -1,0 +1,31 @@
+@media(max-width: 1305px) {
+    .content {
+        width: 90%;
+    }
+
+    .skills-header {
+        justify-content: space-between;
+
+        &-description {
+
+            width: unset;
+            max-width: 575px;
+        }
+
+        &-empty {
+            display: none;
+        }
+    }
+
+    .skills-field {
+
+        &-empty {
+            display: none;
+        }
+
+        &-icons {
+            width: clamp(500px, 55%, 515px);
+        }
+    }
+
+}
