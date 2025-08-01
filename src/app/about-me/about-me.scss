@@ -112,7 +112,7 @@
             position: absolute;
             top: 90px;
             clip-path: inset(0 100% 0 0);
-            animation: aboutMe 6s ease-in-out infinite alternate;
+            animation: leftToRight 6s ease-in-out infinite alternate;
             animation: name duration timing-function delay iteration-count direction fill-mode;
         }
 
@@ -131,27 +131,5 @@
     &-CTA {
         align-self: self-end;
         width: clamp(120px, 25%, 200px);
-    }
-}
-
-@keyframes aboutMe {
-    0% {
-        clip-path: inset(0 100% 0 0);
-    }
-
-    16% {
-        clip-path: inset(0 0 0 0);
-    }
-
-    66% {
-        clip-path: inset(0 0 0 0);
-    }
-
-    83% {
-        clip-path: inset(0 100% 0 0);
-    }
-
-    100% {
-        clip-path: inset(0 100% 0 0);
     }
 }
