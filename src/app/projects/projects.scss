@@ -70,22 +70,31 @@
             z-index: 1;
         }
 
+        >.cta-btn {
+            position: absolute;
+            z-index: 3;
+            right: 50px;
+            bottom: 50px;
+            opacity: 0;
+            width: 150px;
+        }
+
         &::before {
             content: "";
             position: absolute;
             inset: 0;
             border-radius: inherit;
             background: #FFFFFF;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 64%, rgba(56, 56, 56, 1) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(38, 38, 38, 1) 100%);
             opacity: 0;
             z-index: 2;
         }
 
         &:hover {
-            // border-radius: 12px;
             cursor: pointer;
 
-            &::before {
+            &::before,
+            .cta-btn {
                 opacity: 1;
             }
 
@@ -115,5 +124,9 @@
     &-description {
         font-size: 18px;
         font-weight: 400;
+    }
+
+    &-cta-btn-mobile {
+        display: none;
     }
 }

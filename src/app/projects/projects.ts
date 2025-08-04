@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { Button } from "../shared/button/button";
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [Button],
   templateUrl: './projects.html',
-  styleUrl: './projects.scss'
+  styleUrls: [
+    './projects.scss',
+    './projects-mediaQuerrys.scss'
+  ]
 })
 export class Projects {
 
