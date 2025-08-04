@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Project } from '../../interfaces/project.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ export class ProjectsData {
 
   constructor() { }
 
-  projects = [
+  projects: Project[] = [
     {
       title: 'Join',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
