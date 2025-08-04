@@ -161,7 +161,6 @@
     padding: 96px 0;
     text-align: end;
 
-
     &-header {
         >span {
             font-size: 20px;
@@ -183,13 +182,31 @@
             }
         }
 
-
         >h1 {
             font-size: 64px;
             font-weight: 700;
             position: relative;
         }
     }
+
+    &-cards {
+        height: 510px;
+        width: 100%;
+        background-color: lightgreen;
+    }
+
+    &-card {
+        max-width: 485px;
+        width: 45%;
+        height: 320px;
+        border-radius: 12px;
+        background-image: url('../../../public/assets/icons/Stickers/Testimonials/A.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 48px 40px;
+        text-align: center;
+    }
+
 }
 
 @keyframes rightToLeft {
