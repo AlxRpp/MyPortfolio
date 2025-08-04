@@ -96,6 +96,7 @@
 
         &:hover {
             cursor: pointer;
+            animation-play-state: paused;
 
             &::before,
             .cta-btn {
