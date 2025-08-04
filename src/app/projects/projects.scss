@@ -112,6 +112,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
+        z-index: 4;
         // display: none;
 
         >img {
@@ -165,12 +166,50 @@
         >span {
             font-size: 20px;
             font-weight: 500;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 100px;
+                height: 45px;
+                background-image: url('../../../public/assets/icons/Stickers/Testimonials/backArrow.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: -100px;
+                top: 0;
+                clip-path: inset(0 0 0 100%);
+                animation: rightToLeft 6s ease-in-out infinite alternate;
+            }
         }
+
 
         >h1 {
             font-size: 64px;
             font-weight: 700;
             position: relative;
         }
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    16% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    66% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    83% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 100%);
     }
 }
