@@ -49,6 +49,10 @@
 }
 
 
+.animated {
+    animation: upAndDown 5s linear infinite;
+}
+
 .single-project {
     max-width: 50%;
     display: flex;
@@ -128,5 +132,21 @@
 
     &-cta-btn-mobile {
         display: none;
+    }
+}
+
+@keyframes upAndDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    33.3333% {
+        transform: translateY(25px);
+    }
+
+    66.6666% {
+        transform: translateY(-25px);
     }
 }
