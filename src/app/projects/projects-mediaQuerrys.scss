@@ -18,18 +18,18 @@
 
 @media(max-width: 800px) {
     .projects {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        // align-items: center;
     }
 
     .projects-header {
-        max-width: 100%;
-        width: clamp(350px, 100%, 700px);
+        // max-width: 100%;
+        width: clamp(295px, 100%, 700px);
     }
 
     .single-project {
-        max-width: 100%;
-        width: clamp(350px, 100%, 700px);
+        // max-width: 100%;
+        width: clamp(295px, 100%, 700px);
 
         &-image {
             >.cta-btn {
@@ -55,8 +55,8 @@
 
 @media (max-width:600px) {
     .projects-header {
-        max-width: 100%;
-        width: clamp(350px, 100%, 700px);
+        // max-width: 100%;
+        width: clamp(295px, 100%, 700px);
         gap: 32px;
 
         h1 {
@@ -86,8 +86,8 @@
 
 @media (max-width:400px) {
     .projects-header {
-        max-width: 100%;
-        width: clamp(350px, 100%, 700px);
+        // max-width: 100%;
+        width: clamp(295px, 100%, 700px);
         gap: 32px;
 
         h1 {

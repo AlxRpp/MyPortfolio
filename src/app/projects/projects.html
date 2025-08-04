@@ -11,56 +11,21 @@
                         Highlight your approach to creating responsive, user-friendly projects with efficient code.
                     </p>
                 </div>
-                <div class="single-project">
-                    <div class="single-project-image animated">
-                        <img src="./assets/images/projects/Laptop.png" alt="" srcset="">
-                        <app-button class="cta-btn" value="Project details"></app-button>
-                        <div class="single-project-sticker">
-                            <img src="./assets/icons/Stickers/Round/03_ Color option 3 - B.png" alt="" srcset="">
-                        </div>
-                    </div>
-                    <div class="single-project-title">
-                        <h2>Join</h2>
-                    </div>
-                    <div class="single-project-description">
-                        Task manager inspired by the Kanban System. Create and organize tasks using drag and drop
-                        functions, assign users and
-                        categories.
-                    </div>
-                    <app-button class="single-project-cta-btn-mobile second third" value="Project details"></app-button>
-                </div>
-            </div>
-            <div class="projects">
+                @for (project of projects; track $index) {
                 <div class="single-project">
                     <div class="single-project-image">
-                        <img src="./assets/images/projects/alienAdventure.png" alt="" srcset="">
+                        <img src="{{ project.url }}" alt="" srcset="">
                         <app-button class="cta-btn" value="Project details"></app-button>
                     </div>
                     <div class="single-project-title">
-                        <h2>Alien Adeventure</h2>
+                        <h2> {{ project.title }}</h2>
                     </div>
                     <div class="single-project-description">
-                        Task manager inspired by the Kanban System. Create and organize tasks using drag and drop
-                        functions, assign users and
-                        categories.
+                        {{ project.description }}
                     </div>
                     <app-button class="single-project-cta-btn-mobile second third" value="Project details"></app-button>
                 </div>
-                <div class="single-project">
-                    <div class="single-project-image">
-                        <img src="./assets/images/projects/pokedex.png" alt="" srcset="">
-                        <app-button class="cta-btn" value="Project details"></app-button>
-                    </div>
-                    <div class="single-project-title">
-                        <h2>Pokédex</h2>
-                    </div>
-                    <div class="single-project-description">
-                        Task manager inspired by the Kanban System. Create and organize tasks using drag and drop
-                        functions, assign users and
-                        categories.
-                    </div>
-                    <app-button class="single-project-cta-btn-mobile second third" value="Project details"></app-button>
-                </div>
+                }
             </div>
         </div>
     </div>
