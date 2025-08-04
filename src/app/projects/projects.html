@@ -15,6 +15,11 @@
                 <div class="single-project">
                     <div class="single-project-image">
                         <img src="{{ project.url }}" alt="" srcset="">
+                        @if (project.featured) {
+                        <div class="single-project-sticker">
+                            <img src="./assets/icons/Stickers/Round/03_ Color option 3 - B.png" alt="" srcset="">
+                        </div>
+                        }
                         <app-button class="cta-btn" value="Project details"></app-button>
                     </div>
                     <div class="single-project-title">
@@ -26,6 +31,12 @@
                     <app-button class="single-project-cta-btn-mobile second third" value="Project details"></app-button>
                 </div>
                 }
+            </div>
+            <div class="testimonials">
+                <div class="testimonials-header">
+                    <span>IN THEIR WORDS</span>
+                    <h1>Colleagues Thoughts</h1>
+                </div>
             </div>
         </div>
     </div>

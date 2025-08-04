@@ -112,7 +112,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        display: none;
+        // display: none;
 
         >img {
             aspect-ratio: 1/1;
@@ -135,6 +135,7 @@
     }
 }
 
+
 @keyframes upAndDown {
 
     0%,
@@ -148,5 +149,28 @@
 
     66.6666% {
         transform: translateY(-25px);
+    }
+}
+
+
+
+
+
+.testimonials {
+    padding: 96px 0;
+    text-align: end;
+
+
+    &-header {
+        >span {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        >h1 {
+            font-size: 64px;
+            font-weight: 700;
+            position: relative;
+        }
     }
 }
