@@ -9,4 +9,9 @@ import { Button } from "../shared/button/button";
 })
 export class Collaborate {
 
+  test() {
+    console.log('Hallo');
+
+  }
+
 }

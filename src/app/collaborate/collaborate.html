@@ -24,33 +24,31 @@
                 <div class="collaborate-form-sticker">
                     <img src="./assets/icons/Stickers/Round/C.png" alt="" srcset="">
                 </div>
-                <form action="">
-                    <!-- <div class="divider"></div> -->
-                    <div class="custom-input">
-                        <p class="custom-input-lable">What´s your name?</p>
-                        <input class="input" placeholder="Your name goes here" type="text">
-                    </div>
-                    <div class="divider"></div>
-                    <div class="custom-input">
-                        <p class="custom-input-lable">What´s your email?</p>
-                        <input class="input" placeholder="youremail@email.com" type="text">
-                    </div>
-                    <div class="divider"></div>
-                    <div class="custom-input">
-                        <p class="custom-input-lable">How can i help you?</p>
-                        <input class="input" placeholder="Hello Alex, I am interested in..." type="text">
-                    </div>
-                    <div class="divider"></div>
-                    <div class="privacyPolicy">
-                        <div class="privacyPolicy-checkbox"></div>
-                        <p>I've read the <span class="policy">privacy policy</span> and agree to the processing of my
-                            data as outlined.
-                        </p>
-                    </div>
-                    <div class="submit">
-                        <app-button class="cta-btn" value="Send"></app-button>
-                    </div>
-                </form>
+                <!-- <div class="divider"></div> -->
+                <div class="collaborate-form-custom-input">
+                    <p class="custom-input-lable">What´s your name?</p>
+                    <input class="input" placeholder="Your name goes here" type="text">
+                </div>
+                <div class="collaborate-form-divider"></div>
+                <div class="collaborate-form-custom-input">
+                    <p class="custom-input-lable">What´s your email?</p>
+                    <input class="input" placeholder="youremail@email.com" type="text">
+                </div>
+                <div class="collaborate-form-divider"></div>
+                <div class="collaborate-form-custom-input">
+                    <p class="custom-input-lable">How can i help you?</p>
+                    <input class="input" placeholder="Hello Alex, I am interested in..." type="text">
+                </div>
+                <div class="collaborate-form-divider"></div>
+                <div class="collaborate-form-privacyPolicy">
+                    <div class="collaborate-form-privacyPolicy-checkbox"></div>
+                    <p>I've read the <span class="policy">privacy policy</span> and agree to the processing of my
+                        data as outlined.
+                    </p>
+                </div>
+                <div class="collaborate-form-submit">
+                    <app-button (click)="test()" class="cta-btn" value="Send"></app-button>
+                </div>
             </div>
         </div>
     </div>
