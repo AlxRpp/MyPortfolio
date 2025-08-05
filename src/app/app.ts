@@ -5,10 +5,11 @@ import { AboutMe } from "./about-me/about-me";
 import { Skills } from "./skills/skills";
 import { Projects } from "./projects/projects";
 import { Testimonials } from "./testimonials/testimonials";
+import { Collaborate } from "./collaborate/collaborate";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeroSection, AboutMe, Skills, Projects, Testimonials],
+  imports: [RouterOutlet, HeroSection, AboutMe, Skills, Projects, Testimonials, Collaborate],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
