@@ -73,6 +73,28 @@ body {
     }
 }
 
+@keyframes rightToLeft {
+    0% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    16% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    66% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    83% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 100%);
+    }
+}
+
 // .section-title {
 //     font-size: clamp(44px, 4vw + 1rem, 64px) !important;
 // }

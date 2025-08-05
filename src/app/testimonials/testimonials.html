@@ -1,1 +1,27 @@
-<p>testimonials works!</p>
+<div class="max-content">
+    <div class="testimonials">
+        <div class="testimonials-header">
+            <span>IN THEIR WORDS</span>
+            <h1>Colleagues Thoughts</h1>
+        </div>
+        <div class="testimonials-cards">
+            @for (testimonial of testimonials; track $index) {
+            <div class="testimonials-card">
+                <div class="testimonials-card-content">
+                    {{ testimonial.content }}
+                </div>
+                <div class="testimonials-card-footer">
+                    <div class="testimonials-card-footer-name">
+                        <p>{{ testimonial.name }}</p>
+                        <span>{{ testimonial.role }}</span>
+                    </div>
+                    <div (click)="openLinkedInProfil(testimonial.url)" class="testimonials-card-footer-link">
+                        <img src="./assets/icons/Stickers/Testimonials/linkedIn.png" alt="" srcset="">
+                        <span>Profile</span>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

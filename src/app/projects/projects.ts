@@ -15,10 +15,4 @@ import { CommonModule } from '@angular/common';
 export class Projects {
   private projectsData: any = inject(ProjectsData);
   public projects = this.projectsData.projects;
-
-
-
-  openLinkedInProfil(url: string) {
-    window.open(url, '_blank')
-  }
 }
