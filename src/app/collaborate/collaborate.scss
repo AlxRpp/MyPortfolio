@@ -68,9 +68,10 @@
             right: 0;
             top: 0;
             rotate: 90deg;
+            z-index: 2;
 
             >img {
-                width: 125px;
+                width: 130px;
             }
         }
 
@@ -110,10 +111,6 @@
             &:hover::after {
                 opacity: 1;
             }
-
-            // &:hover+.collaborate-form-divider {
-            //     background-color: transparent;
-            // }
 
             p {
                 font-size: 24px;
