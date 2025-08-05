@@ -99,7 +99,7 @@
             }
 
             &::before {
-                top: 0px
+                top: -1px
             }
 
             &::after {
@@ -111,13 +111,13 @@
                 opacity: 1;
             }
 
+            // &:hover+.collaborate-form-divider {
+            //     background-color: transparent;
+            // }
+
             p {
                 font-size: 24px;
                 font-weight: 500;
-            }
-
-            &:hover+.collaborate-form-divider {
-                background-color: transparent;
             }
         }
 
