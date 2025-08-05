@@ -195,6 +195,7 @@
         background-color: lightgreen;
     }
 
+
     &-card {
         max-width: 485px;
         width: 45%;
@@ -205,9 +206,89 @@
         background-repeat: no-repeat;
         padding: 48px 40px;
         text-align: center;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        position: relative;
 
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: url('../../../public/assets/icons/Stickers/Testimonials/Line.png');
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+
+            .testimonials-card-footer-name {
+                color: white;
+            }
+        }
+
+        &-content {
+            z-index: 1;
+        }
+
+        &-footer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            z-index: 2;
+
+            &-name {
+                text-align: start;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            &-link {
+                display: flex;
+                align-items: end;
+                gap: 8px;
+
+                >img {
+                    display: block;
+                    rotate: 5deg;
+                    width: 22px;
+                }
+
+
+                span {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 120%;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    color: white;
+
+                    >img {
+                        filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 @keyframes rightToLeft {
     0% {

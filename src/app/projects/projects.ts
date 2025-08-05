@@ -17,4 +17,8 @@ export class Projects {
   public projects = this.projectsData.projects;
 
 
+
+  openLinkedInProfil(url: string) {
+    window.open(url, '_blank')
+  }
 }
