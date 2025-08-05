@@ -41,7 +41,10 @@
                 </div>
                 <div class="collaborate-form-divider"></div>
                 <div class="collaborate-form-privacyPolicy">
-                    <div class="collaborate-form-privacyPolicy-checkbox"></div>
+                    <div (click)="toggleCheckbox()" class="collaborate-form-privacyPolicy-checkbox">
+                        <img [ngClass]="checked() ? 'dBlock' : 'dNone'"
+                            src="./assets/icons/Hand-drawn_lines/00_Header/Check.png" alt="">
+                    </div>
                     <p>I've read the <span class="policy">privacy policy</span> and agree to the processing of my
                         data as outlined.
                     </p>
