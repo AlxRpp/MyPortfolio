@@ -27,14 +27,15 @@
         }
 
         >h1 {
-            font-size: 64px;
+            // font-size: 64px;
+            font-size: clamp(44px, 4vw + 1rem, 64px);
             font-weight: 700;
             position: relative;
         }
     }
 
     &-cards {
-        height: 510px;
+        height: 432px;
         width: 100%;
         // background-color: lightgreen;
         display: flex;
@@ -43,7 +44,7 @@
         >:nth-child(1) {
             position: absolute;
             top: 50px;
-            left: 50px;
+            left: 16px;
             rotate: -8deg;
             z-index: 1;
 
@@ -68,7 +69,7 @@
         >:nth-child(3) {
             position: absolute;
             top: 50px;
-            right: 50px;
+            right: 16px;
             rotate: 8deg;
             z-index: 1;
 
@@ -79,9 +80,11 @@
     }
 
     &-card {
-        max-width: 485px;
-        width: 45%;
-        height: 320px;
+        width: clamp(300px, 100%, 512px);
+        aspect-ratio: 1.5 /1;
+        // max-width: 485px;
+        // width: 45%;
+        // height: 320px;
         border-radius: 12px;
         background-image: url('../../../public/assets/icons/Stickers/Testimonials/A.png');
         background-size: contain;

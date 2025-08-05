@@ -1,0 +1,136 @@
+@media(max-width:1200px) {
+    .testimonials {
+        &-card {
+            width: clamp(300px, 100%, 480px);
+        }
+    }
+}
+
+@media(max-width:1100px) {
+    .testimonials {
+        &-card {
+            width: clamp(300px, 100%, 448px);
+        }
+    }
+}
+
+@media(max-width:1000px) {
+    .testimonials {
+        &-card {
+            width: clamp(300px, 100%, 416px);
+            padding: 28px 20px;
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .testimonials {
+        &-card {
+            width: clamp(300px, 100%, 384px);
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .testimonials {
+
+        &-cards {
+            height: unset;
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+
+            >:nth-child(1) {
+                position: unset;
+                // top: 50px;
+                // left: 16px;
+                rotate: -5deg;
+                z-index: 3;
+
+                &:hover {
+                    z-index: 9;
+                }
+            }
+
+            >:nth-child(2) {
+                position: unset;
+                // top: 75px;
+                // left: 50%;
+                transform: translateX(0);
+                background-image: url('../../../public/assets/icons/Stickers/Testimonials/B.png');
+                z-index: 2;
+
+                &:hover {
+                    z-index: 9;
+                }
+            }
+
+            >:nth-child(3) {
+                position: unset;
+                // top: 50px;
+                // right: 16px;
+                rotate: 5deg;
+                z-index: 1;
+
+                &:hover {
+                    z-index: 9;
+                }
+            }
+        }
+
+        &-card {
+            width: clamp(300px, 98%, 512px);
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .testimonials {
+        &-card {
+            width: clamp(300px, 100%, 384px);
+            padding: 12px;
+
+            &-content {
+                font-size: 16px;
+            }
+
+            &-footer-name {
+                p {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:456px) {
+    .testimonials {
+        &-header {
+            >span {
+                font-size: 16px;
+            }
+
+            >h1 {
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:400px) {
+    .testimonials {
+        &-card-content {
+            font-size: 14px;
+        }
+    }
+}

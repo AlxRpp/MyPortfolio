@@ -5,7 +5,10 @@ import { Component } from '@angular/core';
   selector: 'app-testimonials',
   imports: [CommonModule],
   templateUrl: './testimonials.html',
-  styleUrl: './testimonials.scss'
+  styleUrls: [
+    './testimonials.scss',
+    './testimonials-mediaQuerrys.scss'
+  ]
 })
 export class Testimonials {
   testimonials = [
