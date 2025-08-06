@@ -60,8 +60,10 @@
         // outline: 1px solid red;
         width: 100%;
         position: relative;
-        justify-content: center;
-        height: 584px;
+        // justify-content: center;
+        // height: 584px;
+        align-items: stretch;
+        padding-top: 80px;
 
         &-sticker {
             position: absolute;
@@ -89,6 +91,8 @@
             flex-direction: column;
             position: relative;
             // gap: 12px;
+            // align-items: stretch;
+            // overflow: visible;
 
             &::before,
             &::after {
@@ -133,10 +137,10 @@
             }
 
             textarea {
-                resize: none;
-                width: 100%;
-                max-height: 175px;
                 margin-top: 6px;
+                resize: none;
+                min-height: 40px;
+                max-height: 175px;
             }
         }
 
@@ -240,7 +244,7 @@
 }
 
 .collaborate-form-custom-input textarea {
-    --sb-track-color: #0e1013;
+    --sb-track-color: #131313;
     --sb-thumb-color: #1073ea;
     --sb-size: 8px;
 }
