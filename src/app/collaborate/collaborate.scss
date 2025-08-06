@@ -120,6 +120,12 @@
             &:hover {
                 color: #1073EA;
             }
+
+            textarea {
+                resize: none;
+                width: 100%;
+                max-height: 175px;
+            }
         }
 
         &-privacyPolicy {

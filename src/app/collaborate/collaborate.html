@@ -25,33 +25,38 @@
                     <img src="./assets/icons/Stickers/Round/C.png" alt="" srcset="">
                 </div>
                 <!-- <div class="divider"></div> -->
-                <div class="collaborate-form-custom-input">
-                    <p class="custom-input-lable">What´s your name?</p>
-                    <input class="input" placeholder="Your name goes here" type="text" [(ngModel)]="name">
-                </div>
-                <div class="collaborate-form-divider"></div>
-                <div class="collaborate-form-custom-input">
-                    <p class="custom-input-lable">What´s your email?</p>
-                    <input class="input" placeholder="youremail@email.com" type="text">
-                </div>
-                <div class="collaborate-form-divider"></div>
-                <div class="collaborate-form-custom-input">
-                    <p class="custom-input-lable">How can i help you?</p>
-                    <input class="input" placeholder="Hello Alex, I am interested in..." type="text">
-                </div>
-                <div class="collaborate-form-divider"></div>
-                <div class="collaborate-form-privacyPolicy">
-                    <div (click)="toggleCheckbox()" class="collaborate-form-privacyPolicy-checkbox">
-                        <img [ngClass]="checked() ? 'dBlock' : 'dNone'"
-                            src="./assets/icons/Hand-drawn_lines/00_Header/Check.png" alt="">
+                <form onsubmit="" name="hallo">
+                    <div class="collaborate-form-custom-input">
+                        <p class="custom-input-lable">What´s your name?</p>
+                        <input name="name" [(ngModel)]="formData.name" class="input" placeholder="Your name goes here"
+                            type="text">
                     </div>
-                    <p>I've read the <span class="policy">privacy policy</span> and agree to the processing of my
-                        data as outlined.
-                    </p>
-                </div>
-                <div class="collaborate-form-submit">
-                    <app-button (click)="test()" class="cta-btn" value="Send"></app-button>
-                </div>
+                    <div class="collaborate-form-divider"></div>
+                    <div class="collaborate-form-custom-input">
+                        <p class="custom-input-lable">What´s your email?</p>
+                        <input name="mail" [(ngModel)]="formData.mail" class="input" placeholder="youremail@email.com"
+                            type="text">
+                    </div>
+                    <div class="collaborate-form-divider"></div>
+                    <div class="collaborate-form-custom-input">
+                        <p class="custom-input-lable">How can i help you?</p>
+                        <textarea #autoTA (input)="adjustHeight(autoTA)" name="message" [(ngModel)]="formData.message"
+                            class="input" placeholder="Hello Alex, I am interested in..." type="text"></textarea>
+                    </div>
+                    <div class="collaborate-form-divider"></div>
+                    <div class="collaborate-form-privacyPolicy">
+                        <div (click)="toggleCheckbox()" class="collaborate-form-privacyPolicy-checkbox">
+                            <img [ngClass]="checked() ? 'dBlock' : 'dNone'"
+                                src="./assets/icons/Hand-drawn_lines/00_Header/Check.png" alt="">
+                        </div>
+                        <p>I've read the <span class="policy">privacy policy</span> and agree to the processing of my
+                            data as outlined.
+                        </p>
+                    </div>
+                    <div class="collaborate-form-submit">
+                        <app-button class="cta-btn" value="Send"></app-button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

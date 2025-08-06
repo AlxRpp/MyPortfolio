@@ -12,14 +12,28 @@ import { FormsModule } from '@angular/forms';
 export class Collaborate {
 
   checked = signal<boolean>(false)
-  name = signal<string>("");
+  formData = {
+    name: "",
+    mail: "",
+    message: ""
+  }
 
   toggleCheckbox() {
     this.checked.update(value => !value);
   }
 
   test() {
-    console.log(this.name());
+    console.log(this.formData);
+    this.formData.name = "";
+    this.formData.mail = "";
+    this.formData.message = "";
+
+  }
+
+  adjustHeight(textarea: HTMLTextAreaElement) {
+    // textarea.style.overflow = 'hidden';
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px'
   }
 
 }
