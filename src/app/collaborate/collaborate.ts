@@ -1,7 +1,7 @@
 import { Component, ElementRef, input, signal, viewChild } from '@angular/core';
 import { Button } from "../shared/button/button";
 import { CommonModule } from '@angular/common';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule, NgForm, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-collaborate',
@@ -40,11 +40,15 @@ export class Collaborate {
     textarea.style.height = textarea.scrollHeight + 'px'
   }
 
-  focusedInput(id: HTMLElement) {
-    id.classList.add('focus');
+  focusedInput(label: HTMLElement, id: NgModel) {
+    label.classList.add('focus');
+    if (id.value.length > 5) {
+      console.log('jooooo');
+
+    }
   }
 
-  bluredInput(id: HTMLElement) {
-    id.classList.remove('focus')
+  bluredInput(label: HTMLElement, id: NgModel) {
+    label.classList.remove('focus')
   }
 }

@@ -29,8 +29,8 @@
                     <div class="collaborate-form-custom-input">
                         <p #inputName class="custom-input-lable">What´s your name?</p>
                         <input #name="ngModel" required name="name" [(ngModel)]="formData.name" class="input"
-                            placeholder="Your name goes here" type="text" (focus)="focusedInput(inputName)"
-                            (blur)="bluredInput(inputName)">
+                            placeholder="Your name goes here" type="text" (focus)="focusedInput(inputName, name)"
+                            (blur)="bluredInput(inputName, name)">
                         @if (!name.valid && name.touched) {
                         <span class="unvalid">Please enter your Name</span>
                         }
@@ -40,8 +40,8 @@
                         <p #focusMail class="custom-input-lable">What´s your email?</p>
                         <input #mail="ngModel" required name="mail" [(ngModel)]="formData.mail" class="input"
                             placeholder="youremail@email.com" type="text"
-                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" (focus)="focusedInput(focusMail)"
-                            (blur)="bluredInput(focusMail)">
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                            (focus)="focusedInput(focusMail, mail)" (blur)="bluredInput(focusMail, mail)">
                         @if (!mail.valid && mail.touched) {
                         <span class="unvalid">Please enter a valid E-Mail</span>
                         }
@@ -49,10 +49,11 @@
                     <div class="collaborate-form-divider"></div>
                     <div class="collaborate-form-custom-input">
                         <p #focusText class="custom-input-lable">How can i help you?</p>
-                        <textarea #message="ngModel" minlength="5" required #autoTA (input)="adjustHeight(autoTA)"
+                        <textarea #message="ngModel" minlength="10" required #autoTA (input)="adjustHeight(autoTA)"
                             name="message" [(ngModel)]="formData.message" class="input"
                             placeholder="Hello Alex, I am interested in..." type="text"
-                            (focus)="focusedInput(focusText)" (blur)="bluredInput(focusText)"></textarea>
+                            (focus)="focusedInput(focusText, message)"
+                            (blur)="bluredInput(focusText, message)"></textarea>
                         @if (!message.valid && message.touched) {
                         <span class="unvalid">Please enter a message</span>
                         }

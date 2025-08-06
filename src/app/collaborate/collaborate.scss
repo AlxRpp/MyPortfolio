@@ -82,7 +82,9 @@
         }
 
         &-custom-input {
-            padding: 12px 32px;
+            // padding: 12px 32px;
+            padding: 12px 0;
+            padding-left: 32px;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -200,6 +202,9 @@
     border: none;
     height: 40px;
     color: whitesmoke !important;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: primaryFont, sans-serif;
 
     &::placeholder {
         color: whitesmoke;
@@ -232,4 +237,31 @@
     font-weight: 300;
     position: absolute;
     bottom: 0;
+}
+
+.collaborate-form-custom-input textarea {
+    --sb-track-color: #0e1013;
+    --sb-thumb-color: #1073ea;
+    --sb-size: 8px;
+}
+
+.collaborate-form-custom-input textarea::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+.collaborate-form-custom-input textarea::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+.collaborate-form-custom-input textarea::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+    border: 2px solid #0e1013;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    .collaborate-form-custom-input textarea {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
 }
