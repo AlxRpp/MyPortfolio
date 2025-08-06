@@ -12,4 +12,5 @@ export class Button {
 
   class = input<string>("");
   value = input<string>("")
+  disabled = input<boolean>(false)
 }

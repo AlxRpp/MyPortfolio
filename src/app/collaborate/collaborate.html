@@ -25,7 +25,7 @@
                     <img src="./assets/icons/Stickers/Round/C.png" alt="" srcset="">
                 </div>
                 <!-- <div class="divider"></div> -->
-                <form (ngSubmit)="test(contactForm)" #contactForm="ngForm">
+                <form (ngSubmit)="submitForm(contactForm)" #contactForm="ngForm">
                     <div class="collaborate-form-custom-input">
                         <p #inputName class="custom-input-lable">What´s your name?</p>
                         <input #name="ngModel" required name="name" [(ngModel)]="formData.name" class="input"
@@ -69,7 +69,8 @@
                         </p>
                     </div>
                     <div class="collaborate-form-submit">
-                        <app-button class="cta-btn" value="Send"></app-button>
+                        <app-button [disabled]="!contactForm.valid || !checked()" class="cta-btn"
+                            value="Send"></app-button>
                     </div>
                 </form>
             </div>

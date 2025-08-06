@@ -22,7 +22,7 @@ export class Collaborate {
     this.checked.update(value => !value);
   }
 
-  test(ngForm: NgForm) {
+  submitForm(ngForm: NgForm) {
     if (ngForm.valid && ngForm.submitted) {
       console.log(this.formData);
       this.formData.name = "";
@@ -30,7 +30,6 @@ export class Collaborate {
       this.formData.message = "";
     } else {
       console.log('form not valid');
-
     }
   }
 
@@ -42,13 +41,13 @@ export class Collaborate {
 
   focusedInput(label: HTMLElement, id: NgModel) {
     label.classList.add('focus');
-    if (id.value.length > 5) {
-      console.log('jooooo');
 
-    }
   }
 
   bluredInput(label: HTMLElement, id: NgModel) {
     label.classList.remove('focus')
+    if (id.value.length < 3) {
+      // console.log('jooooo');
+    }
   }
 }
