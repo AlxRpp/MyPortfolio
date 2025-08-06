@@ -25,23 +25,37 @@
                     <img src="./assets/icons/Stickers/Round/C.png" alt="" srcset="">
                 </div>
                 <!-- <div class="divider"></div> -->
-                <form onsubmit="" name="hallo">
+                <form (ngSubmit)="test(contactForm)" #contactForm="ngForm">
                     <div class="collaborate-form-custom-input">
-                        <p class="custom-input-lable">What´s your name?</p>
-                        <input name="name" [(ngModel)]="formData.name" class="input" placeholder="Your name goes here"
-                            type="text">
+                        <p #inputName class="custom-input-lable">What´s your name?</p>
+                        <input #name="ngModel" required name="name" [(ngModel)]="formData.name" class="input"
+                            placeholder="Your name goes here" type="text" (focus)="focusedInput(inputName)"
+                            (blur)="bluredInput(inputName)">
+                        @if (!name.valid && name.touched) {
+                        <span class="unvalid">Please enter your Name</span>
+                        }
                     </div>
                     <div class="collaborate-form-divider"></div>
                     <div class="collaborate-form-custom-input">
-                        <p class="custom-input-lable">What´s your email?</p>
-                        <input name="mail" [(ngModel)]="formData.mail" class="input" placeholder="youremail@email.com"
-                            type="text">
+                        <p #focusMail class="custom-input-lable">What´s your email?</p>
+                        <input #mail="ngModel" required name="mail" [(ngModel)]="formData.mail" class="input"
+                            placeholder="youremail@email.com" type="text"
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" (focus)="focusedInput(focusMail)"
+                            (blur)="bluredInput(focusMail)">
+                        @if (!mail.valid && mail.touched) {
+                        <span class="unvalid">Please enter a valid E-Mail</span>
+                        }
                     </div>
                     <div class="collaborate-form-divider"></div>
                     <div class="collaborate-form-custom-input">
-                        <p class="custom-input-lable">How can i help you?</p>
-                        <textarea #autoTA (input)="adjustHeight(autoTA)" name="message" [(ngModel)]="formData.message"
-                            class="input" placeholder="Hello Alex, I am interested in..." type="text"></textarea>
+                        <p #focusText class="custom-input-lable">How can i help you?</p>
+                        <textarea #message="ngModel" minlength="5" required #autoTA (input)="adjustHeight(autoTA)"
+                            name="message" [(ngModel)]="formData.message" class="input"
+                            placeholder="Hello Alex, I am interested in..." type="text"
+                            (focus)="focusedInput(focusText)" (blur)="bluredInput(focusText)"></textarea>
+                        @if (!message.valid && message.touched) {
+                        <span class="unvalid">Please enter a message</span>
+                        }
                     </div>
                     <div class="collaborate-form-divider"></div>
                     <div class="collaborate-form-privacyPolicy">

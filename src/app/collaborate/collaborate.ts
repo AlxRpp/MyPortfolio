@@ -1,7 +1,7 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, ElementRef, input, signal, viewChild } from '@angular/core';
 import { Button } from "../shared/button/button";
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-collaborate',
@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class Collaborate {
 
-  checked = signal<boolean>(false)
+  checked = signal<boolean>(false);
   formData = {
     name: "",
     mail: "",
@@ -22,18 +22,29 @@ export class Collaborate {
     this.checked.update(value => !value);
   }
 
-  test() {
-    console.log(this.formData);
-    this.formData.name = "";
-    this.formData.mail = "";
-    this.formData.message = "";
+  test(ngForm: NgForm) {
+    if (ngForm.valid && ngForm.submitted) {
+      console.log(this.formData);
+      this.formData.name = "";
+      this.formData.mail = "";
+      this.formData.message = "";
+    } else {
+      console.log('form not valid');
 
+    }
   }
 
+
   adjustHeight(textarea: HTMLTextAreaElement) {
-    // textarea.style.overflow = 'hidden';
     textarea.style.height = 'auto';
     textarea.style.height = textarea.scrollHeight + 'px'
   }
 
+  focusedInput(id: HTMLElement) {
+    id.classList.add('focus');
+  }
+
+  bluredInput(id: HTMLElement) {
+    id.classList.remove('focus')
+  }
 }
