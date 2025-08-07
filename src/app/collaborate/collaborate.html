@@ -25,14 +25,14 @@
                     <img src="./assets/icons/Stickers/Round/C.png" alt="" srcset="">
                 </div>
                 <!-- <div class="divider"></div> -->
-                <form (ngSubmit)="submitForm(contactForm)" #contactForm="ngForm">
+                <form (ngSubmit)="submitForm(contactForm, name, mail, message)" #contactForm="ngForm">
                     <div class="collaborate-form-custom-input">
                         <p #inputName class="custom-input-lable">What´s your name?</p>
-                        <input #name="ngModel" required name="name" [(ngModel)]="formData.name" class="input"
-                            placeholder="Your name goes here" type="text" (focus)="focusedInput(inputName, name)"
-                            (blur)="bluredInput(inputName, name)">
-                        @if (!name.valid && name.touched) {
-                        <span class="unvalid">Please enter your Name</span>
+                        <input #name="ngModel" required name="name" [(ngModel)]="formData.name" minlength="3"
+                            class="input" placeholder="Your name goes here" type="text"
+                            (focus)="focusedInput(inputName, name)" (blur)="bluredInput(inputName, name)">
+                        @if (!name.valid && (name.touched || submittedOnce())) {
+                        <span class="unvalid">Oops! it seems your name is missing ( at least 3 characters )</span>
                         }
                     </div>
                     <div class="collaborate-form-divider"></div>
@@ -42,20 +42,20 @@
                             placeholder="youremail@email.com" type="text"
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                             (focus)="focusedInput(focusMail, mail)" (blur)="bluredInput(focusMail, mail)">
-                        @if (!mail.valid && mail.touched) {
-                        <span class="unvalid">Please enter a valid E-Mail</span>
+                        @if (!mail.valid && (mail.touched || submittedOnce())) {
+                        <span class="unvalid">Hoppla! your email is required</span>
                         }
                     </div>
                     <div class="collaborate-form-divider"></div>
                     <div class="collaborate-form-custom-input">
                         <p #focusText class="custom-input-lable">How can i help you?</p>
-                        <textarea #message="ngModel" minlength="10" required #autoTA (input)="adjustHeight(autoTA)"
+                        <textarea #message="ngModel" minlength="50" required #autoTA (input)="adjustHeight(autoTA)"
                             name="message" [(ngModel)]="formData.message" class="input"
                             placeholder="Hello Alex, I am interested in..." type="text"
                             (focus)="focusedInput(focusText, message)"
                             (blur)="bluredInput(focusText, message)"></textarea>
-                        @if (!message.valid && message.touched) {
-                        <span class="unvalid">Please enter a message</span>
+                        @if (!message.valid && (message.touched || submittedOnce())) {
+                        <span class="unvalid">What do you need to develop (at least 50 characters)</span>
                         }
                     </div>
                     <div class="collaborate-form-divider"></div>
@@ -67,13 +67,16 @@
                         <p>I've read the <span class="policy">privacy policy</span> and agree to the processing of my
                             data as outlined.
                         </p>
+                        @if (!checked() && clickedOnce()){
+                        <p class="unvalid">Please accept the privacy policy.</p>
+                        }
                     </div>
                     <div class="collaborate-form-submit">
-                        <app-button [disabled]="!contactForm.valid || !checked()" class="cta-btn"
-                            value="Send"></app-button>
+                        <app-button class="cta-btn disabled" value="Send" [class.enabled]="checked()"></app-button>
                     </div>
                 </form>
             </div>
         </div>
+        <app-footer></app-footer>
     </div>
 </div>

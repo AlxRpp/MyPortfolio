@@ -243,6 +243,8 @@
     bottom: 0;
 }
 
+
+
 .collaborate-form-custom-input textarea {
     --sb-track-color: #131313;
     --sb-thumb-color: #1073ea;
@@ -268,4 +270,15 @@
     .collaborate-form-custom-input textarea {
         scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     }
+}
+
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.enabled {
+    pointer-events: all;
+    opacity: 1;
 }
