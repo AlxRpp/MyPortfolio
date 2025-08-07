@@ -12,21 +12,12 @@ export class Footer {
   mail = viewChild.required<HTMLImageElement>('mail');
 
 
-  // rollingIn() {
-  //   this.git().nativeElement.classList.remove('roll-out')
-  //   this.git().nativeElement.classList.add('roll-in')
-  // }
-
-  // rollingOut() {
-  //   this.git().nativeElement.classList.remove('roll-in')
-  //   this.git().nativeElement.classList.add('roll-out')
-
-  // }
-
   toggleAnimation(ref: HTMLImageElement, direction: 'in' | 'out') {
-    // const id = ref.nativeElement;
     ref.classList.add(direction === 'in' ? 'roll-in' : 'roll-out');
     ref.classList.remove(direction === 'out' ? 'roll-in' : 'roll-out');
+  }
 
+  openLink(url: string) {
+    window.open(url, '_blank')
   }
 }

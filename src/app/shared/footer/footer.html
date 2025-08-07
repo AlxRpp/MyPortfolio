@@ -6,15 +6,18 @@
         </div>
         <p>Legal Notice</p>
     </div>
-    <div (mouseenter)="toggleAnimation(git, 'in')" (mouseleave)="toggleAnimation(git, 'out')" class="wrapper">
+    <div (click)="openLink('https://github.com/AlxRpp')" (mouseenter)="toggleAnimation(git, 'in')"
+        (mouseleave)="toggleAnimation(git, 'out')" class="wrapper">
         <img #git class="showIcon" src="./assets/icons/social/Github.png" alt="" srcset="">
         <p>GitHub</p>
     </div>
-    <div (mouseenter)="toggleAnimation(linkedIn, 'in')" (mouseleave)="toggleAnimation(linkedIn, 'out')" class="wrapper">
+    <div (click)="openLink('https://www.linkedin.com/in/alexander-ruppel-450706375/')"
+        (mouseenter)="toggleAnimation(linkedIn, 'in')" (mouseleave)="toggleAnimation(linkedIn, 'out')" class="wrapper">
         <img #linkedIn class="showIcon" src="./assets/icons/social/linkedIn.png" alt="" srcset="">
         <p>LinkedIn</p>
     </div>
-    <div (mouseenter)="toggleAnimation(mail, 'in')" (mouseleave)="toggleAnimation(mail, 'out')" class="wrapper">
+    <div (click)="openLink('mailto:a.ruppel1@icloud@com')" (mouseenter)="toggleAnimation(mail, 'in')"
+        (mouseleave)="toggleAnimation(mail, 'out')" class="wrapper">
         <img #mail class="showIcon" src="./assets/icons/social/mail.png" alt="" srcset="">
         <p>Email</p>
     </div>
