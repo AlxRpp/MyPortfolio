@@ -28,16 +28,75 @@ footer {
 
 
 .wrapper {
-    padding: 8px 24px;
+    padding: 12px 24px;
     background-color: transparent;
     border-radius: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all .15s ease-in-out;
+    position: relative;
 
     &:hover {
         cursor: pointer;
         background-color: #1073ea;
+    }
+
+    >img {
+        width: 24px;
+        aspect-ratio: 1/1;
+    }
+}
+
+.showIcon {
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: -24px;
+    right: 0;
+    transform: translateY(-100%);
+    display: block;
+    // animation: roll-in .5s ease-in-out forwards;
+    z-index: 2;
+    opacity: 0;
+}
+
+.roll-in {
+    animation: roll-in .5s ease-in-out forwards;
+}
+
+.roll-out {
+    animation: roll-out .5s ease-in-out forwards;
+}
+
+@keyframes roll-in {
+    0% {
+        opacity: 0;
+        right: 80px;
+        transform: rotate(-360deg);
+    }
+
+    75% {
+        right: -5px;
+        transform: rotate(15deg);
+    }
+
+    100% {
+        opacity: 1;
+        right: 0px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes roll-out {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+        right: 0px;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-360deg);
+        right: 50px;
     }
 }
