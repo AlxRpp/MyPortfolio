@@ -72,7 +72,9 @@
                         }
                     </div>
                     <div class="collaborate-form-submit">
-                        <app-button class="cta-btn disabled" value="Send" [class.enabled]="checked()"></app-button>
+                        <app-button class="cta-btn disabled" value="Send" [ngClass]="{
+                            enabled: checked() && (name.valid) && (mail.valid) && (message.valid)
+                        }"></app-button>
                     </div>
                 </form>
             </div>
