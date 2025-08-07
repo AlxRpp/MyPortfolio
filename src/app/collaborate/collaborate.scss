@@ -37,19 +37,6 @@
             &-description {
                 font-weight: 400;
                 position: relative;
-
-                &::after {
-                    content: "";
-                    background-image: url('../../../public/assets/icons/Hand-drawn_lines/05_Contact/collaborate.png');
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    height: 48px;
-                    width: 300px;
-                    position: absolute;
-                    bottom: -100px;
-                    right: 0;
-                    animation: leftToRight 6s ease-in-out infinite alternate;
-                }
             }
         }
     }
@@ -157,6 +144,20 @@
                 border: 1px solid #1AA8B5;
                 border-radius: 4px;
                 position: relative;
+
+                &::after {
+                    content: "";
+                    background-image: url('../../../public/assets/icons/Hand-drawn_lines/05_Contact/collaborate.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 48px;
+                    width: 300px;
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    transform: translateX(-125%);
+                    animation: leftToRight 6s ease-in-out infinite alternate;
+                }
 
                 >img {
                     position: absolute;
