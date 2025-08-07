@@ -25,7 +25,7 @@
                     <img src="./assets/icons/Stickers/Round/C.png" alt="" srcset="">
                 </div>
                 <!-- <div class="divider"></div> -->
-                <form (ngSubmit)="submitForm(contactForm, name, mail, message)" #contactForm="ngForm">
+                <form (ngSubmit)="submitForm(contactForm, name, mail, message, autoTA)" #contactForm="ngForm">
                     <div class="collaborate-form-custom-input">
                         <p #inputName class="custom-input-lable">What´s your name?</p>
                         <input #name="ngModel" required name="name" [(ngModel)]="formData.name" minlength="3"

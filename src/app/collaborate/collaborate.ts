@@ -38,7 +38,7 @@ export class Collaborate {
   }
 
 
-  submitForm(ngForm: NgForm, contactName: NgModel, contactMail: NgModel, contactMessage: NgModel) {
+  submitForm(ngForm: NgForm, contactName: NgModel, contactMail: NgModel, contactMessage: NgModel, textArea: HTMLTextAreaElement) {
     if (ngForm.valid && ngForm.submitted && this.checked()) {
       // if (contactName.value.length >= 3 && contactMail.value.length > 3 && contactMessage.value.length > 3
       //   && this.checked() && ngForm.valid) {
@@ -48,7 +48,7 @@ export class Collaborate {
           mail: this.formData.mail,
           message: this.formData.message
         });
-      this.resetForm(ngForm)
+      this.resetForm(ngForm, textArea)
     }
     else {
       this.submittedOnce.set(true)
@@ -57,12 +57,13 @@ export class Collaborate {
   }
 
 
-  resetForm(ngForm: NgForm) {
+  resetForm(ngForm: NgForm, textArea: HTMLTextAreaElement) {
     setTimeout(() => {
       this.submittedOnce.set(false)
       this.checked.set(false)
       this.clickedOnce.set(false)
-      ngForm.reset()
+      ngForm.reset();
+      this.adjustHeight(textArea)
     }, 100)
   }
 
