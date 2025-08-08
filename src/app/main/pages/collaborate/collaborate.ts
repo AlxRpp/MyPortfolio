@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { Button } from "../shared/button/button";
+import { Button } from "../../shared/button/button";
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
-import { Footer } from "../shared/footer/footer";
+import { Footer } from "../../shared/footer/footer";
 
 @Component({
   selector: 'app-collaborate',

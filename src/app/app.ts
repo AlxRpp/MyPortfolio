@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeroSection } from "./hero-section/hero-section";
-import { AboutMe } from "./about-me/about-me";
+import { AboutMe } from "./main/pages/about-me/about-me";
 import { Skills } from "./skills/skills";
 import { Projects } from "./projects/projects";
 import { Testimonials } from "./testimonials/testimonials";
-import { Collaborate } from "./collaborate/collaborate";
-import { Footer } from "./shared/footer/footer";
+import { Collaborate } from "./main/pages/collaborate/collaborate";
+import { Footer } from "./main/shared/footer/footer";
 
 @Component({
   selector: 'app-root',
