@@ -1,10 +1,10 @@
 <div class="max-content">
     <div class="navbar">
         <img src="./assets/icons/testLogo.png" alt="" srcset="">
-        <a class="about-me" href="#about">About me</a>
-        <a class="skills" href="#skills">Skills</a>
-        <a class="projects" href="#">Projects</a>
-        <a class="contact" href="#">Contact</a>
+        <a class="about-me" routerLink="/" fragment="about">About me</a>
+        <a class="skills" routerLink="/" fragment="skills">Skills</a>
+        <a class="projects" routerLink="/" fragment="projects">Projects</a>
+        <a class="contact" routerLink="/" fragment="contact">Contact</a>
         <div class="language">
             <button [class.english]="german" [ngStyle]="{'color': english?active:white}"
                 (click)="toggleLanguage('english')">EN
