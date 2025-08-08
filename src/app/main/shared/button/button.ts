@@ -14,7 +14,7 @@ export class Button {
   class = input<string>("");
   value = input<string>("");
   route = input<string[]>();
-  // fragment = input<string>("");
+  fragment = input<string>("");
   // actionType = input<'route' | 'fragment' | 'submit'>('route')
   disabled = input<boolean>(false);
 
