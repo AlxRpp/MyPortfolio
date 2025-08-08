@@ -10,6 +10,7 @@ export class ProjectsData {
 
   projects: Project[] = [
     {
+      slug: 'join',
       title: 'Join',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       implDetails: 'jsdhfjks kjashdjk aksdjfhkjas hsjgdfjhsvf ksjhdfkjas hfdk b vs ldfhsjkfh shbdfkjshf a sdjhsdkjfh sfskdfhs f ksdjhf sdf llkhdsf ',
@@ -18,6 +19,7 @@ export class ProjectsData {
       duration: 3,
     },
     {
+      slug: 'alien-adventure',
       title: 'Alien Adventure',
       description: 'A space-themed Jump&Run-Game',
       implDetails: 'jsdhfjks kjashdjk aksdjfhkjas hsjgdfjhsvf ksjhdfkjas hfdk b vs ldfhsjkfh shbdfkjshf a sdjhsdkjfh sfskdfhs f ksdjhf sdf llkhdsf ',
@@ -25,6 +27,7 @@ export class ProjectsData {
       featured: false,
       duration: 3,
     }, {
+      slug: 'pokedex',
       title: 'Pokédex',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       implDetails: 'jsdhfjks kjashdjk aksdjfhkjas hsjgdfjhsvf ksjhdfkjas hfdk b vs ldfhsjkfh shbdfkjshf a sdjhsdkjfh sfskdfhs f ksdjhf sdf llkhdsf ',
@@ -34,3 +37,5 @@ export class ProjectsData {
     },
   ]
 }
+
+
