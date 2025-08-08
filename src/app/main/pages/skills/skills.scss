@@ -1,5 +1,5 @@
 .skill-set {
-    background-image: url('../../../public/assets/images/skills.jpeg');
+    background-image: url('../../../../../public/assets/images/skills.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -41,7 +41,7 @@
 
             &::after {
                 content: "";
-                background-image: url('../../../public/assets/icons/Hand-drawn_lines/02_Skills/skillCircle.png');
+                background-image: url('../../../../../public/assets/icons/Hand-drawn_lines/02_Skills/skillCircle.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 265px;
@@ -57,7 +57,7 @@
     }
 
     &-description {
-        background-image: url('../../../public/assets/icons/RippedPaper/a.png');
+        background-image: url('../../../../../public/assets/icons/RippedPaper/a.png');
         background-size: contain;
         background-repeat: no-repeat;
         color: black;

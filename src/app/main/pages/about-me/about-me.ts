@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Button } from "../shared/button/button";
+import { Button } from "../../shared/button/button";
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -1,6 +1,7 @@
 .mobileNavbar {
     width: 100%;
-    background-image: url('../../../../../public/assets/images/hero.png');
+    // background-image: url('../../../../../public/assets/images/hero.png');
+    background-image: url('../../../../../../public/assets/images/hero.png');
     background-size: cover;
     height: 85dvh;
     background-color: transparent;
@@ -33,7 +34,7 @@
     &::after {
         content: "";
         display: block;
-        background-image: url('../../../../../public/assets/icons/Hand-drawn_lines/00_Header/1.png');
+        background-image: url('../../../../../../public/assets/icons/Hand-drawn_lines/00_Header/1.png');
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
@@ -59,7 +60,7 @@
     &::after {
         content: "";
         display: block;
-        background-image: url('../../../../../public/assets/icons/Hand-drawn_lines/00_Header/2.png');
+        background-image: url('../../../../../../public/assets/icons/Hand-drawn_lines/00_Header/2.png');
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
@@ -85,7 +86,7 @@
     &::after {
         content: "";
         display: block;
-        background-image: url('../../../../../public/assets/icons/Hand-drawn_lines/00_Header/3.png');
+        background-image: url('../../../../../../public/assets/icons/Hand-drawn_lines/00_Header/3.png');
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
@@ -111,7 +112,7 @@
     &::after {
         content: "";
         display: block;
-        background-image: url('../../../../../public/assets/icons/Hand-drawn_lines/00_Header/4.png');
+        background-image: url('../../../../../../public/assets/icons/Hand-drawn_lines/00_Header/4.png');
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
@@ -141,7 +142,7 @@
 
     &::after {
         content: "";
-        background-image: url('../../../../../public/assets/icons/Hand-drawn_lines/00_Header/Toggle.png');
+        background-image: url('../../../../../../public/assets/icons/Hand-drawn_lines/00_Header/Toggle.png');
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;

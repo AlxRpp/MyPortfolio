@@ -1,11 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, signal, viewChild } from '@angular/core';
 import { MobileNavbar } from "./mobile-navbar/mobile-navbar";
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, MobileNavbar, RouterLink],
+  imports: [CommonModule, MobileNavbar,],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })

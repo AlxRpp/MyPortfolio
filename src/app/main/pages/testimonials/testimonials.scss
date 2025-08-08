@@ -15,7 +15,7 @@
                 content: "";
                 width: 100px;
                 height: 45px;
-                background-image: url('../../../public/assets/icons/Stickers/Testimonials/backArrow.png');
+                background-image: url('../../../../../public/assets/icons/Stickers/Testimonials/backArrow.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 position: absolute;
@@ -58,7 +58,8 @@
             top: 75px;
             left: 50%;
             transform: translateX(-50%);
-            background-image: url('../../../public/assets/icons/Stickers/Testimonials/B.png');
+            // background-image: url('../../../../../public/assets/icons/Stickers/Testimonials/B.png');
+            background-image: url('../../../../../public/assets/icons/Stickers/Testimonials/b.png');
             z-index: 2;
 
             &:hover {
@@ -86,7 +87,7 @@
         // width: 45%;
         // height: 320px;
         border-radius: 12px;
-        background-image: url('../../../public/assets/icons/Stickers/Testimonials/A.png');
+        background-image: url('../../../../../public/assets/icons/Stickers/Testimonials/A.png');
         background-size: contain;
         background-repeat: no-repeat;
         padding: 48px 40px;
@@ -101,7 +102,7 @@
             content: "";
             width: 100%;
             height: 100%;
-            background-image: url('../../../public/assets/icons/Stickers/Testimonials/Line.png');
+            background-image: url('../../../../../public/assets/icons/Stickers/Testimonials/Line.png');
             background-size: cover;
             position: absolute;
             top: 0;

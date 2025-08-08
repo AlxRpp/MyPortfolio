@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { Button } from "../shared/button/button";
-import { ProjectsData } from '../shared/service/projectsData';
+import { Button } from "../../shared/button/button";
+import { ProjectsData } from '../../shared/service/projectsData';
 import { CommonModule } from '@angular/common';
 
 @Component({
