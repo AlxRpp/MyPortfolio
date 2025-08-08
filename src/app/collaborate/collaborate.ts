@@ -29,13 +29,13 @@ export class Collaborate {
   }
 
 
-  formCompleted(name: NgModel, mail: NgModel, message: NgModel) {
-    if (name.value.length > 3 && mail.value.length > 3 && message.value.length > 3 && this.checked()) {
-      return true
-    } else {
-      return false
-    }
-  }
+  // formCompleted(name: NgModel, mail: NgModel, message: NgModel) {
+  //   if (name.value.length > 3 && mail.value.length > 3 && message.value.length > 3 && this.checked()) {
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  // }
 
 
   submitForm(ngForm: NgForm, contactName: NgModel, contactMail: NgModel, contactMessage: NgModel, textArea: HTMLTextAreaElement) {
