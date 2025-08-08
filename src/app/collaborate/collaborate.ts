@@ -8,7 +8,10 @@ import { Footer } from "../shared/footer/footer";
   selector: 'app-collaborate',
   imports: [Button, CommonModule, FormsModule, Footer],
   templateUrl: './collaborate.html',
-  styleUrl: './collaborate.scss'
+  styleUrls: [
+    './collaborate.scss',
+    './collaborate-mediaQuerrys.scss'
+  ]
 })
 
 

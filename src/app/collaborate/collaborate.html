@@ -1,6 +1,9 @@
 <div class="collaborate-section">
     <div class="max-content">
         <div class="collaborate">
+            <div class="collaborate-sticker">
+                <img src="./assets/icons/Stickers/Round/C.png" alt="" srcset="">
+            </div>
             <div class="collaborate-textfield">
                 <div class="collaborate-textfield-header">
                     <div class="collaborate-textfield-header-title">
@@ -32,7 +35,7 @@
                             class="input" placeholder="Your name goes here" type="text"
                             (focus)="focusedInput(inputName, name)" (blur)="bluredInput(inputName, name)">
                         @if (!name.valid && (name.touched || submittedOnce())) {
-                        <span class="unvalid">Oops! it seems your name is missing ( at least 3 characters )</span>
+                        <span class="unvalid">Oops! it seems your name is missing</span>
                         }
                     </div>
                     <div class="collaborate-form-divider"></div>
@@ -55,7 +58,7 @@
                             (focus)="focusedInput(focusText, message)"
                             (blur)="bluredInput(focusText, message)"></textarea>
                         @if (!message.valid && (message.touched || submittedOnce())) {
-                        <span class="unvalid">What do you need to develop (at least 50 characters)</span>
+                        <span class="unvalid">What do you need to develop</span>
                         }
                     </div>
                     <div class="collaborate-form-divider"></div>
@@ -68,7 +71,7 @@
                             data as outlined.
                         </p>
                         @if (!checked() && clickedOnce()){
-                        <p class="unvalid">Please accept the privacy policy.</p>
+                        <p class="unvalid pol">Please accept the privacy policy.</p>
                         }
                     </div>
                     <div class="collaborate-form-submit">

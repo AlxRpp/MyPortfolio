@@ -125,3 +125,42 @@ footer {
         right: 50px;
     }
 }
+
+.legal-wrapper-mobile {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    // padding: 0 24px;
+    padding-bottom: 96px;
+
+
+    &-name {
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media(min-width:851px) {
+    .legal-wrapper-mobile {
+        display: none;
+    }
+}
+
+@media(max-width:850px) {
+    .legal-wrapper {
+        display: none;
+    }
+
+    .legal-wrapper-mobile {
+        // padding: 24px 0;
+        padding-top: 32px;
+        padding-bottom: 16px;
+
+        &-name {
+            font-weight: 300;
+            text-align: end;
+        }
+    }
+}

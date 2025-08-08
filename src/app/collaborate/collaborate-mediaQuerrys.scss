@@ -1,0 +1,75 @@
+@media(min-width: 851px) {
+    .collaborate-sticker {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .collaborate {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 196px;
+        gap: 24px;
+
+
+
+        &-textfield {
+            // max-width: 50%;
+            max-width: clamp(300px, 100%, 720px);
+        }
+
+        &-form {
+            padding-top: 24px;
+
+            &-sticker {
+                display: none;
+            }
+
+            &-custom-input {
+                padding-left: 0;
+            }
+
+            &-privacyPolicy-checkbox {
+                &::after {
+                    bottom: -90px;
+                    transform: translateX(0);
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .collaborate-form-privacyPolicy-checkbox {
+        &::after {
+            width: 250px;
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+    .collaborate-form-privacyPolicy-checkbox {
+        &::after {
+            width: 200px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .collaborate-form-privacyPolicy-checkbox {
+        &::after {
+            width: 150px;
+            bottom: -100px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .collaborate-form-privacyPolicy-checkbox {
+        &::after {
+            bottom: -110px;
+        }
+    }
+}

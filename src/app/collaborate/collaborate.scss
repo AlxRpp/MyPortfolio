@@ -5,6 +5,7 @@
     background-position: top;
     // height: 1000px;
     width: 100%;
+    position: relative;
 }
 
 
@@ -15,9 +16,22 @@
     display: flex;
     gap: 48px;
 
+    &-sticker {
+        position: absolute;
+        right: 12px;
+        top: 72px;
+        rotate: 90deg;
+        z-index: 2;
+
+        >img {
+            width: 130px;
+        }
+    }
+
 
     &-textfield {
-        max-width: 50%;
+        // max-width: 50%;
+        max-width: clamp(300px, 45%, 720px);
 
         &-header {
             display: flex;
@@ -30,7 +44,8 @@
                 }
 
                 h1 {
-                    font-size: 64px;
+                    // font-size: 64px;
+                    font-size: clamp(42px, 4vw + 1rem, 64px);
                 }
             }
 
@@ -189,7 +204,8 @@
             width: 100%;
 
             .cta-btn {
-                width: 25%;
+                // width: 25%;
+                width: clamp(125px, 25%, 175px);
                 display: block;
                 float: right;
             }
@@ -242,6 +258,10 @@
     font-weight: 300;
     position: absolute;
     bottom: 0;
+}
+
+.pol {
+    bottom: 50px;
 }
 
 
