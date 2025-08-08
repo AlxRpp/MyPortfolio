@@ -1,4 +1,5 @@
 import { Component, ElementRef, viewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,9 @@ import { Component, ElementRef, viewChild } from '@angular/core';
   styleUrl: './footer.scss'
 })
 export class Footer {
+
+  constructor(private router: Router) { }
+
   git = viewChild.required<HTMLImageElement>('git');
   linkedIn = viewChild.required<HTMLImageElement>('linkedIn');
   mail = viewChild.required<HTMLImageElement>('mail');
@@ -19,5 +23,9 @@ export class Footer {
 
   openLink(url: string) {
     window.open(url, '_blank')
+  }
+
+  navigateToLegal() {
+    this.router.navigateByUrl('legal-notice');
   }
 }

@@ -3,6 +3,7 @@ import { Button } from "../../shared/button/button";
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { Footer } from "../../shared/footer/footer";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-collaborate',
@@ -25,20 +26,18 @@ export class Collaborate {
     message: ""
   }
 
+  constructor(private router: Router) { }
+
 
   toggleCheckbox() {
     this.checked.update(value => !value);
     this.clickedOnce.set(true);
   }
 
+  navigateToPrivacy() {
+    this.router.navigateByUrl('privacy-policy');
+  }
 
-  // formCompleted(name: NgModel, mail: NgModel, message: NgModel) {
-  //   if (name.value.length > 3 && mail.value.length > 3 && message.value.length > 3 && this.checked()) {
-  //     return true
-  //   } else {
-  //     return false
-  //   }
-  // }
 
 
   submitForm(ngForm: NgForm, contactName: NgModel, contactMail: NgModel, contactMessage: NgModel, textArea: HTMLTextAreaElement) {

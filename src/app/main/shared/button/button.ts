@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, input, Input, signal } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-button',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './button.html',
   styleUrl: './button.scss'
 })
@@ -11,6 +12,10 @@ export class Button {
 
 
   class = input<string>("");
-  value = input<string>("")
-  disabled = input<boolean>(false)
+  value = input<string>("");
+  route = input<string[]>();
+  fragment = input<string>("");
+  // actionType = input<'route' | 'fragment' | 'submit'>('route')
+  disabled = input<boolean>(false);
+
 }

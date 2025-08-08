@@ -20,7 +20,8 @@
                             <img src="./assets/icons/Stickers/Round/B.png" alt="" srcset="">
                         </div>
                         }
-                        <app-button class="cta-btn" value="Project details"></app-button>
+                        <app-button [route]="['/projects', project.slug]" class="cta-btn"
+                            value="Project details"></app-button>
                     </div>
                     <div class="single-project-title">
                         <h2> {{ project.title }}</h2>
@@ -28,12 +29,11 @@
                     <div class="single-project-description">
                         {{ project.description }}
                     </div>
-                    <app-button class="single-project-cta-btn-mobile second third" value="Project details"></app-button>
+                    <app-button [route]="['/projects', project.slug]" class="single-project-cta-btn-mobile second third"
+                        value="Project details"></app-button>
                 </div>
                 }
             </div>
-
-
         </div>
     </div>
 </div>
