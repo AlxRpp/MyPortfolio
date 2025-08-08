@@ -13,7 +13,7 @@
                 </div>
                 @for (project of projects; track $index) {
                 <div class="single-project">
-                    <div class="single-project-image">
+                    <div (click)="navigateToSingleProject(project.slug)" class="single-project-image">
                         <img src="{{ project.url }}" alt="" srcset="">
                         @if (project.featured) {
                         <div class="single-project-sticker">
