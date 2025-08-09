@@ -10,29 +10,28 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.scss'
 })
 export class Header {
-  english: boolean = true;
-  german: boolean = false;
-  currentLanguage = signal<string>("english")
-  toggleGER = '50%';
-  toggleENG = '-5%';
+  isGerman = signal<boolean>(false);
+  positionGer = '50%'
+  positionEn = '-5%'
   active = '#24DD80';
   white = '#ffffff'
   mobileNavBar = viewChild.required<ElementRef>('mobileNav');
 
-
   toggleLanguage(lang: string) {
-    this.currentLanguage.set(lang);
-    if (this.currentLanguage() == "english") {
-      this.english = true;
-      this.german = false;
+    if (lang === 'english') {
+      this.isGerman.set(false)
+      console.log("deutsch?", this.isGerman());
     } else {
-      this.german = true;
-      this.english = false;
+      this.isGerman.set(true);
+      console.log("deutsch?", this.isGerman());
     }
+  }
+
+  flipLanguage() {
+    this.isGerman.update(value => !value)
   }
 
   toggleBurgerMenu() {
     this.mobileNavBar().nativeElement.classList.toggle('transform-BurgerMenu')
-
   }
 }

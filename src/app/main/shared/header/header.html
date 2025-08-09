@@ -6,25 +6,24 @@
         <a class="projects" routerLink="/" fragment="projects">Projects</a>
         <a class="contact" routerLink="/" fragment="contact">Contact</a>
         <div class="language">
-            <button [class.english]="german" [ngStyle]="{'color': english?active:white}"
+            <button [disabled]="!isGerman()" [class.english]="isGerman()" [ngStyle]="{'color': isGerman()?white:active}"
                 (click)="toggleLanguage('english')">EN
             </button>
             <div class="toggle">
-                <div [ngStyle]="{'left': german? toggleGER: toggleENG}"></div>
+                <div [ngStyle]="{'left': isGerman()? positionGer: positionEn}"></div>
             </div>
-            <button [class.german]="english" [ngStyle]="{'color': german?active:white}"
+            <button [disabled]="isGerman()" [class.german]="!isGerman()" [ngStyle]="{'color': isGerman()?active:white}"
                 (click)="toggleLanguage('german')">DE</button>
         </div>
         <img class="burger" (click)="toggleBurgerMenu()"
             src="./assets/icons/Hand-drawn_lines/00_Header/MobileIcon/burgerMenu.png" alt="" srcset="">
     </div>
-
     <div class="mobileNav" #mobileNav>
         <div class="mobileNavbar-header">
             <img src="./assets/icons/testLogo.png" alt="" srcset="">
             <img (click)="toggleBurgerMenu()" src="./assets/icons/Hand-drawn_lines/00_Header/MobileIcon/close.png"
                 alt="" srcset="">
         </div>
-        <app-mobile-navbar></app-mobile-navbar>
+        <app-mobile-navbar [german]="isGerman()" (toggleLang)="flipLanguage()"></app-mobile-navbar>
     </div>
 </div>

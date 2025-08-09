@@ -5,14 +5,14 @@
         <a class="mobileNavbar-projects" routerLink="/" fragment="projects">Projects</a>
         <a class="mobileNavbar-contact" routerLink="/" fragment="contact">Contact</a>
         <div class="mobileNavbar-language">
-            <button [class.english]="german" [ngStyle]="{'color': english?active:white}"
-                (click)="toggleLanguage('english')">EN
+            <button [disabled]="!german()" [class.english]="german()" [ngStyle]="{'color': german()?white:active}"
+                (click)="toggleLang.emit()">EN
             </button>
             <div class="toggle">
-                <div [ngStyle]="{'left': german? toggleGER: toggleENG}"></div>
+                <div [ngStyle]="{'left': german()? positionGer: positionEn}"></div>
             </div>
-            <button [class.german]="english" [ngStyle]="{'color': german?active:white}"
-                (click)="toggleLanguage('german')">DE</button>
+            <button [disabled]="german()" [class.german]="!german()" [ngStyle]="{'color': german()?active:white}"
+                (click)="toggleLang.emit()">DE</button>
         </div>
         <app-social-links class="social"></app-social-links>
     </div>
