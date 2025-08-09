@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal, viewChild, ElementRef, input, output } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { SocialLinks } from "../../social-links/social-links";
 import { RouterLink } from '@angular/router';
 
@@ -11,7 +11,8 @@ import { RouterLink } from '@angular/router';
 })
 export class MobileNavbar {
   german = input<boolean>();
-  toggleLang = output<void>()
+  toggleLang = output<void>();
+  closeBurger = output<void>();
   positionGer = '50%';
   positionEn = '-5%';
   active = '#24DD80';

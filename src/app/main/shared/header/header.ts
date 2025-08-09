@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, signal, viewChild } from '@angular/core';
 import { MobileNavbar } from "./mobile-navbar/mobile-navbar";
 import { RouterLink } from '@angular/router';
 
@@ -17,6 +17,13 @@ export class Header {
   white = '#ffffff'
   mobileNavBar = viewChild.required<ElementRef>('mobileNav');
 
+  @HostListener('window:resize')
+  onResize() {
+    if (window.innerWidth > 720) {
+      this.closeBurgerMenu()
+    }
+  }
+
   toggleLanguage(lang: string) {
     if (lang === 'english') {
       this.isGerman.set(false)
@@ -27,9 +34,15 @@ export class Header {
 
   flipLanguage() {
     this.isGerman.update(value => !value)
+    this.toggleBurgerMenu();
   }
 
   toggleBurgerMenu() {
     this.mobileNavBar().nativeElement.classList.toggle('transform-BurgerMenu')
+  }
+
+  closeBurgerMenu() {
+    this.mobileNavBar().nativeElement.classList.remove('transform-BurgerMenu')
+
   }
 }
