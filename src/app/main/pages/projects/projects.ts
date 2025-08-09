@@ -2,11 +2,11 @@ import { Component, inject } from '@angular/core';
 import { Button } from "../../shared/button/button";
 import { ProjectsData } from '../../shared/service/projectsData';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
-  imports: [CommonModule, Button],
+  imports: [CommonModule, Button, RouterLink],
   templateUrl: './projects.html',
   styleUrls: [
     './projects.scss',
@@ -20,7 +20,7 @@ export class Projects {
   public projects = this.projectsData.projects;
 
   navigateToSingleProject(slug: string) {
-    // this.router.navigateByUrl(`/projects/`)
+    this.router.navigateByUrl(`projects/`)
     console.log(slug);
 
   }
