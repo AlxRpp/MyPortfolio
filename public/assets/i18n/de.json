@@ -4,5 +4,12 @@
         "skills": "Fähigkeiten",
         "projects": "Projekte",
         "contacte": "Kontakt"
+    },
+
+    "hero":{
+        "touch":"Schreib mir",
+        "greeting": "{{greeting}}"
     }
+
+    
 }

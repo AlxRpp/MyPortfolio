@@ -1,16 +1,18 @@
-import { AfterViewInit, Component, ElementRef, signal, viewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { Header } from "../../shared/header/header";
 import { Button } from "../../shared/button/button";
 import { CommonModule } from '@angular/common';
 import { SocialLinks } from "../../shared/social-links/social-links";
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero-section',
-  imports: [CommonModule, Header, Button, SocialLinks],
+  imports: [CommonModule, Header, Button, SocialLinks, TranslatePipe, TranslateDirective],
   templateUrl: './hero-section.html',
   styleUrl: './hero-section.scss'
 })
 export class HeroSection implements AfterViewInit {
+  private translate = inject(TranslateService)
   greeting = signal<string>('Hello world');
   name = signal<string>('Alex :)')
   background = signal<boolean>(false);

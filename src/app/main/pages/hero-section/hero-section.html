@@ -2,7 +2,8 @@
     <app-header class="header"></app-header>
     <div class="hero max-content">
         <div (mouseenter)="startGreeting()" (mouseleave)="stopGreeting()" class="greeting"
-            [ngStyle]="{'background-color':background()?bgBlue:bgTransparent}"> {{ greeting() }}
+            [ngStyle]="{'background-color':background()?bgBlue:bgTransparent}"> {{ 'hero.greeting' |
+            translate:{ greeting: greeting() } }}
             @if (showHand()) {
             <img #wavingHand src="./assets/icons/waving_hand.png" alt="" srcset=""> }
         </div>
@@ -16,7 +17,8 @@
             </div>
         </div>
         <div class="main-title hero-dev">DEVELOPER</div>
-        <app-button [route]="['/']" [fragment]="'contact'" value="Get in touch" class="hero-ctaBtn"></app-button>
+        <app-button [route]="['/']" [fragment]="'contact'" value="{{ 'hero.touch' | translate }}"
+            class="hero-ctaBtn"></app-button>
         <div class="hero-mobile-img">
             <img [ngStyle]="{'filter': imageHover()?colored:blackAndWhite}" class="main-image"
                 src="./assets/images/selfie.jpeg" alt="" srcset="">
