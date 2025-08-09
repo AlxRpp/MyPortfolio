@@ -1,6 +1,7 @@
 <h1>{{ project?.title }}</h1>
 <button (click)="prev()">zurück</button>
 <button (click)="next()">weiter</button>
+<button [routerLink]="'/'">home</button>
 
 <p>{{ project?.description }}</p>
 <p>{{ project?.implDetails }}</p>

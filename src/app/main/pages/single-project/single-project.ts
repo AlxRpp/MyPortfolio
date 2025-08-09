@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { ProjectsData } from '../../shared/service/projectsData';
 import { Project } from '../../shared/interfaces/project.interface';
 
 @Component({
   selector: 'app-single-project',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './single-project.html',
   styleUrl: './single-project.scss'
 })
