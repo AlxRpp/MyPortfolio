@@ -20,10 +20,8 @@ export class Header {
   toggleLanguage(lang: string) {
     if (lang === 'english') {
       this.isGerman.set(false)
-      console.log("deutsch?", this.isGerman());
     } else {
       this.isGerman.set(true);
-      console.log("deutsch?", this.isGerman());
     }
   }
 
