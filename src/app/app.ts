@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'MyPortfolio';
+  protected title = 'Alexander Ruppel';
+  // private translate = inject(TranslateService);
+
+  // constructor() {
+  //   this.translate.addLangs(['de', 'en']);
+  // }
+
 }

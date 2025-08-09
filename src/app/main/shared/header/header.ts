@@ -1,15 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, HostListener, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, signal, viewChild } from '@angular/core';
 import { MobileNavbar } from "./mobile-navbar/mobile-navbar";
 import { RouterLink } from '@angular/router';
+import { TranslateDirective, TranslatePipe, TranslateService, } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, MobileNavbar, RouterLink],
+  imports: [CommonModule, MobileNavbar, RouterLink, TranslatePipe, TranslateDirective],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
 export class Header {
+  private translate = inject(TranslateService);
+
   isGerman = signal<boolean>(false);
   positionGer = '50%'
   positionEn = '-5%'
@@ -27,7 +30,10 @@ export class Header {
   toggleLanguage(lang: string) {
     if (lang === 'english') {
       this.isGerman.set(false)
+      this.translate.use('en')
+
     } else {
+      this.translate.use('de')
       this.isGerman.set(true);
     }
   }
