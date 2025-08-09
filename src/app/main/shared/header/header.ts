@@ -31,7 +31,6 @@ export class Header {
     if (lang === 'english') {
       this.isGerman.set(false)
       this.translate.use('en')
-
     } else {
       this.translate.use('de')
       this.isGerman.set(true);
@@ -39,8 +38,13 @@ export class Header {
   }
 
   flipLanguage() {
-    this.isGerman.update(value => !value)
+    this.isGerman.update(value => !value);
     this.toggleBurgerMenu();
+    if (this.isGerman()) {
+      this.translate.use('de')
+    } else {
+      this.translate.use('en')
+    }
   }
 
   toggleBurgerMenu() {

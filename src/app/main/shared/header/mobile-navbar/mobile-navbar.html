@@ -1,9 +1,14 @@
 <div class="mobileNavbar">
     <div class="mobileNavbar-content">
-        <a (click)="closeBurger.emit()" class=" mobileNavbar-about-me" routerLink="/" fragment="about">About me</a>
-        <a (click)="closeBurger.emit()" class="mobileNavbar-skills" routerLink="/" fragment="skills">Skills</a>
-        <a (click)="closeBurger.emit()" class="mobileNavbar-projects" routerLink="/" fragment="projects">Projects</a>
-        <a (click)="closeBurger.emit()" class="mobileNavbar-contact" routerLink="/" fragment="contact">Contact</a>
+        <a (click)="closeBurger.emit()" class=" mobileNavbar-about-me" routerLink="/" fragment="about">{{ 'header.about'
+            | translate }}</a>
+        <a (click)="closeBurger.emit()" class="mobileNavbar-skills" routerLink="/" fragment="skills">{{ 'header.skills'
+            |
+            translate }}</a>
+        <a (click)="closeBurger.emit()" class="mobileNavbar-projects" routerLink="/" fragment="projects">{{
+            'header.projects' | translate }}</a>
+        <a (click)="closeBurger.emit()" class="mobileNavbar-contact" routerLink="/" fragment="contact">{{
+            'header.contact' | translate }}</a>
         <div class="mobileNavbar-language">
             <button [disabled]="!german()" [class.english]="german()" [ngStyle]="{'color': german()?white:active}"
                 (click)="toggleLang.emit()">EN
