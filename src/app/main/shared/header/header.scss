@@ -54,13 +54,24 @@
         width: 120px;
         height: 48px;
         clip-path: inset(0 100% 0 0);
-        transition: clip-path .25s ease-in-out,
+        transition: clip-path .25s ease-in-out;
     }
+
+    &.overwrite::after {
+        bottom: -16px;
+        left: -16px;
+    }
+
 
     &:hover::after {
         clip-path: inset(0 0 0 0);
     }
 }
+
+// .overwrite {
+//     bottom: 16px;
+//     left: 16px;
+// }
 
 .projects {
     color: white;
