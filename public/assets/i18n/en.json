@@ -10,5 +10,15 @@
         "touch":"Get in touch",
         "greetingDefault": "Hello world!",
         "greetingActive": "I’m {{name}}"
-    }
+    },
+        "about":{
+        "who":"WHO`S Alex?",
+        "about":"About me",
+        "text": "<h3>From craftsmanship to the software world</h3><br>Code is more than a tool, it’s the key to making ideas limitless.<br><br>Focus on Angular, TypeScript, JavaScript, SCSS and Firebase, combined with an uncompromising sense of precision. Whether layout or logic, every detail matters, every function must be flawless.<br><br>4,5 years as an entrepreneur, 18 years of total work experience. Discipline, persistence and a strong sense of responsibility flow into every project, whether solo or in collaboration.<br><br> <b class='highlighted'>My goal:</b> full-stack developer with a focus on security, building modern web solutions that deliver technically and leave a lasting impression.",
+        "based": "Based in Paderborn",
+        "location": "Open to relocate",
+        "remote": "Open to work remote",
+        "button": "Let´s talk"
+
+}
 }

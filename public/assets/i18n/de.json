@@ -10,6 +10,15 @@
         "touch":"Schreib mir",
         "greetingDefault": "Hallo Welt!",
         "greetingActive": "Ich bin {{name}}"
+    },
+    "about":{
+        "who":"WER IST ALEX?",
+        "about":"Mehr über mich",
+        "text": "<h3>Aus dem Handwerk in die Softwarewelt</h3><br>Code ist mehr als Werkzeug, er ist der Schlüssel, um Ideen grenzenlos umzusetzen.<br><br>Fokus auf Angular, TypeScript, JavaScript, SCSS und Firebase, kombiniert mit einem kompromisslosen Sinn für Präzision. Ob Layout oder Logik, jedes Detail zählt, jede Funktion muss sitzen.<br><br>4,5 Jahre Unternehmer und 18 Jahre Berufserfahrung insgesamt. Disziplin, Ausdauer und Verantwortungsbewusstsein fließen in jedes Projekt, egal ob allein oder im Team.<br><br> <b class='highlighted'>Mein Ziel:</b> Full-Stack-Entwickler mit Schwerpunkt Sicherheit, der moderne Weblösungen baut, die technisch überzeugen und nachhaltig beeindrucken.",
+        "based": "Wohnhaft in Paderborn",
+        "location": "Bereit für einen Umzug",
+        "remote": "Offen für Homeoffice",
+        "button": "Lass uns reden"
     }
 
     

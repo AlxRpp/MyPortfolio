@@ -6,39 +6,26 @@
             <img class="paper-3" src="./assets/icons/RippedPaper/Option3/secondPaper.png" alt="" srcset="">
             <div class="location">
                 <img src="./assets/icons/location.png" alt="" srcset="">
-                <span>Based in Paderborn</span>
+                <span>{{'about.based' | translate}}</span>
             </div>
             <div class="relocate">
                 <img src="./assets/icons/relocation.png" alt="" srcset="">
-                <span>Open to relocate</span>
+                <span>{{'about.location' | translate}}</span>
             </div>
             <div class="remote">
                 <img src="./assets/icons/remote.png" alt="" srcset="">
-                <span>Open to work remote</span>
+                <span>{{'about.remote' | translate}}</span>
             </div>
         </div>
         <div class="about-me">
             <div class="about-me-header">
-                <h2>WHO`S ALEX ?</h2>
-                <h1>About me</h1>
-                <!-- <img src="./assets/icons/Hand-drawn_lines/01_AboutMe/ColorOption-3.png" alt="" srcset=""> -->
+                <h2>{{ 'about.who' | translate }}</h2>
+                <h1>{{ 'about.about' | translate }}</h1>
             </div>
-            <div class="about-me-text-area">
-                Hey there, I'm Karl. Write some information about yourself that is IT related. Why are you passionate
-                about
-                coding?
-                What
-                is your source of inspiration for improving your programming skills? Do you learn from each challenge as
-                you
-                search
-                for
-                the most efficient or elegant solution?
-                <br>
-                <br>
-                Let’s collaborate and build something remarkable together!
-            </div>
+            <div class="about-me-text-area" [innerHTML]="'about.text' | translate"></div>
             <div class="about-me-CTA">
-                <app-button [route]="['/']" [fragment]="'contact'" value="Let’s talk" class="second"></app-button>
+                <app-button [route]="['/']" [fragment]="'contact'" value="{{'about.button' | translate}}"
+                    class="second"></app-button>
             </div>
         </div>
     </div>
