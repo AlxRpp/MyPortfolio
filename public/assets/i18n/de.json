@@ -8,7 +8,8 @@
 
     "hero":{
         "touch":"Schreib mir",
-        "greeting": "{{greeting}}"
+        "greetingDefault": "Hallo Welt!",
+        "greetingActive": "Ich bin {{name}}"
     }
 
     

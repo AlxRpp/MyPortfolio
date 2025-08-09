@@ -4,6 +4,7 @@ import { Button } from "../../shared/button/button";
 import { CommonModule } from '@angular/common';
 import { SocialLinks } from "../../shared/social-links/social-links";
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { single } from 'rxjs';
 
 @Component({
   selector: 'app-hero-section',
@@ -13,7 +14,7 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
 })
 export class HeroSection implements AfterViewInit {
   private translate = inject(TranslateService)
-  greeting = signal<string>('Hello world');
+  // greeting = signal<string>('Hello world');
   name = signal<string>('Alex :)')
   background = signal<boolean>(false);
   showHand = signal<boolean>(false);
@@ -24,6 +25,9 @@ export class HeroSection implements AfterViewInit {
   blackAndWhite = 'grayscale(1)';
   colored = 'grayscale(0)'
 
+  greeting = signal<'hero.greetingDefault' | 'hero.greetingActive'>('hero.greetingDefault');
+  params = signal<{ name: string }>({ name: 'Alexander Ruppel' })
+
   ngAfterViewInit(): void {
     this.mobileView();
   }
@@ -32,7 +36,8 @@ export class HeroSection implements AfterViewInit {
     if (this.showHand()) {
       return
     } else {
-      this.greeting.set("I´M ALEXANDER RUPPEL")
+      // this.greeting.set("I´M ALEXANDER RUPPEL")
+      this.greeting.set('hero.greetingActive')
       this.background.set(true);
       this.showHand.set(true);
       setTimeout(() => {
@@ -48,7 +53,8 @@ export class HeroSection implements AfterViewInit {
       this.wavingHand().nativeElement.classList.add('stop-greeting');
       setTimeout(() => {
         this.showHand.set(false);
-        this.greeting.set('Hello world')
+        // this.greeting.set('Hello world')
+        this.greeting.set('hero.greetingDefault')
         this.background.set(false);
       }, 250)
     }

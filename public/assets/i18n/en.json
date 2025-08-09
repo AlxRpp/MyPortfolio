@@ -8,6 +8,7 @@
 
     "hero":{
         "touch":"Get in touch",
-        "greeting": "{{greeting}}"
+        "greetingDefault": "Hello world!",
+        "greetingActive": "I’m {{name}}"
     }
 }

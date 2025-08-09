@@ -2,8 +2,7 @@
     <app-header class="header"></app-header>
     <div class="hero max-content">
         <div (mouseenter)="startGreeting()" (mouseleave)="stopGreeting()" class="greeting"
-            [ngStyle]="{'background-color':background()?bgBlue:bgTransparent}"> {{ 'hero.greeting' |
-            translate:{ greeting: greeting() } }}
+            [ngStyle]="{'background-color':background()?bgBlue:bgTransparent}"> {{ greeting() | translate : params() }}
             @if (showHand()) {
             <img #wavingHand src="./assets/icons/waving_hand.png" alt="" srcset=""> }
         </div>
