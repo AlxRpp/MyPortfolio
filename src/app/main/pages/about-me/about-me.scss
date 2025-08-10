@@ -9,6 +9,8 @@
     position: relative;
     min-width: 600px;
     font-size: 22px;
+    max-height: 320px;
+    margin-top: 64px;
 
 
     &-1 {
@@ -100,6 +102,7 @@
         h1 {
             font-size: 64px;
             font-weight: 700;
+            text-wrap: nowrap;
         }
 
         &::after {
@@ -132,6 +135,6 @@
 
     &-CTA {
         align-self: self-end;
-        width: clamp(120px, 25%, 200px);
+        width: clamp(150px, 25%, 200px);
     }
 }
