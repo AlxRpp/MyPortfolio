@@ -3,6 +3,7 @@ import { Component, ElementRef, HostListener, inject, signal, viewChild } from '
 import { MobileNavbar } from "./mobile-navbar/mobile-navbar";
 import { RouterLink } from '@angular/router';
 import { TranslateDirective, TranslatePipe, TranslateService, } from '@ngx-translate/core';
+import { Language } from '../service/language';
 
 @Component({
   selector: 'app-header',
@@ -12,8 +13,8 @@ import { TranslateDirective, TranslatePipe, TranslateService, } from '@ngx-trans
 })
 export class Header {
   private translate = inject(TranslateService);
-
-  isGerman = signal<boolean>(false);
+  public lang = inject(Language)
+  isGerman = this.lang.isGerman
   positionGer = '50%'
   positionEn = '-5%'
   active = '#24DD80';

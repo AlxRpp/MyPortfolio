@@ -24,10 +24,11 @@
                         srcset="">
                     <div class="skills-field-sticker-action">
                         <img #arrow src="./assets/icons/Stickers/Arrow.png" alt="">
-                        <span #pull [innerHTML]="'skills.sticker' | translate "></span>
+                        <span [ngStyle]="{right: isGerman() ? '35px' : '55px'}" #pull
+                            [innerHTML]="'skills.sticker' | translate "></span>
                         <div #peeledSticker class="interested d-none">
                             <p>{{ 'skills.interested' | translate }}</p>
-                            <div class="nextTech">
+                            <div [ngStyle]="{top: isGerman() ? '124px' : '100px'}" class="nextTech">
                                 <div>
                                     <img src="./assets/icons/TeckStack/React.png" alt="" srcset="">
                                     <p>React</p>

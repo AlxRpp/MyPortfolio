@@ -52,11 +52,13 @@
             width: unset;
 
             span {
+                font-size: 18px;
                 align-self: end;
                 padding-left: 0;
             }
 
             h1 {
+                font-size: 60px;
                 align-self: end;
             }
         }
@@ -95,8 +97,24 @@
 }
 
 @media(max-width: 800px) {
+    .content {
+        padding: 48px 0;
+        padding-bottom: 96px;
+    }
+
     .skills-header {
         gap: 24px;
+
+        &-title {
+            h1 {
+                font-size: 56px;
+                padding-right: 12px;
+
+                &::after {
+                    width: 240px;
+                }
+            }
+        }
 
         &-description {
             background-size: cover;
@@ -128,8 +146,50 @@
     }
 
     .skills-header {
+        &-title {
+            h1 {
+                font-size: 52px;
+
+                &::after {
+                    width: 225px;
+                }
+            }
+        }
+
         &-description {
             padding: 32px 12px;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .skills-header {
+        &-title {
+            span {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 48px;
+
+                &::after {
+                    width: 212px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .skills-header {
+        &-title {
+            h1 {
+                font-size: 44px;
+
+                &::after {
+                    width: 195px;
+                }
+            }
         }
     }
 }

@@ -1,9 +1,11 @@
 import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Language } from '../../shared/service/language';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-skills',
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [CommonModule, TranslatePipe, TranslateDirective],
   templateUrl: './skills.html',
   styleUrls: [
     './skills.scss',
@@ -11,12 +13,15 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
   ]
 })
 export class Skills {
-  private translate = inject(TranslateService)
+  private translate = inject(TranslateService);
+  public lang = inject(Language);
+  isGerman = this.lang.isGerman;
   sticker = signal<string>("A");
   arrow = viewChild.required<ElementRef>('arrow');
   pull = viewChild.required<ElementRef>('pull');
   peeledSticker = viewChild.required<ElementRef>('peeledSticker')
   peeled = false;
+
 
   icons = [
     {
