@@ -1,3 +1,11 @@
+@media(max-width: 1440px) {
+    .skills-header {
+        &-description {
+            padding: 21px;
+        }
+    }
+}
+
 @media(max-width: 1305px) {
     .content {
         width: clamp(500px, 100%, 1000px);
@@ -116,7 +124,12 @@
     .skills-field {
         &-icons {
             width: clamp(300px, 75%, 515px);
+        }
+    }
 
+    .skills-header {
+        &-description {
+            padding: 32px 12px;
         }
     }
 }

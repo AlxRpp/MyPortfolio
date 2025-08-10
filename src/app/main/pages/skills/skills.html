@@ -3,14 +3,10 @@
         <div class="content">
             <div class="skills-header">
                 <div class="skills-header-title">
-                    <span>MY STACK</span>
-                    <h1 class="section-title">Skill set</h1>
+                    <span>{{ 'skills.stack' | translate }}</span>
+                    <h1 class="section-title">{{ 'skills.set' | translate }}</h1>
                 </div>
-                <div class="skills-header-description">
-                    A short introduction of your skills. Highlight your experience of using different front-end
-                    technologies and emphasise
-                    your openness to learning and adapting to new technologies.
-                </div>
+                <div class="skills-header-description">{{ 'skills.text' | translate }}</div>
                 <div class="skills-header-empty"></div>
             </div>
             <div class="skills-field">
@@ -28,9 +24,9 @@
                         srcset="">
                     <div class="skills-field-sticker-action">
                         <img #arrow src="./assets/icons/Stickers/Arrow.png" alt="">
-                        <span #pull>Pull to <br> peel</span>
+                        <span #pull [innerHTML]="'skills.sticker' | translate "></span>
                         <div #peeledSticker class="interested d-none">
-                            <p>Also, I'm interested in diving into:</p>
+                            <p>{{ 'skills.interested' | translate }}</p>
                             <div class="nextTech">
                                 <div>
                                     <img src="./assets/icons/TeckStack/React.png" alt="" srcset="">

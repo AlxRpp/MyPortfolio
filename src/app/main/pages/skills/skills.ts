@@ -1,8 +1,9 @@
-import { Component, ElementRef, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  imports: [TranslatePipe, TranslateDirective],
   templateUrl: './skills.html',
   styleUrls: [
     './skills.scss',
@@ -10,6 +11,7 @@ import { Component, ElementRef, signal, viewChild } from '@angular/core';
   ]
 })
 export class Skills {
+  private translate = inject(TranslateService)
   sticker = signal<string>("A");
   arrow = viewChild.required<ElementRef>('arrow');
   pull = viewChild.required<ElementRef>('pull');

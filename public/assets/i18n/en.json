@@ -19,6 +19,12 @@
         "location": "Open to relocate",
         "remote": "Open to work remote",
         "button": "Let´s talk"
-
-}
+},
+    "skills":{
+        "text":  "From the first lines of HTML and CSS to complex Angular applications, in a short time I mastered the full stack, built JavaScript with APIs, collaborated in teams using Git and Scrum, and now create precise and creative solutions with SCSS and TypeScript.",
+        "stack": "MY STACK",
+        "set": "Skill set",
+        "sticker": "Pull to <br> Peel",
+        "interested": "Also, im interested in divig into:"
+    }
 }
