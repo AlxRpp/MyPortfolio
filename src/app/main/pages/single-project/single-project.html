@@ -3,7 +3,7 @@
 <button (click)="next()">weiter</button>
 <button [routerLink]="'/'" fragment="projects">home</button>
 
-<p>{{ project?.description }}</p>
+<p>{{ project?.description | translate }}</p>
 <p>{{ project?.implDetails }}</p>
 <p>{{ project?.duration }}</p>
 <img src="{{project?.url}}" alt="" srcset="">

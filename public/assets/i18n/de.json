@@ -8,13 +8,13 @@
 
     "hero":{
         "touch":"Schreib mir",
-        "greetingDefault": "Hallo Welt!",
+        "greetingDefault": "Hallo Welt",
         "greetingActive": "Ich bin {{name}}"
     },
     "about":{
         "who":"WER IST ALEX?",
         "about":"Mehr über mich",
-        "text": "<h3>Aus dem Handwerk in die Softwarewelt</h3><br>Code ist mehr als Werkzeug, er ist der Schlüssel, um Ideen grenzenlos umzusetzen.<br><br>Fokus auf Angular, TypeScript, JavaScript, SCSS und Firebase, kombiniert mit einem kompromisslosen Sinn für Präzision. Ob Layout oder Logik, jedes Detail zählt, jede Funktion muss sitzen.<br><br>4,5 Jahre Unternehmer und 18 Jahre Berufserfahrung insgesamt. Disziplin, Ausdauer und Verantwortungsbewusstsein fließen in jedes Projekt, egal ob allein oder im Team.<br><br> <b class='highlighted'>Mein Ziel:</b> Full-Stack-Entwickler mit Schwerpunkt Sicherheit, der moderne Weblösungen baut, die technisch überzeugen und nachhaltig beeindrucken.",
+        "text": "<h3>Aus dem Handwerk in die Softwarewelt</h3><br>Code ist mehr als Werkzeug, er ist der Schlüssel, um Ideen grenzenlos umzusetzen.<br><br>Fokus auf Angular, TypeScript, JavaScript, SCSS und Firebase, kombiniert mit einem kompromisslosen Sinn für Präzision. Ob Layout oder Logik, jedes Detail zählt, jede Funktion muss sitzen.<br><br>4,5 Jahre Unternehmer und 18 Jahre Berufserfahrung insgesamt. Disziplin, Ausdauer und Verantwortungsbewusstsein fließen in jedes Projekt, egal ob allein oder im Team.<br><br> <b class='highlighted'>Mein Ziel:</b> Fullstack Entwickler mit Schwerpunkt Sicherheit, der moderne Weblösungen baut, die technisch überzeugen und nachhaltig beeindrucken.",
         "based": "Wohnhaft in Paderborn",
         "location": "Bereit für einen Umzug",
         "remote": "Offen für Homeoffice",
@@ -30,6 +30,18 @@
     "projects":{
         "craft": "MEINE ARBEIT",
         "title": "Projekte",
-        "text": "Aus über zwölf Projekten wurden hier die überzeugendsten ausgewählt. Jedes ist voll funktionsfähig und kann geprüft werden. Neben sauberem, wartbarem Code lag der Fokus auf präziser Umsetzung und feinen Details. Rückmeldungen sind willkommen."
+        "text": "Aus über zwölf Projekten habe ich hier die überzeugendsten ausgewählt. Jedes ist voll funktionsfähig und kann geprüft werden. Neben sauberem, wartbarem Code lag der Fokus auf präziser Umsetzung und feinen Details. Rückmeldungen sind willkommen."
+    },
+    "join":{
+        "description": "Aufgabenmanager inspiriert vom Kanban-System, erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen und weisen Sie Benutzer sowie Kategorien zu.",
+        "implDetails": ""
+    },
+    "alien":{
+        "description": "hallo das ist Alien in deutsch",
+        "implDetails": ""
+    },
+    "pokedex":{
+        "description": "jojojojoj Pokedex in German",
+        "implDetails": ""
     }
 }
