@@ -26,7 +26,10 @@
         "set": "Skill set",
         "sticker": "Hier <br> Abziehen",
         "interested": "Außerdem interessiere ich mich für:"
+    },
+    "projects":{
+        "craft": "MEINE ARBEIT",
+        "title": "Projekte",
+        "text": "Aus über zwölf Projekten wurden hier die überzeugendsten ausgewählt. Jedes ist voll funktionsfähig und kann geprüft werden. Neben sauberem, wartbarem Code lag der Fokus auf präziser Umsetzung und feinen Details. Rückmeldungen sind willkommen."
     }
-
-    
 }

@@ -3,12 +3,11 @@
         <div class="content">
             <div class="projects">
                 <div class="projects-header">
-                    <div><span>MY CRAFT</span>
-                        <h1 class="section-title">Projects</h1>
+                    <div><span>{{ 'projects.craft' | translate }}</span>
+                        <h1 class="section-title">{{ 'projects.title' | translate }}</h1>
                     </div>
                     <p>
-                        Encourage people to take a look and interact with your projects.
-                        Highlight your approach to creating responsive, user-friendly projects with efficient code.
+                        {{ 'projects.text' | translate }}
                     </p>
                 </div>
                 @for (project of projects; track $index) {

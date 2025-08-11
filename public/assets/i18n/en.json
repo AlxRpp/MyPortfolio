@@ -26,5 +26,10 @@
         "set": "Skill set",
         "sticker": "Pull to <br> Peel",
         "interested": "Also, im interested in divig into:"
+    },
+    "projects":{
+        "craft": "MY CRAFT",
+        "title": "Projects",
+        "text": "From more than twelve projects, only the most compelling have been selected. Each is fully functional and open for review. Alongside clean, maintainable code, the focus was on precise execution and refined details. Feedback is welcome."
     }
 }

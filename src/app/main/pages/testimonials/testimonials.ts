@@ -20,8 +20,8 @@ export class Testimonials {
     },
     {
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minus ad possimus delectusdignissimos atque voluptatum ipsum libero aliquid.Minima neque iusto nostrum unde a? Vero voluptatibus possimus natus nostrum.',
-      name: 'Karina Ruppel',
-      role: 'Ehefrau',
+      name: 'Oliver Jung ',
+      role: 'Fullstack Developer',
       url: 'https://quickref.me/index.html'
     }, {
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minus ad possimus delectusdignissimos atque voluptatum ipsum libero aliquid.Minima neque iusto nostrum unde a? Vero voluptatibus possimus natus nostrum.',
