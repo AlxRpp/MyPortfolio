@@ -38,5 +38,21 @@ export class SingleProject {
     this.router.navigate(['/projects', prev])
   }
 
+  goToGit() {
+    switch (true) {
+      case this.slug === "join":
+        window.open('https://github.com/AlxRpp/JOIN-427', '_blank')
+        break;
+      case this.slug === "alien-adventure":
+        window.open('https://github.com/AlxRpp/AlienAdventure', '_blank')
+        break;
+      case this.slug === "pokedex":
+        window.open('https://github.com/AlxRpp/PokeDex', '_blank')
+        break;
+      default:
+        window.open('https://github.com/AlxRpp', '_blank')
+        break;
+    }
+  }
 
 }
