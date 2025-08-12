@@ -23,7 +23,7 @@ export class Header {
 
   @HostListener('window:resize')
   onResize() {
-    if (window.innerWidth > 720) {
+    if (window.innerWidth > 800) {
       this.closeBurgerMenu()
     }
   }

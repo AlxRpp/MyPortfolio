@@ -15,6 +15,7 @@
     color: white;
     text-decoration: none;
     position: relative;
+    mix-blend-mode: difference;
 
     &::after {
         content: "";
@@ -41,6 +42,7 @@
     color: white;
     text-decoration: none;
     position: relative;
+    mix-blend-mode: difference;
 
     &::after {
         content: "";
@@ -72,6 +74,7 @@
     color: white;
     text-decoration: none;
     position: relative;
+    mix-blend-mode: difference;
 
     &::after {
         content: "";
@@ -97,6 +100,7 @@
     color: white;
     text-decoration: none;
     position: relative;
+    mix-blend-mode: difference;
 
     &::after {
         content: "";
@@ -203,13 +207,13 @@ button {
 }
 
 
-@media(min-width: 721px) {
+@media(min-width: 801px) {
     .burger {
         display: none;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     .about-me {
         display: none;
     }

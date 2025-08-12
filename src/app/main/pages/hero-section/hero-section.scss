@@ -206,14 +206,14 @@
     }
 }
 
-@media (min-width:721px) {
+@media (min-width:801px) {
     .hero-mobile-img {
         display: none;
     }
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     .hero {
         >.hero-dev {
             text-align: start;
