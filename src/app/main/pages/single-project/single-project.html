@@ -1,7 +1,7 @@
 <div class="single-project">
     <div class="more-pad">
         <app-header></app-header>
-        <div class="max-content">
+        <div class="project-wrapper">
             <div class="back-arrow">
                 <button [routerLink]="'/'" fragment="projects"><img
                         src="./assets/icons/Hand-drawn_lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 3.png" alt=""
@@ -16,7 +16,6 @@
                     <div class="project-textfield-wrapper">
                         <h2>{{ 'single-project.description' | translate}}</h2>
                         <p>{{ project?.description | translate }}</p>
-
                     </div>
 
                     <div class="project-textfield-wrapper">
@@ -39,34 +38,35 @@
                         </div>
                         }
                     </div>
-
                 </div>
+
                 <div class="project-imagefield">
+                    <div class="project-imagefield-empty"></div>
                     <img src="{{project?.detailImg}}" alt="" srcset="">
+                    @if (project?.featured) {
+                    <div class="project-imagefield-sticker">
+                        <img src="./assets/icons/Stickers/Round/B.png" alt="" srcset="">
+                    </div>
+                    }
+                    @if (!project?.featured){
+                    <div class="project-imagefield-sticker">
+                        <img src="./assets/icons/Stickers/Round/A.png" alt="" srcset="">
+                    </div>
+                    }
                     <div class="project-imagefield-buttons">
                         <app-button (click)="goToGit()" class="BTN-Width" value="GitHub"></app-button>
                         <app-button class="BTN-Width" value="Live Test"></app-button>
-
                     </div>
                 </div>
+
+            </div>
+            <div class="nextArrow">
+                <button (click)="next()">
+                    {{ 'single-project.next' | translate }}
+                    <img src="./assets/icons/Hand-drawn_lines/03_Portfolio/Breadcrumbs/Next project arrow 3.png" alt=""
+                        srcset="">
+                </button>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button (click)="prev()">zurück</button>
-<button (click)="next()">weiter</button>

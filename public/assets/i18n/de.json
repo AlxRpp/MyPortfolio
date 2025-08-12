@@ -34,7 +34,7 @@
     },
     "join":{
         "description": "Aufgabenmanager inspiriert vom Kanban-System, erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen und weisen Sie Benutzer sowie Kategorien zu.",
-        "implDetails": "Gruppen Arbeit"
+        "implDetails": "Dieses Projekt wurde in einer Gruppe mit insgesamt 3 Personen umgesetzt. Unsere Herausforderung war es dabei nach dem SCRUM-Prinzip unsere Aufgaben selbst zu Organiesieren."
     },
     "alien":{
         "description": "hallo das ist Alien in deutsch",
@@ -49,6 +49,8 @@
         "details":"Technische Umsetzung",
         "duration":"Umsetzungdauer:",
         "weeks":"Wochen",
-        "back":"Zurück"
+        "back":"Zurück",
+        "next": "Nächste Projekt"
+
     }
 }

@@ -49,7 +49,7 @@ export class ProjectsData {
       description: 'alien.description',
       implDetails: 'alien.implDetails',
       url: './assets/images/projects/alienAdventure.png',
-      detailImg: './assets/images/projects/join-detailed.png',
+      detailImg: './assets/images/projects/alienAdventure.png',
       featured: false,
       duration: 6,
       technology: [{
@@ -75,7 +75,7 @@ export class ProjectsData {
       description: 'pokedex.description',
       implDetails: 'pokedex.implDetails',
       url: './assets/images/projects/pokedex.png',
-      detailImg: './assets/images/projects/join-detailed.png',
+      detailImg: './assets/images/projects/pokedex.png',
       featured: false,
       duration: 4,
       technology: [{

@@ -49,7 +49,8 @@
         "details":"Implementation Details",
         "duration":"Duration:",
         "weeks":"weeks",
-        "back":"Go Back"
+        "back":"Go Back",
+        "next": "Next Project"
     }
 }
 
