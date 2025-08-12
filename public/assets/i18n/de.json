@@ -34,14 +34,21 @@
     },
     "join":{
         "description": "Aufgabenmanager inspiriert vom Kanban-System, erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen und weisen Sie Benutzer sowie Kategorien zu.",
-        "implDetails": ""
+        "implDetails": "Gruppen Arbeit"
     },
     "alien":{
         "description": "hallo das ist Alien in deutsch",
-        "implDetails": ""
+        "implDetails": "hier ging es um objektorientiert Programmierung"
     },
     "pokedex":{
         "description": "jojojojoj Pokedex in German",
-        "implDetails": ""
+        "implDetails": "hier ging es API´s in der App"
+    },
+    "single-project":{
+        "description": "Beschreibung",
+        "details":"Technische Umsetzung",
+        "duration":"Umsetzungdauer:",
+        "weeks":"Wochen",
+        "back":"Zurück"
     }
 }

@@ -1,7 +1,44 @@
 <div class="single-project">
-    <app-header></app-header>
+    <div class="more-pad">
+        <app-header></app-header>
+        <div class="max-content">
+            <div class="back-arrow">
+                <button [routerLink]="'/'" fragment="projects"><img
+                        src="./assets/icons/Hand-drawn_lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 3.png" alt=""
+                        srcset="">
+                    {{ 'single-project.back' | translate }}
+                </button>
+            </div>
+            <div class="project">
+                <div class="project-textfield">
+                    <h1>{{ project?.title }}</h1>
 
-    <div class="max-content">
+                    <div class="project-textfield-wrapper">
+                        <h2>{{ 'single-project.description' | translate}}</h2>
+                        <p>{{ project?.description | translate }}</p>
+
+                    </div>
+
+                    <div class="project-textfield-wrapper">
+                        <h2>{{ 'single-project.details' | translate }}</h2>
+                        <p>{{ project?.implDetails | translate }}</p>
+                    </div>
+
+                    <div class="project-textfield-wrapper-duration">
+                        <h2>{{ 'single-project.duration' | translate }} </h2>
+                        <div>
+                            <p>{{ project?.duration }}</p>
+                            <p>{{ 'single-project.weeks' | translate }}</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-image">
+                    <img src="{{project?.url}}" alt="" srcset="">
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -19,12 +56,5 @@
 
 
 
-<!-- <h1>{{ project?.title }}</h1>
 <button (click)="prev()">zurück</button>
 <button (click)="next()">weiter</button>
-<button [routerLink]="'/'" fragment="projects">home</button>
-
-<p>{{ project?.description | translate }}</p>
-<p>{{ project?.implDetails }}</p>
-<p>{{ project?.duration }}</p>
-<img src="{{project?.url}}" alt="" srcset=""> -->

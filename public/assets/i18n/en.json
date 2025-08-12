@@ -34,15 +34,22 @@
     },
     "join":{
         "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "implDetails": ""
+        "implDetails": "Group Project"
     },
     "alien":{
         "description": "hallo das ist Alien in Enenenenenenneglishshshshsh ",
-        "implDetails": ""
+        "implDetails": "ist was OOP this Case"
     },
     "pokedex":{
         "description": "lalalal Pokedex in englishHHHHHHHH",
-        "implDetails": ""
+        "implDetails": "worked first time with API´s"
+    },
+    "single-project":{
+        "description": "Description",
+        "details":"Implementation Details",
+        "duration":"Duration:",
+        "weeks":"weeks",
+        "back":"Go Back"
     }
 }
 

@@ -1,3 +1,8 @@
+.more-pad {
+    padding: 0 62px;
+}
+
+
 .single-project {
     background-color: #0E161F;
     height: 100dvh;
@@ -7,7 +12,70 @@
 }
 
 
+.back-arrow {
+    margin: 62px 0;
 
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: primaryFont;
+
+        >img {
+            width: 24px;
+        }
+
+        &:hover {
+            color: #1073EA;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.project {
+    display: flex;
+    padding: 0 32px;
+
+    &-textfield {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h1 {
+            font-size: 64px;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-weight: 300;
+            }
+
+            &-duration {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                >div {
+                    font-weight: 300;
+                    display: flex;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}
 
 
 
