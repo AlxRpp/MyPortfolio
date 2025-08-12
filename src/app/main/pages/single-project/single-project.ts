@@ -5,10 +5,11 @@ import { ProjectsData } from '../../shared/service/projectsData';
 import { Project } from '../../shared/interfaces/project.interface';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { Header } from '../../shared/header/header';
+import { Button } from '../../shared/button/button';
 
 @Component({
   selector: 'app-single-project',
-  imports: [CommonModule, RouterLink, TranslatePipe, TranslateDirective, Header],
+  imports: [CommonModule, RouterLink, TranslatePipe, TranslateDirective, Header, Button],
   templateUrl: './single-project.html',
   styleUrl: './single-project.scss'
 })

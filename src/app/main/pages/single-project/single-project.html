@@ -31,11 +31,23 @@
                             <p>{{ 'single-project.weeks' | translate }}</p>
                         </div>
                     </div>
+                    <div class="project-textfield-technologys">
+                        @for(item of project?.technology; track $index){
+                        <div class="project-textfield-technologys-technology">
+                            <img src="{{ item.src }}" alt="" srcset="">
+                            <p>{{ item.name }}</p>
+                        </div>
+                        }
+                    </div>
 
                 </div>
-                <div class="project-image">
-                    <img src="{{project?.url}}" alt="" srcset="">
+                <div class="project-imagefield">
+                    <img src="{{project?.detailImg}}" alt="" srcset="">
+                    <div class="project-imagefield-buttons">
+                        <app-button class="BTN-Width" value="GitHub"></app-button>
+                        <app-button class="BTN-Width" value="Live Test"></app-button>
 
+                    </div>
                 </div>
             </div>
         </div>

@@ -39,11 +39,17 @@
 .project {
     display: flex;
     padding: 0 32px;
+    gap: 48px;
+    outline: 1px solid salmon;
+
 
     &-textfield {
         display: flex;
         flex-direction: column;
         gap: 24px;
+        outline: 1px solid olive;
+        max-width: 50%;
+        justify-content: space-between;
 
         h1 {
             font-size: 64px;
@@ -74,9 +80,51 @@
                 }
             }
         }
+
+        &-technologys {
+            display: flex;
+            gap: 12px;
+
+            &-technology {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-weight: 300;
+
+                >img {
+                    width: 32px;
+                }
+            }
+
+
+        }
+    }
+
+    &-imagefield {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        justify-content: space-between;
+        outline: 1px solid red;
+
+        >img {
+            width: 100%;
+        }
+
+        &-buttons {
+            display: flex;
+            justify-content: end;
+            gap: 48px;
+
+        }
     }
 }
 
+
+.BTN-Width {
+    width: 150px;
+}
 
 
 @media(max-width:800px) {
