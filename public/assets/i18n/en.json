@@ -57,6 +57,10 @@
     },
     "legal":{
         "html": "<h1>Legal notice</h1><br><br><p>Alexander Ruppel<br />Nieh&ouml;rsterstr. 13<br />3104 Paderborn</p><br><br><h2>Contact</h2><p>Phone: 017622393181<br />E-mail: a.ruppel1@icloud.com</p><br><br><p>Source: <a class='link' href='https://www.e-recht24.de/impressum-generator.html'>https://www.e-recht24.de/impressum-generator.html</a></p>"
+    },
+    "testimonials":{
+        "words": "IN THEIR WORDS",
+        "colleagues": "Colleagues Thoughts"
     }
 }
 
