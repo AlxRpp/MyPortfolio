@@ -60,13 +60,23 @@
                 </div>
 
             </div>
-            <div class="nextArrow">
-                <button (click)="next()">
-                    {{ 'single-project.next' | translate }}
-                    <img src="./assets/icons/Hand-drawn_lines/03_Portfolio/Breadcrumbs/Next project arrow 3.png" alt=""
-                        srcset="">
-                </button>
+            <div class="buttons">
+                <div class="back-arrow-mobile">
+                    <button [routerLink]="'/'" fragment="projects"><img
+                            src="./assets/icons/Hand-drawn_lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 3.png" alt=""
+                            srcset="">
+                        {{ 'single-project.back' | translate }}
+                    </button>
+                </div>
+                <div class="next-arrow">
+                    <button (click)="next()">
+                        {{ 'single-project.next' | translate }}
+                        <img src="./assets/icons/Hand-drawn_lines/03_Portfolio/Breadcrumbs/Next project arrow 3.png"
+                            alt="" srcset="">
+                    </button>
+                </div>
             </div>
+
         </div>
     </div>
 </div>

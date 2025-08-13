@@ -69,6 +69,7 @@
         justify-content: space-between;
 
         h1 {
+            // font-size: clamp(44px, 100%, 64px);
             font-size: 64px;
             position: relative;
             width: min-content;
@@ -126,6 +127,11 @@
                 gap: 4px;
                 font-weight: 300;
 
+                p {
+                    color: white;
+                    mix-blend-mode: difference;
+                }
+
                 >img {
                     width: 32px;
                 }
@@ -178,11 +184,11 @@
 
 
 .BTN-Width {
-    width: 150px;
+    width: clamp(100px, 100%, 150px);
     mix-blend-mode: difference;
 }
 
-.nextArrow {
+.next-arrow {
     // margin: 62px 0;
     margin-bottom: 62px;
     display: flex;
@@ -211,8 +217,27 @@
     }
 }
 
-@media(max-width:800px) {
-    .single-project {
-        background-image: url('../../../../../public/assets/images/notebook_paper_rotated.png');
+.back-arrow-mobile {
+    // margin: 62px 0;
+    // margin-top: 62px;
+
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: primaryFont;
+        color: white;
+
+        >img {
+            width: 24px;
+        }
+
+        &:hover {
+            color: #1073EA;
+            cursor: pointer;
+        }
     }
 }

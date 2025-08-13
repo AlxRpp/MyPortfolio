@@ -1,0 +1,123 @@
+@media(min-width:1000px) {
+    .back-arrow-mobile {
+        display: none;
+    }
+}
+
+@media(max-width:1000px) {
+    .more-pad {
+        padding: 0;
+    }
+
+    .single-project {
+        background-image: url('../../../../../public/assets/images/notebook_paper_rotated.png');
+        height: 100ch;
+    }
+
+    .back-arrow-mobile {
+        display: block;
+    }
+
+    .back-arrow {
+        display: none;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 48px 0;
+
+        &-textfield {
+            width: 100%;
+            justify-content: center;
+
+            h1 {
+                // text-wrap: wrap;
+                font-size: 58px;
+            }
+
+            &-wrapper {
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-weight: 300;
+                    max-width: unset;
+                }
+            }
+        }
+
+        &-imagefield {
+            max-width: clamp(280px, 100%, 600px);
+            justify-content: center;
+            align-self: center;
+
+            >img {
+                width: 100%;
+            }
+
+            &-empty {
+                display: none;
+            }
+
+            &-sticker {
+                display: none;
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 48px;
+
+        .next-arrow {
+            margin: 0;
+        }
+    }
+}
+
+@media(max-width:800px) {
+
+    .project-wrapper {
+        padding: 0 12px;
+    }
+
+
+    .project {
+        padding: 24px 0;
+
+        &-textfield {
+            width: 100%;
+            justify-content: center;
+
+            h1 {
+                // text-wrap: auto;
+                font-size: 48px;
+            }
+
+            &-wrapper {
+                h2 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-weight: 300;
+                    max-width: unset;
+                }
+            }
+        }
+    }
+
+    .buttons {
+        padding-bottom: 24px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .single-project {
+        height: 100dvh;
+    }
+}

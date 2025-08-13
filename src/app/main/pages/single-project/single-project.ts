@@ -11,7 +11,10 @@ import { Button } from '../../shared/button/button';
   selector: 'app-single-project',
   imports: [CommonModule, RouterLink, TranslatePipe, TranslateDirective, Header, Button],
   templateUrl: './single-project.html',
-  styleUrl: './single-project.scss'
+  styleUrls: [
+    './single-project.scss',
+    'single-project-mediaQuerrys.scss'
+  ]
 })
 export class SingleProject {
 

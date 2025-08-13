@@ -125,6 +125,7 @@
 .english {
     position: relative;
     cursor: pointer;
+    mix-blend-mode: difference;
 
     &::after {
         content: "";
@@ -148,6 +149,7 @@
 .german {
     position: relative;
     cursor: pointer;
+    mix-blend-mode: difference;
 
     &::after {
         content: "";
