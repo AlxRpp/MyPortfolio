@@ -6,10 +6,8 @@
     left: 0;
     right: 0;
     background-position: bottom;
-    z-index: 0;
+    z-index: 2;
 }
-
-
 
 
 .policy {
@@ -38,6 +36,10 @@
     overflow-y: scroll;
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -89,5 +91,25 @@ app-footer {
 @media(max-width:800px) {
     .content {
         padding: 0 12px;
+    }
+}
+
+@media(max-width:600px) {
+    .content {
+        bottom: 180px;
+    }
+
+    .footer {
+        height: 180px;
+    }
+}
+
+@media(max-width:400px) {
+    .content {
+        bottom: 160px;
+    }
+
+    .footer {
+        height: 160px;
     }
 }

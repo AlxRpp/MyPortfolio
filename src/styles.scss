@@ -99,3 +99,14 @@ body {
 .highlighted {
     font-weight: 600;
 }
+
+.link {
+    color: #1073EA;
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        color: #24DD80;
+    }
+}
