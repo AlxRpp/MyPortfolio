@@ -11,7 +11,7 @@
 
     .single-project {
         background-image: url('../../../../../public/assets/images/notebook_paper_rotated.png');
-        height: 100ch;
+        height: min-content;
     }
 
     .back-arrow-mobile {
@@ -116,7 +116,7 @@
 
 }
 
-@media(max-width:500px) {
+@media(max-width:440px) {
     .single-project {
         height: 100dvh;
     }
