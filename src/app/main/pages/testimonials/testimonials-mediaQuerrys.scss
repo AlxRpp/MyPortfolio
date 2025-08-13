@@ -90,7 +90,7 @@
 @media(max-width:400px) {
     .testimonials {
         &-card {
-            width: clamp(300px, 100%, 384px);
+            width: clamp(280px, 100%, 384px);
             padding: 12px;
 
             &-content {
@@ -131,7 +131,7 @@
 @media(max-width:400px) {
     .testimonials {
         &-card-content {
-            font-size: 14px;
+            font-size: 13px;
         }
     }
 }

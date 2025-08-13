@@ -94,6 +94,10 @@ footer {
     animation: roll-out .5s ease-in-out forwards;
 }
 
+.zeroPad {
+    padding: 0;
+}
+
 @keyframes roll-in {
     0% {
         opacity: 0;
@@ -158,6 +162,28 @@ footer {
         // padding: 24px 0;
         padding-top: 32px;
         padding-bottom: 16px;
+
+        &-name {
+            font-weight: 300;
+            text-align: end;
+        }
+    }
+}
+
+
+@media(max-width:600px) {
+    footer {
+        padding-bottom: 12px;
+    }
+
+    .wrapper {
+        padding: 12px 18px;
+    }
+
+    .legal-wrapper-mobile {
+        // padding: 24px 0;
+        // padding-top: 32px;
+        padding-bottom: 24px;
 
         &-name {
             font-weight: 300;

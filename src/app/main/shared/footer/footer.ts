@@ -1,13 +1,15 @@
-import { Component, ElementRef, viewChild } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, input, viewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './footer.html',
   styleUrl: './footer.scss'
 })
 export class Footer {
+  class = input<string>("");
 
   constructor(private router: Router) { }
 

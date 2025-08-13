@@ -27,7 +27,6 @@
                 <div class="collaborate-form-sticker">
                     <img src="./assets/icons/Stickers/Round/C.png" alt="" srcset="">
                 </div>
-                <!-- <div class="divider"></div> -->
                 <form (ngSubmit)="submitForm(contactForm, name, mail, message, autoTA)" #contactForm="ngForm">
                     <div class="collaborate-form-custom-input">
                         <p #inputName class="custom-input-lable">What´s your name?</p>
@@ -84,6 +83,6 @@
                 </form>
             </div>
         </div>
-        <app-footer></app-footer>
+        <app-footer class="zeroPad"></app-footer>
     </div>
 </div>
