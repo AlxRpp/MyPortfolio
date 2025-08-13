@@ -1,34 +1,37 @@
-<div class="legal-wrapper-mobile">
-    <div class="legal-wrapper-mobile-icon">
-        <img src="./assets/icons/testLogo.png" alt="" srcset="">
-    </div>
-    <div class="legal-wrapper-mobile-name">
-        <p> © Alexander Ruppel 2025</p>
-        <p (click)="navigateToLegal()" class="legal-wrapper-mobile-icon-legal">Legal Notice</p>
-    </div>
-</div>
-<footer>
-    <div class="legal-wrapper">
-        <div class="legal-wrapper-icon">
+<div class="max-content">
+    <div class="legal-wrapper-mobile">
+        <div class="legal-wrapper-mobile-icon">
             <img src="./assets/icons/testLogo.png" alt="" srcset="">
-            <p> © Alexander Ruppel 2025</p>
         </div>
-        <p (click)="navigateToLegal()" class="legal-wrapper-icon-legal">Legal Notice</p>
+        <div class="legal-wrapper-mobile-name">
+            <p> © Alexander Ruppel 2025</p>
+            <p (click)="navigateToLegal()" class="legal-wrapper-mobile-icon-legal">Legal Notice</p>
+        </div>
     </div>
+    <footer>
+        <div class="legal-wrapper">
+            <div class="legal-wrapper-icon">
+                <img src="./assets/icons/testLogo.png" alt="" srcset="">
+                <p> © Alexander Ruppel 2025</p>
+            </div>
+            <p (click)="navigateToLegal()" class="legal-wrapper-icon-legal">Legal Notice</p>
+        </div>
 
-    <div (click)="openLink('https://github.com/AlxRpp')" (mouseenter)="toggleAnimation(git, 'in')"
-        (mouseleave)="toggleAnimation(git, 'out')" class="wrapper">
-        <img #git class="showIcon" src="./assets/icons/social/Github.png" alt="" srcset="">
-        <p>GitHub</p>
-    </div>
-    <div (click)="openLink('https://www.linkedin.com/in/alexander-ruppel-450706375/')"
-        (mouseenter)="toggleAnimation(linkedIn, 'in')" (mouseleave)="toggleAnimation(linkedIn, 'out')" class="wrapper">
-        <img #linkedIn class="showIcon" src="./assets/icons/social/linkedIn.png" alt="" srcset="">
-        <p>LinkedIn</p>
-    </div>
-    <div (click)="openLink('mailto:a.ruppel1@icloud@com')" (mouseenter)="toggleAnimation(mail, 'in')"
-        (mouseleave)="toggleAnimation(mail, 'out')" class="wrapper">
-        <img #mail class="showIcon" src="./assets/icons/social/mail.png" alt="" srcset="">
-        <p>Email</p>
-    </div>
-</footer>
+        <div (click)="openLink('https://github.com/AlxRpp')" (mouseenter)="toggleAnimation(git, 'in')"
+            (mouseleave)="toggleAnimation(git, 'out')" class="wrapper">
+            <img #git class="showIcon" src="./assets/icons/social/Github.png" alt="" srcset="">
+            <p>GitHub</p>
+        </div>
+        <div (click)="openLink('https://www.linkedin.com/in/alexander-ruppel-450706375/')"
+            (mouseenter)="toggleAnimation(linkedIn, 'in')" (mouseleave)="toggleAnimation(linkedIn, 'out')"
+            class="wrapper">
+            <img #linkedIn class="showIcon" src="./assets/icons/social/linkedIn.png" alt="" srcset="">
+            <p>LinkedIn</p>
+        </div>
+        <div (click)="openLink('mailto:a.ruppel1@icloud@com')" (mouseenter)="toggleAnimation(mail, 'in')"
+            (mouseleave)="toggleAnimation(mail, 'out')" class="wrapper">
+            <img #mail class="showIcon" src="./assets/icons/social/mail.png" alt="" srcset="">
+            <p>Email</p>
+        </div>
+    </footer>
+</div>
