@@ -11,6 +11,8 @@
     background-image: url('../../../../../public/assets/images/notebook_paper.png');
     background-repeat: no-repeat;
     background-size: cover;
+    // background-size: auto 100%;
+    // background-position: right 50% center;
 }
 
 .project-wrapper {
@@ -68,6 +70,22 @@
 
         h1 {
             font-size: 64px;
+            position: relative;
+            width: min-content;
+            text-wrap: nowrap;
+
+            &::after {
+                content: "";
+                background-image: url('../../../../../public/assets/icons/Hand-drawn_lines/01_AboutMe/ColorOption-3.png');
+                position: absolute;
+                bottom: -18px;
+                left: 0;
+                right: 0;
+                height: 32px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                animation: leftToRight 6s ease-in-out infinite;
+            }
         }
 
         &-wrapper {
