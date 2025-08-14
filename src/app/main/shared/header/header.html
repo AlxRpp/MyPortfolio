@@ -1,6 +1,6 @@
 <div class="max-content">
     <div class="navbar">
-        <img src="./assets/icons/icon.png" alt="" srcset="">
+        <img [routerLink]="'/'" src="./assets/icons/icon.png" alt="" srcset="">
         <a class="about-me" routerLink="/" fragment="about">{{ 'header.about' | translate }}</a>
         <a class="skills" [class.overwrite]="isGerman()" routerLink="/" fragment="skills">{{ 'header.skills' |
             translate }}</a>
@@ -21,7 +21,7 @@
     </div>
     <div class="mobileNav" #mobileNav>
         <div class="mobileNavbar-header">
-            <img src="./assets/icons/testLogo.png" alt="" srcset="">
+            <img class="mobile-icon" [routerLink]="'/'" src="./assets/icons/icon.png" alt="" srcset="">
             <img (click)="toggleBurgerMenu()" src="./assets/icons/Hand-drawn_lines/00_Header/MobileIcon/close.png"
                 alt="" srcset="">
         </div>
