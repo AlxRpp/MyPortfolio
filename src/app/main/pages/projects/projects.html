@@ -6,14 +6,12 @@
                     <div><span>{{ 'projects.craft' | translate }}</span>
                         <h1 class="section-title">{{ 'projects.title' | translate }}</h1>
                     </div>
-                    <p>
-                        {{ 'projects.text' | translate }}
-                    </p>
+                    <p> {{ 'projects.text' | translate }}</p>
                 </div>
                 @for (project of projects; track $index) {
                 <div class="single-project">
                     <div [routerLink]="['/projects', project.slug]" class="single-project-image">
-                        <img src="{{ project.url }}" alt="" srcset="">
+                        <img class="animated{{$index}}" src="{{ project.url }}" alt="" srcset="">
                         @if (project.featured) {
                         <div class="single-project-sticker">
                             <img src="./assets/icons/Stickers/Round/B.png" alt="" srcset="">
