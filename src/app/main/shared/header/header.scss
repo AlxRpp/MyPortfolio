@@ -1,11 +1,16 @@
 .navbar {
-    padding-top: 32px;
+    // padding-top: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    >img {
+        width: 84px;
+    }
+
     >.burger {
         height: 32px;
+        width: 42px;
         cursor: pointer;
     }
 }
@@ -236,9 +241,9 @@ button {
         display: none;
     }
 
-    .navbar {
-        padding-top: 12px;
-    }
+    // .navbar {
+    //     padding-top: 12px;
+    // }
 
 }
 
