@@ -33,16 +33,16 @@
         "text": "Aus über zwölf Projekten habe ich hier die überzeugendsten ausgewählt. Jedes ist voll funktionsfähig und kann geprüft werden. Neben sauberem, wartbarem Code lag der Fokus auf präziser Umsetzung und feinen Details. Rückmeldungen sind willkommen."
     },
     "join":{
-        "description": "Aufgabenmanager inspiriert vom Kanban-System, erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen und weisen Sie Benutzer sowie Kategorien zu.",
-        "implDetails": "Dieses Projekt wurde in einer Gruppe mit insgesamt 3 Personen umgesetzt. Unsere Herausforderung war es dabei nach dem SCRUM-Prinzip unsere Aufgaben selbst zu Organiesieren."
+        "description": "In dieser Business-App erstellst du Kontakte, legst Aufgaben an, weist sie zu und behältst dank eines interaktiven Kanban-Boards jederzeit den Überblick. Verschiebe deine To-Dos per Drag & Drop zwischen den Spalten, bearbeite sie bei Bedarf und passe deinen Workflow flexibel an. Nach dem Login bekommst du eine klare Zusammenfassung, wo deine Aufgaben stehen, perfekt, um sofort durchzustarten und Projekte effizient zu steuern.",
+        "implDetails": "Join entstand in einem dreiköpfigen Team und war unser erstes gemeinsames Projekt, das wir komplett über Git organisiert haben. Diese Arbeitsweise hat uns einen praxisnahen Einblick in professionelle Softwareentwicklung gegeben. Für die Datenhaltung kommt eine Firebase Realtime Database zum Einsatz, die es ermöglicht, Aufgaben und Kontakte geräteübergreifend in Echtzeit zu verwalten. Das Projekt hat uns gezeigt, wie wichtig eine gute Teamdynamik für die Umsetzung komplexer Anwendungen ist."
     },
     "alien":{
-        "description": "hallo das ist Alien in deutsch",
-        "implDetails": "hier ging es um objektorientiert Programmierung"
+        "description": "Alien Adventure ist ein farbenfrohes 2D-Jump’n’Run für den Browser. Du steuerst ein kleines Alien, das flink durch die Level läuft, über Gegner springt und sie mit geworfenen Flaschen ausschaltet. Mit einfacher Steuerung und flüssigem Gameplay eignet sich das Spiel perfekt für kurze Pausen oder ein paar schnelle Runden zwischendurch.",
+        "implDetails": "Bei der Umsetzung wurde objektorientierte Programmierung in JavaScript eingesetzt, um bewegliche Objekte, zeichnerische Objekte, Level und Audio klar voneinander zu trennen. Die größte Herausforderung lag darin, flüssige Animationen zu gewährleisten und gleichzeitig alle zeitgesteuerten Abläufe wie Intervalle und Timeouts im Blick zu behalten. Jede Bewegung und jeder Ablauf wurden so entkoppelt, dass sie sich nicht gegenseitig beeinflussen. Zusätzlich wurden passende Musik und Soundeffekte gezielt an bestimmte Spielereignisse gebunden. Diese Struktur hat nicht nur für sauberen Code gesorgt, sondern auch wertvolle Erfahrung im Zusammenspiel von Animation, Timing und Audio vermittelt."
     },
     "pokedex":{
-        "description": "jojojojoj Pokedex in German",
-        "implDetails": "hier ging es API´s in der App"
+        "description": "Mit diesem Pokédex kannst du durch eine ständig wachsende Liste von Pokémon scrollen, ihre Typen und Werte entdecken und dir jedes Detail in einem ansprechenden Kartenlayout ansehen. Speichere deine Favoriten ab und bestimme selbst, wie viele Pokémon du laden möchtest, natürlich bleiben deine Favoriten auch beim nächsten Aufruf erhalten.",
+        "implDetails": "Dieses Projekt war mein erster praktischer Einsatz einer API. Um direkt ein Gefühl für den Umgang mit großen Datensätzen zu bekommen, habe ich die PokeAPI genutzt. Anfangs war es schwierig, die Daten korrekt auszuwerten und zu strukturieren. Mit zunehmendem Verständnis hat es jedoch richtig Spaß gemacht, die gewünschten Informationen gezielt dort im Frontend einzubinden, wo sie benötigt werden."
     },
     "single-project":{
         "description": "Beschreibung",

@@ -33,16 +33,16 @@
         "text": "From over twelve projects, I've selected the most compelling ones here. Each is fully functional and ready to be tested. In addition to clean, maintainable code, the focus was on precise implementation and fine details. Feedback is welcome."
     },
     "join":{
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "implDetails": "Group Project"
+        "description": "In this business app, you can create contacts, add tasks, assign them, and always keep track thanks to an interactive Kanban board. Move your to-dos between columns via drag and drop, edit them when needed, and adapt your workflow flexibly. After logging in, you receive a clear summary of where your tasks stand, perfect for getting started right away and managing projects efficiently.",
+        "implDetails": "Join was created by a team of three and was our first collaborative project fully managed with Git. This workflow provided us with a hands-on insight into professional software development. The application uses a Firebase Realtime Database, allowing tasks and contacts to be managed in real time across devices. The project demonstrated just how crucial strong team dynamics are when building complex applications."
     },
     "alien":{
-        "description": "hallo das ist Alien in Enenenenenenneglishshshshsh ",
-        "implDetails": "ist was OOP this Case"
+        "description": "Alien Adventure is a colorful 2D side-scrolling platformer for the browser. You control a small alien that swiftly moves through each level, jumps over enemies, and takes them out by throwing bottles. With simple controls and smooth gameplay, the game is perfect for short breaks or a few quick rounds in between.",
+        "implDetails": "The project was implemented using object-oriented programming in JavaScript, separating moveable objects, drawable objects, levels, and audio into clearly defined components. The main challenge was to ensure smooth animations while keeping track of all time-based processes such as intervals and timeouts. Each movement and process was decoupled so they would not interfere with one another. In addition, fitting music and sound effects were tied directly to specific game events. This structure not only resulted in clean code but also provided valuable experience in coordinating animation, timing, and audio."
     },
     "pokedex":{
-        "description": "lalalal Pokedex in englishHHHHHHHH",
-        "implDetails": "worked first time with API´s"
+        "description": "With this Pokédex, you can scroll through an ever-growing list of Pokémon, explore their types and stats, and view every detail in an appealing card layout. Save your favorites and decide yourself how many Pokémon to load – and of course, your favorites will still be there the next time you visit.",
+        "implDetails": "This project was my first hands-on experience with an API. To quickly get a sense of working with large datasets, I used the PokeAPI. At first, it was challenging to parse and structure the data correctly. However, as my understanding grew, it became genuinely enjoyable to integrate the desired information exactly where it was needed in the frontend."
     },
     "single-project":{
         "description": "Description",
