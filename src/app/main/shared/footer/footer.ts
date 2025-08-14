@@ -1,14 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, input, viewChild } from '@angular/core';
+import { Component, ElementRef, inject, input, viewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateDirective, TranslatePipe],
   templateUrl: './footer.html',
   styleUrl: './footer.scss'
 })
 export class Footer {
+  private translate = inject(TranslateService)
+
   class = input<string>("");
 
   constructor(private router: Router) { }

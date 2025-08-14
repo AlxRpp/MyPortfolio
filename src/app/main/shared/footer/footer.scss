@@ -140,10 +140,15 @@ footer {
 
 
     &-name {
-
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        span {
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 }
 

@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { Footer } from "../../shared/footer/footer";
 import { Router } from '@angular/router';
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-collaborate',
-  imports: [Button, CommonModule, FormsModule, Footer],
+  imports: [Button, CommonModule, FormsModule, Footer, TranslateDirective, TranslatePipe],
   templateUrl: './collaborate.html',
   styleUrls: [
     './collaborate.scss',
@@ -17,6 +18,7 @@ import { Router } from '@angular/router';
 
 
 export class Collaborate {
+  private translate = { TranslateService }
   checked = signal<boolean>(false);
   clickedOnce = signal<boolean>(false);
   submittedOnce = signal<boolean>(false);

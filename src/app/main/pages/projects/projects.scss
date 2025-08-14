@@ -17,6 +17,7 @@
     justify-content: center;
     gap: 48px;
     width: clamp(350px, 100%, 700px);
+    margin: 0 auto;
 
     span {
         font-weight: 500;
@@ -58,6 +59,7 @@
     flex-direction: column;
     gap: 24px;
     width: clamp(350px, 100%, 700px);
+    margin: 0 auto;
 
 
     &-image {

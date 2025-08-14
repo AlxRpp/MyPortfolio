@@ -5,7 +5,8 @@
         </div>
         <div class="legal-wrapper-mobile-name">
             <p> © Alexander Ruppel 2025</p>
-            <p (click)="navigateToLegal()" class="legal-wrapper-mobile-icon-legal">Legal Notice</p>
+            <span (click)="navigateToLegal()" class="legal-wrapper-mobile-icon-legal">{{ 'footer.imprint' | translate }}
+            </span>
         </div>
     </div>
     <footer>
@@ -14,7 +15,7 @@
                 <img src="./assets/icons/testLogo.png" alt="" srcset="">
                 <p> © Alexander Ruppel 2025</p>
             </div>
-            <p (click)="navigateToLegal()" class="legal-wrapper-icon-legal">Legal Notice</p>
+            <p (click)="navigateToLegal()" class="legal-wrapper-icon-legal">{{ 'footer.imprint' | translate }}</p>
         </div>
 
         <div (click)="openLink('https://github.com/AlxRpp')" (mouseenter)="toggleAnimation(git, 'in')"

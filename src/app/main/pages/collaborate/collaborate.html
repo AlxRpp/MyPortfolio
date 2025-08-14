@@ -7,19 +7,10 @@
             <div class="collaborate-textfield">
                 <div class="collaborate-textfield-header">
                     <div class="collaborate-textfield-header-title">
-                        <span>CONTACT ME</span>
-                        <h1>Ready to work together?</h1>
+                        <span> {{ 'contact.me' | translate }}</span>
+                        <h1> {{ 'contact.headline' | translate }}</h1>
                     </div>
-                    <div class="collaborate-textfield-header-description">
-                        Encourage people to contact you and describe what role you are interested in. Express confidence
-                        in
-                        your ability to make
-                        a meaningful contribution to a team through your expertise and enthusiasm for improving your
-                        skills.
-                        <br>
-                        <br>
-                        Show interest in contributing to a new project, while
-                        highlighting the value and skills you can bring to the table.
+                    <div [innerHTML]="'contact.text' | translate" class="collaborate-textfield-header-description">
                     </div>
                 </div>
             </div>
@@ -29,35 +20,35 @@
                 </div>
                 <form (ngSubmit)="submitForm(contactForm, name, mail, message, autoTA)" #contactForm="ngForm">
                     <div class="collaborate-form-custom-input">
-                        <p #inputName class="custom-input-lable">What´s your name?</p>
+                        <p #inputName class="custom-input-lable">{{ 'contact.nameLabel' | translate }}</p>
                         <input #name="ngModel" required name="name" [(ngModel)]="formData.name" minlength="3"
-                            class="input" placeholder="Your name goes here" type="text"
+                            class="input" placeholder="{{ 'contact.namePlaceholder' | translate }}" type="text"
                             (focus)="focusedInput(inputName, name)" (blur)="bluredInput(inputName, name)">
                         @if (!name.valid && (name.touched || submittedOnce())) {
-                        <span class="unvalid">Oops! it seems your name is missing</span>
+                        <span class="unvalid">{{ 'contact.nameError' | translate }}</span>
                         }
                     </div>
                     <div class="collaborate-form-divider"></div>
                     <div class="collaborate-form-custom-input">
-                        <p #focusMail class="custom-input-lable">What´s your email?</p>
+                        <p #focusMail class="custom-input-lable">{{ 'contact.emailLabel' | translate }}</p>
                         <input #mail="ngModel" required name="mail" [(ngModel)]="formData.mail" class="input"
-                            placeholder="youremail@email.com" type="text"
+                            placeholder="{{ 'contact.emailPlaceholder' | translate }}" type="text"
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                             (focus)="focusedInput(focusMail, mail)" (blur)="bluredInput(focusMail, mail)">
                         @if (!mail.valid && (mail.touched || submittedOnce())) {
-                        <span class="unvalid">Hoppla! your email is required</span>
+                        <span class="unvalid">{{ 'contact.emailError' | translate }}</span>
                         }
                     </div>
                     <div class="collaborate-form-divider"></div>
                     <div class="collaborate-form-custom-input">
-                        <p #focusText class="custom-input-lable">How can i help you?</p>
+                        <p #focusText class="custom-input-lable">{{ 'contact.messageLabel' | translate }}</p>
                         <textarea #message="ngModel" minlength="50" required #autoTA (input)="adjustHeight(autoTA)"
                             name="message" [(ngModel)]="formData.message" class="input"
-                            placeholder="Hello Alex, I am interested in..." type="text"
+                            placeholder="{{ 'contact.messagePlaceholder' | translate }}" type="text"
                             (focus)="focusedInput(focusText, message)"
                             (blur)="bluredInput(focusText, message)"></textarea>
                         @if (!message.valid && (message.touched || submittedOnce())) {
-                        <span class="unvalid">What do you need to develop</span>
+                        <span class="unvalid">{{ 'contact.messageError' | translate }}</span>
                         }
                     </div>
                     <div class="collaborate-form-divider"></div>
@@ -66,17 +57,16 @@
                             <img [ngClass]="checked() ? 'dBlock' : 'dNone'"
                                 src="./assets/icons/Hand-drawn_lines/00_Header/Check.png" alt="">
                         </div>
-                        <p>I've read the <span (click)="navigateToPrivacy()" class="policy">privacy policy</span> and
-                            agree to
-                            the processing of my
-                            data as outlined.
+                        <p> {{ 'contact.privacyText_prefix' | translate }} <span (click)="navigateToPrivacy()"
+                                class="policy">{{ 'contact.privacyLink' | translate }}</span>
+                            {{ 'contact.privacyText_suffix' | translate }}
                         </p>
                         @if (!checked() && clickedOnce()){
-                        <p class="unvalid pol">Please accept the privacy policy.</p>
+                        <p class="unvalid pol"> {{ 'contact.privacyError' | translate }}</p>
                         }
                     </div>
                     <div class="collaborate-form-submit">
-                        <app-button class="cta-btn disabled" value="Send" [ngClass]="{
+                        <app-button class="cta-btn disabled" value="{{ 'contact.submit' | translate }}" [ngClass]="{
                             enabled: checked() && (name.valid) && (mail.valid) && (message.valid)
                         }"></app-button>
                     </div>
