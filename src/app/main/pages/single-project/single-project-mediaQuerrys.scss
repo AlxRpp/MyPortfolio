@@ -82,6 +82,10 @@
 }
 
 @media(max-width:800px) {
+    .single-project {
+        // height: 100dvh;
+        background-size: auto 125%;
+    }
 
     .project-wrapper {
         padding: 0 12px;
