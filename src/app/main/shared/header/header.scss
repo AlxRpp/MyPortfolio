@@ -21,6 +21,7 @@
 }
 
 
+
 .about-me {
     color: white;
     text-decoration: none;
@@ -293,4 +294,8 @@ button {
 
 .transform-BurgerMenu {
     transform: translateY(0);
+}
+
+.zeroPad {
+    padding: 0 !important;
 }

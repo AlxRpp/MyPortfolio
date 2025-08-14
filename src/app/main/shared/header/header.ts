@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, HostListener, inject, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, input, viewChild } from '@angular/core';
 import { MobileNavbar } from "./mobile-navbar/mobile-navbar";
 import { RouterLink } from '@angular/router';
 import { TranslateDirective, TranslatePipe, TranslateService, } from '@ngx-translate/core';
@@ -20,6 +20,7 @@ export class Header {
   active = '#24DD80';
   white = '#ffffff'
   mobileNavBar = viewChild.required<ElementRef>('mobileNav');
+  class = input<string>("")
 
   @HostListener('window:resize')
   onResize() {

@@ -1,4 +1,4 @@
-<div class="max-content">
+<div class="max-content" [ngClass]="class()">
     <div class="navbar">
         <img [routerLink]="'/'" src="./assets/icons/icon.png" alt="" srcset="">
         <a class="about-me" routerLink="/" fragment="about">{{ 'header.about' | translate }}</a>
