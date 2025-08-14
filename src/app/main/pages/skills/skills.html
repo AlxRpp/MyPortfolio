@@ -14,7 +14,8 @@
                 <div class="skills-field-icons">
                     @for (icon of icons; track $index) {
                     <div class="singleTechnology">
-                        <img src="{{ icon.src }}" alt="" srcset="">
+                        <img [style.filter]="mobile() ? 'grayscale(0)' : 'grayscale(1)'" src="{{ icon.src }}" alt=""
+                            srcset="">
                         <span>{{ icon.name }}</span>
                     </div>
                     }

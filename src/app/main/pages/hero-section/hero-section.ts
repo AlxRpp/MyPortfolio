@@ -73,16 +73,11 @@ export class HeroSection implements AfterViewInit {
 
   mobileView() {
     let width = window.innerWidth;
-    if (width <= 720) {
+    if (width <= 800) {
       setTimeout(() => {
         this.startGreeting();
         this.addColor();
       }, 2000)
     }
-
   }
-
-
-
-
 }

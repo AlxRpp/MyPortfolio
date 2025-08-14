@@ -21,6 +21,7 @@ export class Skills {
   pull = viewChild.required<ElementRef>('pull');
   peeledSticker = viewChild.required<ElementRef>('peeledSticker')
   peeled = false;
+  mobile = signal<boolean>(false);
 
 
   icons = [
@@ -67,6 +68,11 @@ export class Skills {
   ]
 
 
+  ngOnInit() {
+    this.mobileView();
+  }
+
+
   stickerPeel() {
     if (this.sticker() === "C") {
       this.stickerContent()
@@ -82,6 +88,7 @@ export class Skills {
     }
   }
 
+
   stickerContent() {
     if (this.peeled) {
       this.peeledSticker().nativeElement.classList.add('d-none');
@@ -95,6 +102,12 @@ export class Skills {
   }
 
 
+  mobileView() {
+    let width = window.innerWidth;
+    if (width <= 800) {
+      setTimeout(() => {
+        this.mobile.set(true);
+      }, 2000)
+    }
+  }
 }
-
-
