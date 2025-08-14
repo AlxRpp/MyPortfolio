@@ -68,7 +68,7 @@
         "text": "Kontaktieren Sie mich gern und teilen Sie mir mit, welche Rolle oder welches Projekt Sie im Sinn haben. Mit Expertise und der Motivation, mich kontinuierlich weiterzuentwickeln, leiste ich einen spürbaren Beitrag zu Ihrem Team. <br><br> Ich freue mich darauf, an neuen Projekten mitzuwirken, und bringe den passenden Mehrwert sowie die nötigen Fähigkeiten mit.",
         "nameLabel": "Wie ist Ihr Name?",
         "namePlaceholder": "Ihr Name",
-        "nameError": "Oops! Es schein als fehlt ihr Name",
+        "nameError": "Oops! Es scheint als fehlt ihr Name",
         "emailLabel": "Wie lautet Ihre E-Mail-Adresse?",
         "emailPlaceholder": "ihre@email.com",
         "emailError": "Hoppla! Ihre E-mail wird benötigt ",
@@ -78,7 +78,7 @@
         "privacyText_prefix": "Ich habe die",
         "privacyLink": "Datenschutzerklärung",
         "privacyText_suffix": "gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
-        "privacyError": "Bitte bestätigen Sie die Datenschutzerklärung.",
+        "privacyError": "Bitte bestätigen Sie die Datenschutzerklärung",
         "submit": "Senden"
     },
     "footer":{
