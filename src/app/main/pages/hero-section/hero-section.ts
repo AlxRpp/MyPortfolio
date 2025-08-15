@@ -4,7 +4,10 @@ import { Button } from "../../shared/button/button";
 import { CommonModule } from '@angular/common';
 import { SocialLinks } from "../../shared/social-links/social-links";
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { single } from 'rxjs';
+import { gsap, random } from "gsap";
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(SplitText);
 
 @Component({
   selector: 'app-hero-section',
@@ -30,6 +33,44 @@ export class HeroSection implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.mobileView();
+
+
+    document.fonts.ready.then(() => {
+      const firstsplit = SplitText.create(".frontSplit", { type: "chars, lines, words" });
+      gsap.from(firstsplit.chars, {
+        duration: 2,
+        yPercent: "random([-100, 100])",
+        // x: -500,
+        rotation: "random(-90, 90)",
+        autoAlpha: 0,
+        stagger: {
+          amount: .2,
+          from: "end",
+          repeat: 0
+        }
+      });
+    });
+
+
+    document.fonts.ready.then(() => {
+      const split = SplitText.create(".devSplit", { type: "chars, lines, words" });
+      gsap.from(split.chars, {
+        duration: 2,
+        // y: 1000,
+        xPercent: "random([-500, 500])",
+        // x: 500,
+        rotation: "random(-270, 90)",
+        autoAlpha: 0,
+        ease: "bounce.out",
+        stagger: {
+          each: .25,
+          from: "start",
+          repeat: 0
+        }
+      });
+    });
+
+
   }
 
   startGreeting() {

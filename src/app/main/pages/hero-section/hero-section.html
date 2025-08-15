@@ -7,7 +7,7 @@
             <img #wavingHand src="./assets/icons/waving_hand.png" alt="" srcset=""> }
         </div>
         <div class="main-title hero-frontend">
-            Frontend
+            <p class="frontSplit">Frontend</p>
             <div (mouseenter)="addColor()" (mouseleave)="addGrayscale()" class="picture">
                 <img [ngStyle]="{'filter': imageHover()?colored:blackAndWhite}" class="main-image"
                     src="./assets/images/selfie.jpeg" alt="" srcset="">
@@ -15,7 +15,7 @@
                 <span>{{ name() }}</span>
             </div>
         </div>
-        <div class="main-title hero-dev">DEVELOPER</div>
+        <div class="devSplit main-title hero-dev">DEVELOPER</div>
         <app-button [route]="['/']" [fragment]="'contact'" value="{{ 'hero.touch' | translate }}"
             class="hero-ctaBtn"></app-button>
         <div class="hero-mobile-img">
