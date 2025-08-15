@@ -119,7 +119,7 @@
 
         >img {
             aspect-ratio: 1/1;
-            width: 168px;
+            width: clamp(100px, 35%, 168px);
             display: block;
         }
     }
