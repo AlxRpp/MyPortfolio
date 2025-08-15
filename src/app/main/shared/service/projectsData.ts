@@ -15,7 +15,7 @@ export class ProjectsData {
       description: 'join.description',
       implDetails: 'join.implDetails',
       url: './assets/images/projects/Laptop.png',
-      detailImg: './assets/images/projects/join-detailed.png',
+      detailImg: './assets/images/projects/join-B.png',
       featured: true,
       duration: 3,
       technology: [{
@@ -48,8 +48,8 @@ export class ProjectsData {
       title: 'Alien Adventure',
       description: 'alien.description',
       implDetails: 'alien.implDetails',
-      url: './assets/images/projects/alienAdventure.png',
-      detailImg: './assets/images/projects/alienAdventure.png',
+      url: './assets/images/projects/alienAdventure-A.png',
+      detailImg: './assets/images/projects/alienAdventure-B.png',
       featured: false,
       duration: 6,
       technology: [{
@@ -74,8 +74,8 @@ export class ProjectsData {
       title: 'Pokédex',
       description: 'pokedex.description',
       implDetails: 'pokedex.implDetails',
-      url: './assets/images/projects/pokedex.png',
-      detailImg: './assets/images/projects/pokedex.png',
+      url: './assets/images/projects/pokedex-A.png',
+      detailImg: './assets/images/projects/pokedex-B.png',
       featured: false,
       duration: 4,
       technology: [{

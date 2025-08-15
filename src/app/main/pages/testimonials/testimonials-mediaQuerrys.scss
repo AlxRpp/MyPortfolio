@@ -93,9 +93,9 @@
             width: clamp(280px, 100%, 384px);
             padding: 12px;
 
-            &-content {
-                font-size: 16px;
-            }
+            // &-content {
+            //     font-size: 16px;
+            // }
 
             &-footer-name {
                 p {
@@ -131,7 +131,7 @@
 @media(max-width:400px) {
     .testimonials {
         &-card-content {
-            font-size: 13px;
+            font-size: 10px;
         }
     }
 }

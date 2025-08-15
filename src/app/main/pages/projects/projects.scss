@@ -73,6 +73,8 @@
             width: 100%;
             transition: all .15s ease-out;
             z-index: 1;
+            // aspect-ratio: 3/2;
+            // object-fit: cover;
         }
 
         >.cta-btn {
