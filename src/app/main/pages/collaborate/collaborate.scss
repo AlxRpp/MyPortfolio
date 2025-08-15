@@ -6,6 +6,7 @@
     // height: 1000px;
     width: 100%;
     position: relative;
+    overflow-x: hidden;
 }
 
 
@@ -301,4 +302,44 @@
 .enabled {
     pointer-events: all;
     opacity: 1;
+}
+
+.notification {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .25s ease-in;
+
+
+
+    >img {
+        position: absolute;
+        bottom: 0;
+        left: -25px;
+        width: clamp(340px, 100%, 1000px);
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+@keyframes notification {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

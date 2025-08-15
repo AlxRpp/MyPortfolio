@@ -1,10 +1,11 @@
-import { Component, signal } from '@angular/core';
+import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { Button } from "../../shared/button/button";
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { Footer } from "../../shared/footer/footer";
 import { Router } from '@angular/router';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Language } from '../../shared/service/language';
 
 @Component({
   selector: 'app-collaborate',
@@ -18,10 +19,13 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
 
 
 export class Collaborate {
-  private translate = { TranslateService }
+  private translate = { TranslateService };
+  private language = inject(Language);
+  public isGerman = this.language.isGerman;
   checked = signal<boolean>(false);
   clickedOnce = signal<boolean>(false);
   submittedOnce = signal<boolean>(false);
+  notification = viewChild.required<ElementRef>('notification')
   formData = {
     name: "",
     mail: "",
@@ -53,6 +57,8 @@ export class Collaborate {
           message: this.formData.message
         });
       this.resetForm(ngForm, textArea)
+      this.getNotification();
+
     }
     else {
       this.submittedOnce.set(true)
@@ -85,5 +91,12 @@ export class Collaborate {
 
   bluredInput(label: HTMLElement, id: NgModel) {
     label.classList.remove('focus')
+  }
+
+  getNotification() {
+    this.notification().nativeElement.classList.add('opacity');
+    setTimeout(() => {
+      this.notification().nativeElement.classList.remove('opacity');
+    }, 5000)
   }
 }

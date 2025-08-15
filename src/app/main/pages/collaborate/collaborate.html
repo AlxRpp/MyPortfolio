@@ -75,4 +75,13 @@
         </div>
         <app-footer class="zeroPad"></app-footer>
     </div>
+    <div #notification class="notification">
+        @if(isGerman()){
+        <img src="./assets/images/notification-DE.png" alt="" srcset="">
+        }
+        @if(!isGerman()){
+        <img src="./assets/images/notification-EN.png" alt="" srcset="">
+        }
+
+    </div>
 </div>
