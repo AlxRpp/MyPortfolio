@@ -17,7 +17,6 @@ gsap.registerPlugin(SplitText);
 })
 export class HeroSection implements AfterViewInit {
   private translate = inject(TranslateService)
-  // greeting = signal<string>('Hello world');
   name = signal<string>('Alex :)')
   background = signal<boolean>(false);
   showHand = signal<boolean>(false);
@@ -40,11 +39,12 @@ export class HeroSection implements AfterViewInit {
       gsap.from(firstsplit.chars, {
         duration: 2,
         yPercent: "random([-100, 100])",
-        // x: -500,
+        xPercent: "random([-100, 100])",
         rotation: "random(-90, 90)",
         autoAlpha: 0,
+        ease: "elastic.out",
         stagger: {
-          amount: .2,
+          amount: .25,
           from: "end",
           repeat: 0
         }
@@ -53,31 +53,41 @@ export class HeroSection implements AfterViewInit {
 
 
     document.fonts.ready.then(() => {
-      const split = SplitText.create(".devSplit", { type: "chars, lines, words" });
+      const split = SplitText.create(".devSplit", {
+        type: "chars, lines, words",
+        charsClass: "char++"
+      });
       gsap.from(split.chars, {
         duration: 2,
-        // y: 1000,
-        xPercent: "random([-500, 500])",
-        // x: 500,
-        rotation: "random(-270, 90)",
+        x: 500,
         autoAlpha: 0,
-        ease: "bounce.out",
+        ease: "back.out",
         stagger: {
-          each: .25,
+          amount: 2,
           from: "start",
           repeat: 0
         }
       });
+
+
+      const colors = ["#24DD80", "#1AA8B5", "#1073EA"];
+      split.chars.forEach(char => {
+        gsap.to(char, {
+          color: () => gsap.utils.random(colors),
+          repeat: 5,
+          yoyo: true,
+          duration: gsap.utils.random(0.2, 0.6),
+          repeatRefresh: true
+        });
+      });
     });
+  };
 
-
-  }
 
   startGreeting() {
     if (this.showHand()) {
       return
     } else {
-      // this.greeting.set("I´M ALEXANDER RUPPEL")
       this.greeting.set('hero.greetingActive')
       this.background.set(true);
       this.showHand.set(true);
@@ -94,7 +104,6 @@ export class HeroSection implements AfterViewInit {
       this.wavingHand().nativeElement.classList.add('stop-greeting');
       setTimeout(() => {
         this.showHand.set(false);
-        // this.greeting.set('Hello world')
         this.greeting.set('hero.greetingDefault')
         this.background.set(false);
       }, 250)
