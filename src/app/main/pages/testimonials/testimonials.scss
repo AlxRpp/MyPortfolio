@@ -122,7 +122,7 @@
 
         &-content {
             z-index: 1;
-            font-size: 13px;
+            font-size: 16px;
         }
 
         &-footer {
@@ -174,4 +174,8 @@
             }
         }
     }
+}
+
+.d-none {
+    display: none;
 }

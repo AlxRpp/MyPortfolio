@@ -63,7 +63,7 @@ export class HeroSection implements AfterViewInit {
         autoAlpha: 0,
         ease: "back.out",
         stagger: {
-          amount: 2,
+          amount: .5,
           from: "start",
           repeat: 0
         }

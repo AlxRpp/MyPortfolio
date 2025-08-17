@@ -15,19 +15,19 @@ export class Testimonials {
   private translate = inject(TranslateService)
   testimonials = [
     {
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minus ad possimus delectusdignissimos atque voluptatum ipsum libero aliquid.Minima neque iusto nostrum unde a? Vero voluptatibus possimus natus nostrum.',
-      name: 'Alexander Ruppel',
+      content: 'Mit Alex bei dem Projekt Kochwelt zu arbeiten war eine durchweg positive Erfahrung. Er hat ein ausgeprägtes Gespür für sauberen Code und ein klares Designverständnis. Besonders geschätzt habe ich, dass er nie den Überblick verliert und auch unter Zeitdruck strukturiert und lösungsorientiert bleibt.',
+      name: 'Frank Möllers',
       role: 'Frontend Devloper',
       url: 'https://www.linkedin.com/in/alexander-ruppel-450706375/'
     },
     {
-      content: 'Ich habe mit Alexander bei der Entwicklung der App Join zusammengearbeitet und war von Beginn an beeindruckt von seiner Zuverlässigkeit in Bezug auf die Einhaltung von Terminen und die Erfüllung seiner Aufgaben. Schon in der Anfangsphase war deutlich zu spüren, dass er das Projekt aktiv vorantreiben wollte. Er arbeitet sehr strukturiert und organisiert, was die Zusammenarbeit enorm erleichtert hat. Zudem ist er ein ausgesprochen kommunikativer Teamplayer, mit dem sich Herausforderungen konstruktiv besprechen und effizient lösen ließen. Alles in allem ist Alexander ein kompetenter, hilfsbereiter und äußerst zuverlässiger Partner, mit dem die Zusammenarbeit nicht nur produktiv, sondern auch angenehm war.',
+      content: 'Ich habe mit Alexander bei der Entwicklung der App Join zusammengearbeitet und war von Anfang an beeindruckt von seiner Zuverlässigkeit und Termintreue. Schon in der frühen Phase hat er das Projekt spürbar vorangetrieben. Seine strukturierte Arbeitsweise und seine offene Kommunikation machten die Zusammenarbeit nicht nur effizient, sondern auch sehr angenehm.',
       name: 'Manuel Horn',
       role: 'Frontend Developer',
       url: 'https://quickref.me/index.html'
     }, {
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minus ad possimus delectusdignissimos atque voluptatum ipsum libero aliquid.Minima neque iusto nostrum unde a? Vero voluptatibus possimus natus nostrum.',
-      name: 'Junus Ergin',
+      content: 'Alex beeindruckt durch seine Weitsicht und sein Engagement. Er denkt Prozesse bis zum Ende durch, bringt proaktiv Ideen ein und übernimmt Verantwortung, sobald es nötig ist. Mit ihm im Team fühlt man sich nicht nur fachlich unterstützt, sondern auch menschlich abgeholt.',
+      name: 'Michael Scholz',
       role: 'Fullstack Devloper',
       url: 'https://www.linkedin.com/in/junus-ergin/'
     },
