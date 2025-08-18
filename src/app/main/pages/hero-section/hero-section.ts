@@ -33,9 +33,8 @@ export class HeroSection implements AfterViewInit {
   ngAfterViewInit(): void {
     this.mobileView();
 
-
-    setTimeout(() => {
-      const firstsplit = SplitText.create(".frontSplit", { type: "chars, lines, words" });
+    document.fonts.ready.then(() => {
+      const firstsplit = SplitText.create(".frontSplit", { type: "chars" });
       gsap.from(firstsplit.chars, {
         duration: 2,
         yPercent: "random([-100, 100])",
@@ -49,11 +48,13 @@ export class HeroSection implements AfterViewInit {
           repeat: 0
         }
       });
+    })
 
 
 
+    document.fonts.ready.then(() => {
       const split = SplitText.create(".devSplit", {
-        type: "chars, lines, words",
+        type: "chars",
         charsClass: "char++",
       });
       gsap.from(split.chars, {
@@ -78,8 +79,7 @@ export class HeroSection implements AfterViewInit {
           repeatRefresh: true
         });
       });
-    }, 220)
-
+    })
 
   };
 

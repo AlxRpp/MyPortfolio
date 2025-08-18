@@ -7,7 +7,10 @@
 
 @font-face {
     font-family: "primaryFont";
-    src: url('../public/assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
+    src: url('../public/assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.woff2') format("woff2-variations");
+    font-weight: 300 700;
+    font-stretch: 75% 125%;
+    font-display: swap;
 }
 
 
