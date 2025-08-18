@@ -67,13 +67,12 @@ export class Collaborate {
           next: (response) => {
 
             ngForm.resetForm();
-            this.getNotification();
 
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => this.getNotification(),
         });
     }
   }
