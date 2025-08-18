@@ -42,7 +42,7 @@
                     <div class="collaborate-form-divider"></div>
                     <div class="collaborate-form-custom-input">
                         <p #focusText class="custom-input-lable">{{ 'contact.messageLabel' | translate }}</p>
-                        <textarea #message="ngModel" minlength="50" required #autoTA (input)="adjustHeight(autoTA)"
+                        <textarea #message="ngModel" minlength="10" required #autoTA (input)="adjustHeight(autoTA)"
                             name="message" [(ngModel)]="formData.message" class="input"
                             placeholder="{{ 'contact.messagePlaceholder' | translate }}" type="text"
                             (focus)="focusedInput(focusText, message)"

@@ -6,6 +6,7 @@ import { Footer } from "../../shared/footer/footer";
 import { Router } from '@angular/router';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { Language } from '../../shared/service/language';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-collaborate',
@@ -19,6 +20,7 @@ import { Language } from '../../shared/service/language';
 
 
 export class Collaborate {
+  http = inject(HttpClient)
   private translate = { TranslateService };
   private language = inject(Language);
   public isGerman = this.language.isGerman;
@@ -31,6 +33,7 @@ export class Collaborate {
     mail: "",
     message: ""
   }
+
 
   constructor(private router: Router) { }
 
@@ -45,24 +48,33 @@ export class Collaborate {
   }
 
 
+  post = {
+    endPoint: 'https://alexander-ruppel.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
 
   submitForm(ngForm: NgForm, contactName: NgModel, contactMail: NgModel, contactMessage: NgModel, textArea: HTMLTextAreaElement) {
     if (ngForm.valid && ngForm.submitted && this.checked()) {
-      // if (contactName.value.length >= 3 && contactMail.value.length > 3 && contactMessage.value.length > 3
-      //   && this.checked() && ngForm.valid) {
-      console.log(
-        {
-          name: this.formData.name,
-          mail: this.formData.mail,
-          message: this.formData.message
-        });
-      this.resetForm(ngForm, textArea)
-      this.getNotification();
+      this.http.post(this.post.endPoint, this.post.body(this.formData))
+        .subscribe({
+          next: (response) => {
 
-    }
-    else {
-      this.submittedOnce.set(true)
-      console.log('form not valid');
+            ngForm.resetForm();
+            this.getNotification();
+
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
     }
   }
 

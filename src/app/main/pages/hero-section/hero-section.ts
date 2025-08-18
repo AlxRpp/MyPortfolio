@@ -55,7 +55,7 @@ export class HeroSection implements AfterViewInit {
     // document.fonts.ready.then(() => {
     const split = SplitText.create(".devSplit", {
       type: "chars, lines, words",
-      charsClass: "char++"
+      charsClass: "char++",
     });
     gsap.from(split.chars, {
       duration: 2,
