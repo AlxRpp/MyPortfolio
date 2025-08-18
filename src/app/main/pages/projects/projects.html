@@ -11,7 +11,7 @@
                 @for (project of projects; track $index) {
                 <div class="single-project">
                     <div [routerLink]="['/projects', project.slug]" class="single-project-image">
-                        <img class="animated{{$index}}" src="{{ project.url }}" alt="" srcset="">
+                        <img class="animated{{$index}}" src="{{ project.img }}" alt="" srcset="">
                         @if (project.featured) {
                         <div class="single-project-sticker">
                             <img src="./assets/icons/Stickers/Round/feat-Sticker.png" alt="" srcset="">

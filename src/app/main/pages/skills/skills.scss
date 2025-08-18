@@ -155,7 +155,7 @@
         filter: grayscale(1);
 
         &:hover {
-            filter: grayscale(0);
+            filter: grayscale(0) !important;
             scale: .9;
         }
     }

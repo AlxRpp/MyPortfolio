@@ -58,4 +58,8 @@ export class SingleProject {
     }
   }
 
+
+  projectLiveTest(url?: string) {
+    window.open(url, '_blank')
+  }
 }

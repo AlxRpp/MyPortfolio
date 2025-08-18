@@ -56,7 +56,8 @@
                     }
                     <div class="project-imagefield-buttons">
                         <app-button (click)="goToGit()" class="BTN-Width" value="GitHub"></app-button>
-                        <app-button class="BTN-Width" value="Live Test"></app-button>
+                        <app-button (click)="projectLiveTest(project?.url)" class="BTN-Width"
+                            value="Live Test"></app-button>
                     </div>
                 </div>
 

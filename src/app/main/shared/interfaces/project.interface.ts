@@ -4,6 +4,7 @@ export interface Project {
     description: string;
     implDetails: string;
     url: string;
+    img: string;
     detailImg: string;
     featured: boolean;
     duration: number;
