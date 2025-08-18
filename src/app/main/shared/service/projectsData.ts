@@ -31,7 +31,7 @@ export class ProjectsData {
         name: "CSS"
       },
       {
-        src: "/assets/icons/TeckStack/git.png",
+        src: "./assets/icons/TeckStack/git.png",
         name: "GIT"
       },
       {
@@ -65,7 +65,7 @@ export class ProjectsData {
         name: "CSS"
       },
       {
-        src: "/assets/icons/TeckStack/git.png",
+        src: "./assets/icons/TeckStack/git.png",
         name: "GIT"
       }]
     },
@@ -91,10 +91,10 @@ export class ProjectsData {
         name: "CSS"
       },
       {
-        src: "/assets/icons/TeckStack/git.png",
+        src: "./assets/icons/TeckStack/git.png",
         name: "GIT"
       }, {
-        src: "/assets/icons/TeckStack/restApi.png",
+        src: "./assets/icons/TeckStack/restApi.png",
         name: "REST-API"
       }]
     }

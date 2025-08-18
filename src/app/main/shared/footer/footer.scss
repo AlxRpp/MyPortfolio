@@ -24,6 +24,10 @@ footer {
         left: 0;
         transform: translateY(-100%);
 
+        >img {
+            width: 96px;
+        }
+
         &-legal {
             background: unset;
             position: relative;
@@ -138,11 +142,18 @@ footer {
     // padding: 0 24px;
     padding-bottom: 96px;
 
+    &-icon {
+        >img {
+            width: 84px;
+        }
+    }
+
 
     &-name {
         display: flex;
         flex-direction: column;
         gap: 8px;
+        justify-content: center;
 
         span {
             &:hover {

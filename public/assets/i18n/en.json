@@ -60,7 +60,10 @@
     },
     "testimonials":{
         "words": "IN THEIR WORDS",
-        "colleagues": "Colleagues Thoughts"
+        "colleagues": "Colleagues Thoughts",
+        "cardFrank": "Working with Alex on the Kochwelt project was an entirely positive experience. He has a strong sense for clean code and a clear understanding of design. What I especially appreciated was that he never loses sight of the big picture and remains structured and solution-oriented even under time pressure.",
+        "cardManuel": "I worked with Alexander on the development of the Join app and was impressed from the very beginning by his reliability and punctuality. Even in the early stages, he significantly advanced the project. His structured way of working and open communication made the collaboration not only efficient but also very pleasant.",
+        "cardMichael": "Alex impresses with his foresight and commitment. He thinks processes through to the end, proactively contributes ideas, and takes responsibility whenever necessary. With him on the team, you feel not only professionally supported but also personally valued."
     },
     "contact": {
         "me": "CONTACT ME",

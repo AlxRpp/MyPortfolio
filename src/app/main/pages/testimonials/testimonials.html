@@ -8,7 +8,7 @@
             @for (testimonial of testimonials; track $index) {
             <div class="testimonials-card">
                 <div class="testimonials-card-content">
-                    {{ testimonial.content }}
+                    {{ testimonial.content | translate }}
                 </div>
                 <div class="testimonials-card-footer">
                     <div class="testimonials-card-footer-name">
