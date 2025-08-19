@@ -18,7 +18,8 @@
                 <div class="collaborate-form-sticker">
                     <img src="./assets/icons/Stickers/Round/AR-Sticker.png" alt="" srcset="">
                 </div>
-                <form (ngSubmit)="submitForm(contactForm, name, mail, message, autoTA)" #contactForm="ngForm">
+                <form autocomplete="off" (ngSubmit)="submitForm(contactForm, name, mail, message, autoTA)"
+                    #contactForm="ngForm">
                     <div class="collaborate-form-custom-input">
                         <p #inputName class="custom-input-lable">{{ 'contact.nameLabel' | translate }}</p>
                         <input #name="ngModel" required name="name" [(ngModel)]="formData.name" minlength="3"

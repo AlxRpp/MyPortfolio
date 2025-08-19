@@ -29,32 +29,64 @@ export class Header {
     }
   }
 
+
+  ngOnInit() {
+    this.getCurrentLanguage();
+  }
+
+
+  getCurrentLanguage() {
+    const lang = localStorage.getItem('currentLanguage')
+    if (lang === 'en') {
+      this.isGerman.set(false)
+      this.translate.use('en')
+    } else {
+      this.isGerman.set(true)
+      this.translate.use('de')
+    }
+  }
+
+
   toggleLanguage(lang: string) {
     if (lang === 'english') {
       this.isGerman.set(false)
       this.translate.use('en')
+      this.setLangToLocalstorage('en');
     } else {
       this.translate.use('de')
       this.isGerman.set(true);
+      this.setLangToLocalstorage('ger');
     }
   }
+
 
   flipLanguage() {
     this.isGerman.update(value => !value);
     this.toggleBurgerMenu();
     if (this.isGerman()) {
-      this.translate.use('de')
+      this.translate.use('de');
+      this.setLangToLocalstorage('ger');
     } else {
       this.translate.use('en')
+      this.setLangToLocalstorage('en');
     }
   }
 
+
   toggleBurgerMenu() {
-    this.mobileNavBar().nativeElement.classList.toggle('transform-BurgerMenu')
+    this.mobileNavBar().nativeElement.classList.toggle('transform-BurgerMenu');
+    this.mobileNavBar().nativeElement.classList.toggle('d-none');
   }
+
 
   closeBurgerMenu() {
     this.mobileNavBar().nativeElement.classList.remove('transform-BurgerMenu')
-
   }
+
+
+  setLangToLocalstorage(language: string) {
+    localStorage.setItem('currentLanguage', language)
+  }
+
+
 }
